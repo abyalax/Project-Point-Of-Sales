@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Catatan Feature
-    url: https://github.com/abyalax/abyalax/issues/new?template=feature.md
+    url: https://github.com/abyalax/Project-Point-Of-Sales/issues/new?template=feature.md
     about: Gunakan template ini untuk kebutuha fitur yang akan diimplementasikan.

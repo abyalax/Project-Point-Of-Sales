@@ -1,3 +1,11 @@
+---
+name: Note Feature
+about: Template Simple
+title: 
+labels: [note]
+assignees: ''
+---
+
 ## 📝 1️⃣ Nama Feature – role ( pengguna )
 Tanggal:
 
