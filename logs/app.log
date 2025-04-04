@@ -1,0 +1,21 @@
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"inventaris","query":[]}
+WebRoutes:  {"method":"GET","path":"inventaris","query":[]}
+Get Inventaris Page 
+Request Entry Point:  {"method":"GET","path":"analytics","query":[]}
+WebRoutes:  {"method":"GET","path":"analytics","query":[]}
+Get Analytics Page 
+Request Entry Point:  {"method":"GET","path":"suppliers","query":[]}
+WebRoutes:  {"method":"GET","path":"suppliers","query":[]}
+Get Supplier Page 
+Request Entry Point:  {"method":"GET","path":"members","query":[]}
+WebRoutes:  {"method":"GET","path":"members","query":[]}
+Get Member Page 

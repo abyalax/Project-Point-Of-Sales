@@ -15,7 +15,7 @@
   - [**📌 Feature Aplikasi Kasir (POS)**](#-feature-aplikasi-kasir-pos)
   - [**🛠️ Fitur Utama**](#️-fitur-utama)
     - [**1️⃣ Proses Transaksi (Point of Sale) – Kasir**](#1️⃣-proses-transaksi-point-of-sale--kasir)
-    - [**2️⃣ Manajemen Produk, Kasir \& Stok – Admin**](#2️⃣-manajemen-produk-kasir--stok--admin)
+    - [**2️⃣ Manajemen Operasional – Admin**](#2️⃣-manajemen-operasional--admin)
     - [**3️⃣ Laporan \& Analitik Operasional – Manajer**](#3️⃣-laporan--analitik-operasional--manajer)
     - [**4️⃣ Pemantauan \& Kebijakan Bisnis – Pemilik Toko**](#4️⃣-pemantauan--kebijakan-bisnis--pemilik-toko)
     - [**5️⃣ Manajemen Pengguna \& Hak Akses**](#5️⃣-manajemen-pengguna--hak-akses)
@@ -131,11 +131,16 @@ Aplikasi ini dirancang untuk membantu bisnis dalam mengelola transaksi penjualan
    - Mengirim laporan harian ke admin.  
 
 2. **Admin** – Bertanggung jawab atas operasional produk dan manajemen kasir. 
-   - **Dashboard**: Berfokus pada pengelolaan operasional 
-   - **CRUD Produk**: Menambah, mengedit, menghapus, dan mengelola produk.  
-   - **CRUD Kasir**: Menambah dan mengelola akun kasir.  
-   - **Pengelolaan Biaya Operasional**: Mencatat biaya listrik, perawatan toko, dan pengeluaran lainnya.  
-   - **Manajemen Stok**: Memonitor stok, memberi notifikasi jika stok menipis, serta menangani produk yang menumpuk (misal dengan diskon).  
+   - **Dashboard**
+   - Akses CRUD untuk :
+     - [ ] **Manajemen Kategori**   
+     - [ ] **Manajemen Brand**
+     - [ ] **Manajemen Data Supplier**
+     - [ ] **Manajemen Produk**
+     - [ ] **Manajemen Hutang**
+     - [ ] **Manajemen Piutang**
+     - [ ] **Manajemen Member**
+   - Akses Notifikasi Stock
 
 3. **Manajer** – Mengelola dan menganalisis laporan operasional.  
    - Mengekspor laporan dalam format PDF (harian, mingguan, bulanan).  
@@ -147,7 +152,6 @@ Aplikasi ini dirancang untuk membantu bisnis dalam mengelola transaksi penjualan
    - Melihat hasil keuntungan bisnis secara berkala dengan dashboard yang lengkap.  
    - Menentukan kebijakan pajak dan strategi bisnis baru.
 
-
 ## **🛠️ Fitur Utama**  
 
 ### **1️⃣ Proses Transaksi (Point of Sale) – Kasir**  
@@ -157,21 +161,22 @@ Aplikasi ini dirancang untuk membantu bisnis dalam mengelola transaksi penjualan
    - **Tunai**  
    - **Kartu Debit/Kredit**  
    - **E-Wallet (QRIS, OVO, Gopay, dll.)**  
-- [ ] Mencetak atau mengirim struk ke email pelanggan  
+- [ ] Mencetak struk ke pelanggan ( No Refund )
 - [ ] Membuat laporan hasil penjualan harian dan menyerahkannya ke admin  
 
 ---
 
-### **2️⃣ Manajemen Produk, Kasir & Stok – Admin**  
-- [ ] Menambah, mengedit, dan menghapus produk  
-- [ ] Mengatur kategori produk  
-- [ ] Upload gambar produk  
-- [ ] Mengelola stok:  
-   - Notifikasi stok menipis  
-   - Update stok otomatis setelah transaksi  
-- [ ] Mengelola akun kasir (menambah, mengedit, menghapus)  
-- [ ] Mencatat biaya operasional (listrik, perawatan toko, dll.)  
-- [ ] Mengelola produk dengan strategi diskon untuk mengurangi stok menumpuk  
+### **2️⃣ Manajemen Operasional – Admin**  
+- [ ] Kategori
+- [ ] Brand
+- [ ] Data Suplier 
+- [ ] Product ➯ CRUD data Product dan Upload Image Product
+- [ ] Hutang dan Piutang  
+- [ ] Member 
+- [ ] Stock Opname
+- [ ] Transaksi Penjualan
+- [ ] Transaksi Pembelian
+- [ ] Transaksi Pengembalian 
 
 ---
 
@@ -194,7 +199,7 @@ Aplikasi ini dirancang untuk membantu bisnis dalam mengelola transaksi penjualan
 - [ ] Login & logout dengan autentikasi aman  
 - [ ] Role-based access control (RBAC):  
    - **Kasir** → Hanya akses transaksi  
-   - **Admin** → Mengelola produk, kasir, dan biaya operasional  
+   - **Admin** → Mengelola operasional  
    - **Manajer** → Akses laporan & analitik operasional  
    - **Pemilik Toko** → Akses laporan keuangan & kebijakan bisnis  
 - [ ] Reset password & pengaturan akun  
