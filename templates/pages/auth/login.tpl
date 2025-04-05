@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
     <meta name="author" content="Abya">
-    <meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+    <meta name="keywords"
+        content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
@@ -46,7 +47,9 @@
                         <div class="card w-75 mx-auto">
                             <div class="card-body">
                                 <div class="m-sm-3">
-                                    <form>
+
+                                {include file="../../components/form/login-form.tpl"}
+                                    {* <form>
                                         <div class="mb-3">
                                             <label class="form-label">Email</label>
                                             <input class="form-control form-control-lg" type="email" name="email" placeholder="Enter your email" />
@@ -66,7 +69,7 @@
                                         <div class="d-grid gap-2 mt-3">
                                             <a href="index.html" class="btn btn-lg btn-primary">Sign in</a>
                                         </div>
-                                    </form>
+                                    </form> *}
                                 </div>
                             </div>
                         </div>

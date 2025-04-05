@@ -40,9 +40,8 @@ INSERT INTO role_permissions (id_role, id_permission) VALUES
     (1, 1),  -- Admin bisa create_user
     (1, 2),  -- Admin bisa edit_user
     (1, 3),  -- Admin bisa delete_user
-    (2, 4),  -- Kasir bisa view_sales
+    (2, 4),  -- Kasir bisa read_sales
     (3, 5);  -- Supervisor bisa manage_inventory
-
 
 -- Products Entity
 INSERT INTO products (name, price) VALUES 

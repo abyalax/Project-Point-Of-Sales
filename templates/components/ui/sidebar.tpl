@@ -1,5 +1,29 @@
 {literal}
     <script>
+        function handleLogout() {
+            fetch('api/logout', {
+                    method: 'POST', // Lebih aman pakai POST untuk aksi perubahan state
+                    credentials: 'include' // Penting untuk mengirim session cookie
+                })
+                .then(response => {
+                    if (response.redirected) {
+                        window.location.href = response.url; // Redirect jika dari backend
+                    } else {
+                        return response.json().then(data => {
+                            if (data.redirect) {
+                                window.location.href = data.redirect; // Redirect dari JSON
+                            }
+                            // Tambahan: Bersihkan state frontend
+                            localStorage.clear();
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error('Logout error:', error);
+                    alert('Logout failed');
+                });
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
             const currentPath = window.location.pathname;
             const sidebarItems = document.querySelectorAll('.sidebar-item');
@@ -115,11 +139,11 @@
                     Are you sure for logout ?
                 </div>
                 <div class="d-grid">
-                    <a href="upgrade-to-pro.html"
+                    <button type="button" onclick="handleLogout()"
                         class="btn btn-primary px-5 d-flex gap-2 justify-content-center align-items-center">
                         Logout
                         <i class="align-middle" data-feather="log-out"></i>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>

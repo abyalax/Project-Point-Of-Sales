@@ -13,11 +13,13 @@ class User {
         $this->db = Database::getConnection();
     }
 
-    public function findByEmail($email): stdClass {
+    public function findByEmail($email): array {
         $stmt = $this->db->prepare("SELECT * FROM users WHERE email = ?");
         $stmt->execute([$email]);
-        return $stmt->fetch(PDO::FETCH_OBJ);
+        return $stmt->fetch(PDO::FETCH_ASSOC) ?: [];
     }
+
+
 
     public function find($id): array {
         $stmt = $this->db->prepare("SELECT * FROM users WHERE id = ?");

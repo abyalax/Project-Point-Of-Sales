@@ -29,6 +29,7 @@ class WebRoutes {
                     [HomeController::class, 'index']
                 ],
                 'dashboard' => [
+                    [AuthMiddleware::class, 'checkSession'],
                     [DashboardController::class, 'index']
                 ],
                 // // Dengan middleware (dieksekusi berurutan)
@@ -39,46 +40,54 @@ class WebRoutes {
                 // ],
                 // Dynamic route /number
                 'products/(\d+)' => [
+                    [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'manageProducts']
                 ],
                 // Dynamic route /word
                 'products/(\w+)' => [
+                    [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'manageProducts']
                 ],
-
                 'login' => [
                     [AuthController::class, 'loginView']
                 ],
-
                 'register' => [
                     [AuthController::class, 'registerView']
                 ],
-
                 'transactions' => [
+                    [AuthMiddleware::class, 'checkSession'],
                     [TransactionController::class, 'index']
                 ],
                 'inventaris' => [
+                    [AuthMiddleware::class, 'checkSession'],
                     [InventarisController::class, 'index']
                 ],
                 'analytics' => [
+                    [AuthMiddleware::class, 'checkSession'],
                     [AnalyticsController::class, 'index']
                 ],
                 'suppliers' => [
+                    [AuthMiddleware::class, 'checkSession'],
                     [SupplierController::class, 'index']
                 ],
                 'members' => [
+                    [AuthMiddleware::class, 'checkSession'],
                     [MemberController::class, 'index']
                 ],
                 'karyawans' => [
+                    [AuthMiddleware::class, 'checkSession'],
                     [KaryawanController::class, 'index']
                 ],
                 'products' => [
+                    [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'index']
                 ],
                 'payments' => [
+                    [AuthMiddleware::class, 'checkSession'],
                     [PaymentController::class, 'index']
                 ],
                 'settings' => [
+                    [AuthMiddleware::class, 'checkSession'],
                     [SettingController::class, 'index']
                 ],
             ],
