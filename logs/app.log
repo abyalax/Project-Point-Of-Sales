@@ -1,0 +1,2484 @@
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nive"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"ni"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"gats"}
+Success query data {"result":["GATSBY Powder Clay Unbrekable smooth 20g"]}
+Result Searching Data {"result":["GATSBY Powder Clay Unbrekable smooth 20g"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"ga"}
+Success query data {"result":["GATSBY Powder Clay Unbrekable smooth 20g"]}
+Result Searching Data {"result":["GATSBY Powder Clay Unbrekable smooth 20g"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"gatas"}
+Success query data {"result":[]}
+Result Searching Data {"result":[]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"ga"}
+Success query data {"result":["GATSBY Powder Clay Unbrekable smooth 20g"]}
+Result Searching Data {"result":["GATSBY Powder Clay Unbrekable smooth 20g"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"gatsy"}
+Success query data {"result":[]}
+Result Searching Data {"result":[]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"gats"}
+Success query data {"result":["GATSBY Powder Clay Unbrekable smooth 20g"]}
+Result Searching Data {"result":["GATSBY Powder Clay Unbrekable smooth 20g"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nive"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nive"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"gat"}
+Success query data {"result":["GATSBY Powder Clay Unbrekable smooth 20g"]}
+Result Searching Data {"result":["GATSBY Powder Clay Unbrekable smooth 20g"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"GATSBY Powder Clay Unbrekable smooth 20g"}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"GATSBY Powder Clay Unbrekable smooth 20g"}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"GATSBY Powder Clay Unbrekable smooth 20g"}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+Found Product by Name {"id":18,"name":"GATSBY Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.00","barcode":"8992222056700","category_id":6,"stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"GATSBY Powder Clay Unbrekable smooth 20g"}
+Get Product By Name {"name":"GATSBY Powder Clay Unbrekable smooth 20g"}
+Found Product by Name {"id":18,"name":"GATSBY Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.00","barcode":"8992222056700","category_id":6,"stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Found Product by Name {"id":18,"name":"GATSBY Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.00","barcode":"8992222056700","category_id":6,"stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Found Product by Name {"id":18,"name":"GATSBY Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.00","barcode":"8992222056700","category_id":6,"stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Found Product by Name {"id":18,"name":"GATSBY Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.00","barcode":"8992222056700","category_id":6,"stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"inventaris","query":[]}
+WebRoutes:  {"method":"GET","path":"inventaris","query":[]}
+handleRoutes with :  {"method":"GET","path":"inventaris","query":[]}
+Pass auth middleware 
+Get Inventaris Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"analytics","query":[]}
+WebRoutes:  {"method":"GET","path":"analytics","query":[]}
+handleRoutes with :  {"method":"GET","path":"analytics","query":[]}
+Pass auth middleware 
+Get Analytics Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"suppliers","query":[]}
+WebRoutes:  {"method":"GET","path":"suppliers","query":[]}
+handleRoutes with :  {"method":"GET","path":"suppliers","query":[]}
+Pass auth middleware 
+Get Supplier Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"members","query":[]}
+WebRoutes:  {"method":"GET","path":"members","query":[]}
+handleRoutes with :  {"method":"GET","path":"members","query":[]}
+Pass auth middleware 
+Get Member Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"karyawans","query":[]}
+WebRoutes:  {"method":"GET","path":"karyawans","query":[]}
+handleRoutes with :  {"method":"GET","path":"karyawans","query":[]}
+Pass auth middleware 
+Get Karyawan Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"products","query":[]}
+WebRoutes:  {"method":"GET","path":"products","query":[]}
+handleRoutes with :  {"method":"GET","path":"products","query":[]}
+Pass auth middleware 
+Get Products Page {"find":[{"id":10,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":11,"name":"Chitato BBQ 68g","price":"9500.00","discount":"500.00","barcode":"8998866201234","category_id":1,"stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":12,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":13,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":14,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"1500.00","barcode":"8999999998888","category_id":3,"stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":15,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":16,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"3000.00","barcode":"8999991122334","category_id":5,"stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":18,"name":"GATSBY Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.00","barcode":"8992222056700","category_id":6,"stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nive"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nive"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"lo"}
+Success query data {"result":[]}
+Result Searching Data {"result":[]}
+Request Entry Point:  {"method":"GET","path":"products","query":[]}
+WebRoutes:  {"method":"GET","path":"products","query":[]}
+handleRoutes with :  {"method":"GET","path":"products","query":[]}
+Pass auth middleware 
+Get Products Page {"find":[{"id":10,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":11,"name":"Chitato BBQ 68g","price":"9500.00","discount":"500.00","barcode":"8998866201234","category_id":1,"stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":12,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":13,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":14,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"1500.00","barcode":"8999999998888","category_id":3,"stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":15,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":16,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"3000.00","barcode":"8999991122334","category_id":5,"stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"},{"id":18,"name":"GATSBY Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.00","barcode":"8992222056700","category_id":6,"stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"Bisk"}
+Success query data {"result":["Biskuit Roma Kelapa 300g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nive"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nive"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"bis"}
+Success query data {"result":["Biskuit Roma Kelapa 300g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nive"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"ni"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nive"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"inventaris","query":[]}
+WebRoutes:  {"method":"GET","path":"inventaris","query":[]}
+handleRoutes with :  {"method":"GET","path":"inventaris","query":[]}
+Pass auth middleware 
+Get Inventaris Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"analytics","query":[]}
+WebRoutes:  {"method":"GET","path":"analytics","query":[]}
+handleRoutes with :  {"method":"GET","path":"analytics","query":[]}
+Pass auth middleware 
+Get Analytics Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nie"}
+Success query data {"result":[]}
+Result Searching Data {"result":[]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"ni"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nive"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nive"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nive"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"NIVEA MEN Extra Briht 50ml"}
+Success query data {"result":[]}
+Result Searching Data {"result":[]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"bisk"}
+Success query data {"result":["Biskuit Roma Kelapa 300g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"Biskuit Roma Kelapa 300g"}
+Found Product by Name {"id":10,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"bis"}
+Success query data {"result":["Biskuit Roma Kelapa 300g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"Biskuit Roma Kelapa 300g"}
+Found Product by Name {"id":10,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"ni"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"niev"}
+Success query data {"result":[]}
+Result Searching Data {"result":[]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"ni"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"bs"}
+Success query data {"result":[]}
+Result Searching Data {"result":[]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"bi"}
+Success query data {"result":["Biskuit Roma Kelapa 300g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"bis"}
+Success query data {"result":["Biskuit Roma Kelapa 300g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"Biskuit Roma Kelapa 300g"}
+Found Product by Name {"id":10,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nive"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"niv"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivw"}
+Success query data {"result":[]}
+Result Searching Data {"result":[]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"niv"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"biskuti"}
+Success query data {"result":[]}
+Result Searching Data {"result":[]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"biskuti\\"}
+Success query data {"result":[]}
+Result Searching Data {"result":[]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"bisku"}
+Success query data {"result":["Biskuit Roma Kelapa 300g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"biskuit"}
+Success query data {"result":["Biskuit Roma Kelapa 300g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"Biskuit Roma Kelapa 300g"}
+Found Product by Name {"id":10,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"bisku"}
+Success query data {"result":["Biskuit Roma Kelapa 300g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"Biskuit Roma Kelapa 300g"}
+Found Product by Name {"id":10,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":17,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"2000.00","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 13:36:26","updated_at":"2025-04-07 13:36:26"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":26,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 21:35:14","updated_at":"2025-04-07 21:35:14"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"bis"}
+Success query data {"result":["Biskuit Roma Kelapa 300g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g"]}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"bisk"}
+Success query data {"result":["Biskuit Roma Kelapa 300g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"Biskuit Roma Kelapa 300g"}
+Found Product by Name {"id":19,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"10.00","created_at":"2025-04-07 21:35:14","updated_at":"2025-04-07 21:35:14"}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"0g"}
+Success query data {"result":["Biskuit Roma Kelapa 300g","GATSBY Powder Clay Unbrekable smooth 20g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g","GATSBY Powder Clay Unbrekable smooth 20g"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":26,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 21:35:14","updated_at":"2025-04-07 21:35:14"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":26,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 21:35:14","updated_at":"2025-04-07 21:35:14"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":26,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"10.00","created_at":"2025-04-07 21:35:14","updated_at":"2025-04-07 21:35:14"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":35,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":35,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"ni"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":35,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":35,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":35,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"bs"}
+Success query data {"result":[]}
+Result Searching Data {"result":[]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"bis"}
+Success query data {"result":["Biskuit Roma Kelapa 300g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"Biskuit Roma Kelapa 300g"}
+Found Product by Name {"id":28,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"Biskuit Roma Kelapa 300g"}
+Found Product by Name {"id":28,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nivea"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":35,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nive"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":35,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"}
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"nive"}
+Success query data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":35,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"bisk"}
+Success query data {"result":["Biskuit Roma Kelapa 300g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"Biskuit Roma Kelapa 300g"}
+Found Product by Name {"id":28,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"Biskuit Roma Kelapa 300gNIVEA MEN Extra Bright 50ml"}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"Biskuit Roma Kelapa 30"}
+Success query data {"result":["Biskuit Roma Kelapa 300g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g"]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"Bi"}
+Success query data {"result":["Biskuit Roma Kelapa 300g"]}
+Result Searching Data {"result":["Biskuit Roma Kelapa 300g"]}
+Request Entry Point:  {"method":"GET","path":"products","query":[]}
+WebRoutes:  {"method":"GET","path":"products","query":[]}
+handleRoutes with :  {"method":"GET","path":"products","query":[]}
+Pass auth middleware 
+Get Products Page {"find":[{"id":28,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"},{"id":29,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"},{"id":30,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"},{"id":31,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"},{"id":32,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.10","barcode":"8999999998888","category_id":3,"stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"},{"id":33,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"},{"id":34,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"},{"id":35,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"},{"id":36,"name":"GATSBY Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.00","barcode":"8992222056700","category_id":6,"stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"}]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"transactions","query":[]}
+WebRoutes:  {"method":"GET","path":"transactions","query":[]}
+handleRoutes with :  {"method":"GET","path":"transactions","query":[]}
+Pass auth middleware 
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Get index page 
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.min.js.map","query":[]}
+Request Entry Point:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+WebRoutes:  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+handleRoutes with :  {"method":"GET","path":"ts/awesomplete/awesomplete.css.map","query":[]}
+Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Search data with keyword {"keyword":"aqu"}
+Success query data {"result":["Aqua Botol 600ml"]}
+Result Searching Data {"result":["Aqua Botol 600ml"]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Get Product By Name {"name":"Aqua Botol 600ml"}
+Found Product by Name {"id":30,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10","created_at":"2025-04-07 21:54:56","updated_at":"2025-04-07 21:54:56"}

@@ -8,6 +8,7 @@ use Abya\PointOfSales\Controllers\AuthController;
 use Abya\PointOfSales\Controllers\UserController;
 use Abya\PointOfSales\Controllers\HomeController;
 use Abya\PointOfSales\Controllers\ProductController;
+use Abya\PointOfSales\Controllers\TransactionController;
 
 class ApiRoutes {
     public static function get() {
@@ -20,7 +21,7 @@ class ApiRoutes {
                     [HomeController::class, 'dummyPagination'],
                 ],
                 'api/products' => [
-                    [ProductController::class, 'search'],
+                    [ProductController::class, 'getProducts'],
                 ],
             ],
             'POST' => [
@@ -32,7 +33,16 @@ class ApiRoutes {
                 ],
                 'api/logout' => [
                     [AuthController::class, 'logout'],
-                ]
+                ],
+                'api/products' => [
+                    [ProductController::class, 'search'],
+                ],
+                'api/transactions' => [
+                    [TransactionController::class, 'addToCart'],
+                ],
+                'api/product/name' => [
+                    [ProductController::class, 'getProductByName'],
+                ],
             ],
         ];
     }

@@ -254,6 +254,17 @@ VALUES
     (6, 16), -- Karyawan (read)
     (6, 18), -- Products (read)
     (6, 21), -- Payments (read)
-    (6, 23);
+    (6, 23); -- Settings (read)
 
--- Settings (read)
+-- Products Entity
+INSERT INTO products (name, price) VALUES 
+    ('Product 1', 10000.00),
+    ('Product 2', 1900.00),
+    ('Product 3', 50000.00),
+    ('Product 4', 12500.00),
+    ('Product 5', 86000.00),
+    ('Product A', 10000.00),
+    ('Product B', 1900.00),
+    ('Product C', 50000.00),
+    ('Product D', 12500.00),
+    ('Product E', 86000.00);

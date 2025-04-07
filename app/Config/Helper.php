@@ -51,42 +51,54 @@ class Helper {
         exit;
     }
 
-    /**
-     * Check if request is AJAX
-     */
     private static function isAjaxRequest(): bool {
         return !empty($_SERVER['HTTP_X_REQUESTED_WITH']) &&
             strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest';
     }
 
-    static function handleMatchQuery($routePattern, $handlers, $path, $query) {
+    static function handleMatchQuery($routePattern, $handlers, $path) {
         if (preg_match("#^{$routePattern}$#", $path, $matches)) {
 
-            // Eksekusi semua handler berurutan
             foreach ($handlers as $handler) {
-                $controller = new $handler[0]();
-                $method = $handler[1];
+                // Handle middleware/controller instantiation
+                $class = $handler[0];
+                $methodWithParams = $handler[1];
+
+                // Ekstrak method name dan parameter (jika ada)
+                $methodParts = explode(':', $methodWithParams);
+                $methodName = $methodParts[0];
+                $param = $methodParts[1] ?? null;
+
+                // Instansiasi class
+                $instance = new $class();
+
+                // Handle parameter passing
                 $args = [];
 
-                // Handle parameter matching (untuk controller utama)
+                // Jika ini adalah controller utama (handler terakhir)
                 if ($handler === end($handlers)) {
-                    $refMethod = new ReflectionMethod($controller, $method);
+                    $refMethod = new ReflectionMethod($instance, $methodName);
                     foreach ($refMethod->getParameters() as $param) {
                         if (isset($matches[$param->getPosition() + 1])) {
                             $args[] = $matches[$param->getPosition() + 1];
                         }
                     }
                 }
+                // Jika middleware dengan parameter
+                elseif ($param !== null) {
+                    $args[] = $param;
+                }
 
-                // Panggil middleware/controller
-                $result = $controller->{$method}(...$args);
+                // Eksekusi method
+                $result = $instance->{$methodName}(...$args);
 
-                // Jika middleware return false, hentikan eksekusi
+                // Handle return value
                 if ($result === false) {
                     Helper::sendResponse(403, 'error', 'Forbidden');
                     exit;
                 }
             }
+
             return true;
         }
         return false;

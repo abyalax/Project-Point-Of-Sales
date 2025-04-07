@@ -12,8 +12,8 @@ class SmartyConfig {
         if (self::$smarty === null) {
             try {
                 $smarty = new Smarty();
-                $smarty->setTemplateDir(__DIR__ . '/../../templates');
-                $smarty->setCompileDir(__DIR__ . '/../../templates_c');
+                $smarty->setTemplateDir(__DIR__ . '/../../resources');
+                $smarty->setCompileDir(__DIR__ . '/../../.compiled');
                 $smarty->setEscapeHtml(true);
                 // $smarty->caching = Smarty::CACHING_LIFETIME_CURRENT;
                 $smarty->setCacheDir(__DIR__ . '/../../cache');

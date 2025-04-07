@@ -6,7 +6,7 @@ require_once __DIR__ . '/../../vendor/autoload.php';
 
 use Abya\PointOfSales\Config\Database;
 use Abya\PointOfSales\Models\Permission;
-use Zend\Permissions\Rbac\Rbac;
+use Laminas\Permissions\Rbac\Rbac;
 use PDO;
 
 class RBACService {

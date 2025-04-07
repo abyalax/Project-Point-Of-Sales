@@ -11,8 +11,9 @@ use Abya\PointOfSales\Config\LoggerConfig;
 
 class AuthService {
     public static function login($email, $password) {
-        LoggerConfig::getInstance()->debug('Masuk Login Service');
-        $user = (new User())->findByEmail($email);
+        LoggerConfig::getInstance()->debug('Masuk Login Service', ['email' => $email, 'password' => $password]);
+        $model = new User();
+        $user = $model->findByEmail($email);
 
         LoggerConfig::getInstance()->debug('User Data', ['data' => $user]);
 

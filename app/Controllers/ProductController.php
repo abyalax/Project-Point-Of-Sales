@@ -16,9 +16,27 @@ class ProductController {
 
     public function index() {
         $smarty = SmartyConfig::getInstance();
-        LoggerConfig::getInstance()->debug('Get Products Page');
+        $data = new Product(Database::getConnection());
+        $find = $data->findAll();
+        LoggerConfig::getInstance()->debug('Get Products Page', compact('find'));
+        $smarty->assign('products', $find);
         $smarty->assign('page', 'Products Page');
         $smarty->display('pages/product.tpl');
+    }
+
+    public function getProducts() {
+        $products = new Product(Database::getConnection());
+        $find = $products->findAll();
+        Helper::sendResponse(200, 'success', 'Success get Data', $find);
+    }
+
+    public function getProductByName() {
+        $name = $_POST['name'];
+        LoggerConfig::getInstance()->debug('Get Product By Name', compact('name'));
+        $products = new Product(Database::getConnection());
+        $find = $products->findByName($name);
+        LoggerConfig::getInstance()->debug('Found Product by Name', $find);
+        Helper::sendResponse(200, 'success', 'Success get Data', $find);
     }
 
     public function manageProducts() {
@@ -29,27 +47,29 @@ class ProductController {
     public function search() {
         header('Content-Type: application/json');
         try {
-            $keyword = $_GET['keyword'];
+            $keyword = $_POST['keyword'];
 
-            V::stringType()->length(2, 100)->assert($keyword);
+            LoggerConfig::getInstance()->debug('Search data with keyword', compact('keyword'));
+
+            V::stringType()->length(2, 50)->assert($keyword);
             $data = new Product(Database::getConnection());
 
             $result = $data->search($keyword);
+
             LoggerConfig::getInstance()->debug('Result Searching Data', compact('result'));
             Helper::sendResponse(200, 'success', 'Success get Data', $result);
-            
         } catch (NestedValidationException $exception) {
             $errors = $exception->getMessages();
             if (!is_array($errors)) {
                 $errors = [$errors];
             }
-            Helper::sendResponse(400, 'error', 'Bad Request', $errors);
+            Helper::sendResponse(400, 'error', 'Bad Request', ['Error: ' => $errors]);
         } catch (\Exception $exception) {
             $errors = $exception->getMessage();
             if (!is_array($errors)) {
                 $errors = [$errors];
             }
-            Helper::sendResponse(500, 'error', 'Internal Server Error', $errors);
+            Helper::sendResponse(500, 'error', 'Internal Server Error', ['Error: ' => $errors]);
         }
     }
 }

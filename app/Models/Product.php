@@ -16,7 +16,13 @@ class Product {
     public function findAll() {
         $stmt = $this->db->prepare("SELECT * FROM products");
         $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_OBJ);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function findByName($name) {
+        $stmt = $this->db->prepare("SELECT * FROM products WHERE name = :name");
+        $stmt->execute(['name' => $name]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
     public function search($keyword) {

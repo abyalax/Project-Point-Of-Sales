@@ -13,6 +13,7 @@ $queryParams = [];
 if (!empty($parsed['query'])) {
     parse_str($parsed['query'], $queryParams);
 }
+
 $prefix = '/point-of-sales/';
 $path = trim(substr($path, strlen($prefix)), '/');
 

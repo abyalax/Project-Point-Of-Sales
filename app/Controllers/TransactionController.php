@@ -6,14 +6,41 @@ require_once __DIR__ . '/../../vendor/autoload.php';
 
 use Abya\PointOfSales\Config\SmartyConfig;
 use Abya\PointOfSales\Config\LoggerConfig;
+use Abya\PointOfSales\Models\Product;
+use Abya\PointOfSales\Config\Database;
+use Abya\PointOfSales\Config\Helper;
+use Respect\Validation\Validator as V;
 
 class TransactionController {
 
     public function index() {
         $smarty = SmartyConfig::getInstance();
         LoggerConfig::getInstance()->debug('Get Transaction Page');
+        // $products = new Product(Database::getConnection());
+        // $find = $products->findAll();
+        // LoggerConfig::getInstance()->debug('Get Products Page', compact('find'));
+        // $smarty->assign('products', $find);
+        // $arr = array(1 => 'Product Tennis', 2 => 'Product Swimming', 3 => 'Product Coding');
+        // $arr = array('Product Tennis','Product Swimming','Product Coding');
+        // $smarty->assign('products', $arr);
+        // $product = [
+        //     ['id' => 1, 'name' => 'Product 1', 'price' => 10000],
+        //     ['id' => 2, 'name' => 'Product 2', 'price' => 10400],
+        // ];
+        // $smarty->assign('product', $product);
         $smarty->assign('page', 'Transaction Page');
         $smarty->display('pages/transaction.tpl');
+    }
+
+    public function addToCart() {
+        $productName = $_POST['productName'];
+        LoggerConfig::getInstance()->debug('Adding Cart to products: ', compact('productName'));
+
+        V::stringType()->length(2, 50)->assert($productName);
+        $data = new Product(Database::getConnection());
+        $result = $data->search($productName);
+
+        Helper::sendResponse(200, 'success', 'Adding data to cart', ['data' => $result]);
     }
 
     public function getPaginatedTransactions($query = []) {

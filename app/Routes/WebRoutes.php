@@ -84,6 +84,12 @@ class WebRoutes {
                 ],
                 'payments' => [
                     [AuthMiddleware::class, 'checkSession'],
+                    [RBACMiddleware::class, 'handle:read_payments'],
+                    [PaymentController::class, 'index']
+                ],
+                'payments/manage' => [
+                    [AuthMiddleware::class, 'checkSession'],
+                    [RBACMiddleware::class, 'handle:manage_payments'],
                     [PaymentController::class, 'index']
                 ],
                 'settings' => [

@@ -21,8 +21,9 @@ class Routes {
         LoggerConfig::getInstance()->debug('ApiRoutes: ', ['method' => $method, 'path' => $path, 'query' => $query]);
         self::handleRoutes($routes, $method, $path, $query);
     }
-
+    
     private static function handleRoutes($routes, $method, $path, $query) {
+        LoggerConfig::getInstance()->debug('handleRoutes with : ', ['method' => $method, 'path' => $path, 'query' => $query]);
         foreach ($routes[$method] ?? [] as $routePattern => $handlers) {
             if (Helper::handleMatchQuery($routePattern, $handlers, $path, $query)) {
                 return;
