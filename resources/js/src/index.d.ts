@@ -14,7 +14,7 @@ interface Product {
 }
 
 export interface CartItem {
-    id: string | number;
+    id: number;
     barcode: number;
     name: string;
     price: number;
