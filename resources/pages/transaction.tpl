@@ -1,8 +1,23 @@
 {extends file="../components/layouts/dashboard.tpl"}
 
+{block name="head"}
+    <!-- Mode Development -->
+    {* <script type="module" src="http://localhost:5173/src/cart/index.ts"></script> *}
+    <!-- Mode Production -->
+    <script src="/resources/js/dist/cart.js" type="module"></script>
+{/block}
+
 {block name="content"}
-    <main class="content">
-        <h1 class="fw-bold">{$page|default:'Transactions'}</h1>
+    <main>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="">
+                <h1 class="fw-bold">{$page|default:'Transactions'}</h1>
+            </div>
+            <div class="text-end">
+                <h1 class="fw-bold">{$auth_user.name|default:'Nama Cashier'}</h1>
+                <p class="date-time"></p>
+            </div>
+        </div>
         <div class="row">
             <div class="col-12 col-lg-8 col-xxl-9 d-flex">
                 <div class="card flex-fill">
@@ -10,56 +25,133 @@
                     {include file="../components/form/transaction-form.tpl"}
 
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <form id="cart-form" class="d-flex gap-2">
-                            <div>
-                                <input id="searchProducts" class="form-control form-control-lg" type="text"
-                                    placeholder="Search Products" />
+                        <form id="form-search-products" class="d-flex gap-2">
+                            <div class="d-inline-block">
+                                <div class="input-group input-group-navbar">
+                                    <button class="btn btn-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" style="width: 1.2rem;height: 1.2rem;" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-search">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        </svg>
+                                    </button>
+                                    <input id="fm-search-products" class="form-control form-control-lg" type="text"
+                                        placeholder="Search Products..." />
+                                </div>
                             </div>
-                            <button type="submit" class="btn btn-secondary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    style="width: 1.2rem;height: 1.2rem;" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-plus-square">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="12" y1="8" x2="12" y2="16"></line>
-                                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                            <button type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                data-bs-title="Insert this product to cart"
+                                class="btn btn-lg btn-secondary d-flex gap-1 flex-nowrap align-items-center">
+                                Insert
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    style="width: 1.2rem;height: 1.2rem;" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <polyline points="19 12 12 19 5 12"></polyline>
                                 </svg>
-                                Add Item
                             </button>
                         </form>
+                        {include file="../components/form/search-transaction-form.tpl"}
+                        <button data-fancybox data-src="#box-cart-form" id="select-product-btn" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" data-bs-title="Preview many products"
+                            class="btn btn-lg btn-primary d-flex gap-1 flex-nowrap align-items-center">
+                            Select
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                style="width: 1.2rem;height: 1.2rem;" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </button>
                     </div>
                     <div class="card-body">
                         {include file="../components/table/transaction.tpl"}
                     </div>
                     <div class="card-footer">
-                        <div class="d-flex w-100 justify-content-between align-items-center p-4">
-                            <div class="dataTables_info" id="datatables-orders_info" role="status" aria-live="polite">
-                                Showing 1 to 10 of 15 entries
-                            </div>
-                            <div class="my-3">
-                                <div class="dataTables_paginate paging_simple_numbers" id="datatables-orders_paginate">
-                                    <ul class="pagination">
-                                        <li class="paginate_button page-item previous disabled"
-                                            id="datatables-orders_previous">
-                                            <a aria-controls="datatables-orders" aria-disabled="true" aria-role="link"
-                                                data-dt-idx="previous" tabindex="0" class="page-link">Previous
-                                            </a>
-                                        </li>
-                                        <!-- Dynamic page numbers will be inserted here -->
-                                        <li class="paginate_button page-item next" id="datatables-orders_next">
-                                            <a href="#" aria-controls="datatables-orders" aria-role="link"
-                                                data-dt-idx="next" tabindex="0" class="page-link">Next
-                                            </a>
-                                        </li>
-                                    </ul>
+                        <div class="d-flex w-100 justify-content-between align-items-start p-4">
+                            <div class="w-100">
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" placeholder="Catatan Transaksi ( jika ada )"
+                                        rows="3"></textarea>
                                 </div>
+                                <div class="row mt-3">
+                                    <p class="fw-bold fs-5 my-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-command mb-1">
+                                            <path
+                                                d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z">
+                                            </path>
+                                        </svg>
+                                        Shortcut Keyboard
+                                    </p>
+                                    <div class="col-sm-6 d-flex flex-column">
+                                        <p class="my-0 fs-6">F7 = Tambah Baris Baru</p>
+                                        <p class="my-0 fs-6">F8 = Fokus ke field bayar</p>
+                                    </div>
+                                    <div class="col-sm-6 d-flex flex-column">
+                                        <p class="my-0 fs-6">F9 = Cetak Struct</p>
+                                        <p class="my-0 fs-6">F10 = Simpan Transaksi</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-75">
+                                <form class="d-flex flex-column justify-content-end gap-2">
+                                    <div class="mb-3 row d-flex justify-content-start">
+                                        <label class="col-form-label col-sm-4 text-sm-end">Bayar</label>
+                                        <div class="col-sm-8">
+                                            <input id="pay-transaction" class="form-control form-control-lg" type="number"
+                                                placeholder="Jumlah Pembayaran..." />
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row d-flex justify-content-start">
+                                        <label class="col-form-label col-sm-4 text-sm-end">Kembali</label>
+                                        <div class="col-sm-8">
+                                            <input id="return-transaction" class="form-control form-control-lg" type="text"
+                                                disabled placeholder="Kembalian.." />
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3 justify-content-end">
+                                        <button data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="Print Struct to printer"
+                                            class="btn btn-primary btn-lg d-flex gap-1 flex-nowrap align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-printer">
+                                                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                                                <path
+                                                    d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2">
+                                                </path>
+                                                <rect x="6" y="14" width="12" height="8"></rect>
+                                            </svg>
+                                            Cetak
+                                        </button>
+                                        <button id="save-transaction-btn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="Save & Finish Transaction"
+                                            class="btn btn-secondary btn-lg d-flex gap-1 flex-nowrap align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-save">
+                                                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z">
+                                                </path>
+                                                <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                                                <polyline points="7 3 7 8 15 8"></polyline>
+                                            </svg>
+                                            Simpan
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-4 col-xxl-3 d-flex">
-                <div class="card flex-fill w-100">
+                <div class="card w-100" style="height:fit-content;">
                     <div class="card-header">
                         <h5 class="card-title mb-0">Overview</h5>
                     </div>
@@ -67,22 +159,45 @@
                         <div class="d-flex w-100">
                             <div class="align-self-center w-100">
                                 <div class="d-flex justify-content-between">
-                                    <p>Subtotal Cart</p>
+                                    <p>Total Items</p>
+                                    <p id="cart-total-item">0</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Subtotal Price</p>
                                     <p id="cart-sub-total"></p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Total Tax Products</p>
+                                    <p id="cart-total-tax"></p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <p>Total Discount</p>
                                     <p id="cart-total-discount"></p>
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <p>Total Cart</p>
+                                    <p>Total Price</p>
                                     <p id="cart-total"></p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Payment Method</p>
+                                    <p>Cash</p>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+                                    <button class="btn btn-secondary" id="print-struct-btn" data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" data-bs-title="View Struct before print">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-eye">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                        Preview Struct
+                                    </button>
+                                    <button class="btn btn-secondary" id="reset-cart-btn" data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" data-bs-title="Reset and remove all item">Reset</button>
                                 </div>
                             </div>
                         </div>
-                        <button id="checkout-btn" class="btn btn-primary">
-                            Process
-                        </button>
                     </div>
                 </div>
             </div>
@@ -103,7 +218,7 @@
                     },
                 },
             });
-            $("#searchProducts").autocomplete({
+            $("#fm-search-products").autocomplete({
                 source: function(request, response) {
                     $.ajax({
                         url: "api/products",
@@ -113,6 +228,7 @@
                         },
                         dataType: "json",
                         success: function(data) {
+                            console.log(data);
                             response(data.data);
                         },
                         error: function(xhr, status, error) {
@@ -122,6 +238,28 @@
                     });
                 },
                 minLength: 2
+            });
+            $("#bx-search-products").autocomplete({
+                source: function(request, response) {
+                    $.ajax({
+                        url: "api/products",
+                        type: "POST",
+                        data: {
+                            keyword: request.term
+                        },
+                        dataType: "json",
+                        success: function(data) {
+                            console.log(data);
+                            response(data.data);
+                        },
+                        error: function(xhr, status, error) {
+                            console.log(xhr);
+                            console.error("AJAX Error:", status, error);
+                        }
+                    });
+                },
+                minLength: 2,
+                appendTo: '#parent-box-search-products'
             });
         })
     </script>

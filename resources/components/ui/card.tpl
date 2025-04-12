@@ -1,15 +1,9 @@
-<style>
-    .icon {
-        width: 60px;
-        height: 60px;
-    }
-</style>
 <div class="card col px-2">
-    <div class="card-body d-flex flex-column gap-1">
+    <div class="card-body d-flex     flex-column gap-1">
         <p>{$title}</p>
-        <div class="col-auto d-flex justify-content-start align-items-center gap-4">
-            <i class="align-middle icon" data-feather="{$icon}"></i>
-            <h2 class="fw-semibold">{$menu}</h2>
+        <div class="col-auto d-flex justify-content-start align-items-center gap-4" style="height: 2rem;">
+            {$icon nofilter}
+            <h4 class="fw-semibold text-nowrap">{$menu}</h4>
         </div>
         <a href="/point-of-sales/{$link}" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
         data-bs-title="You must login as {$role}">

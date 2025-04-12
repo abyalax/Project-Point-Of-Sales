@@ -2,9 +2,10 @@
 
 namespace Abya\PointOfSales\Models;
 
-use PDO;
-use stdClass;
 use Abya\PointOfSales\Config\Database;
+use PDOException;
+use Abya\PointOfSales\Config\LoggerConfig;
+use PDO;
 
 class User {
     private $db;
@@ -14,26 +15,37 @@ class User {
     }
 
     public function findByEmail($email): array {
-        $stmt = $this->db->prepare("SELECT * FROM users WHERE email = ?");
-        $stmt->execute([$email]);
-        return $stmt->fetch(PDO::FETCH_ASSOC) ?: [];
+        try {
+            $stmt = $this->db->prepare("SELECT * FROM users WHERE email = ?");
+            $stmt->execute([$email]);
+            return $stmt->fetch(PDO::FETCH_ASSOC) ?: [];
+        }  catch (PDOException $e) {
+            LoggerConfig::getInstance()->error('Error Query getUserRoles', compact('e'));
+            throw $e;
+        }
     }
 
-
-
-    public function find($id): array {
-        $stmt = $this->db->prepare("SELECT * FROM users WHERE id = ?");
-        $stmt->execute([$id]);
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
-        
-        return $result ?: []; // Pastikan selalu array, bukan null
+    public function findById($id) {
+        try {
+            $stmt = $this->db->prepare("SELECT * FROM users WHERE id = ?");
+            $stmt->execute([$id]);
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            return $result;
+        } catch (PDOException $e) {
+            LoggerConfig::getInstance()->error('Error Query findById user', compact('e'));
+            throw $e;
+        }
     }
-    
     
     public function findAll(): array {
-        $stmt = $this->db->prepare("SELECT * FROM users LIMIT 10");
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        try {
+            $stmt = $this->db->prepare("SELECT * FROM users LIMIT 10");
+            $stmt->execute();
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            LoggerConfig::getInstance()->error('Error Query findById user', compact('e'));
+            throw $e;
+        }
     }
     
 }

@@ -12,7 +12,6 @@
                 formData.append('email', email.value);
                 formData.append('password', password.value);
 
-
                 fetch('api/login', {
                         method: 'POST',
                         body: formData
@@ -25,7 +24,9 @@
                         // Handle response JSON (jika tidak redirect)
                         else {
                             return response.json().then(data => {
-                                document.getElementById('response').innerText = data.message;
+                                console.log(data);
+                                const res = Object.values(data.data).join('<br>');
+                                document.getElementById('response').innerHTML = res;
                             });
                         }
                     })
@@ -60,5 +61,5 @@
     <div class="d-grid gap-2 mt-3">
         <button type="submit" class="btn btn-lg btn-primary">Sign in</button>
     </div>
-    <p id="response" class="my-3">response</p>
+    <p id="response" class="my-3"></p>
 </form>

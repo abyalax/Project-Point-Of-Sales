@@ -11,7 +11,6 @@
         content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
 
     <link rel="stylesheet" href="/vendor/components/jqueryui/themes/smoothness/jquery-ui.min.css" />
     <link rel="stylesheet" href="/vendor/components/jqueryui/themes/smoothness/theme.css" />
@@ -49,27 +48,6 @@
                                 <div class="m-sm-3">
 
                                 {include file="../../components/form/login-form.tpl"}
-                                    {* <form>
-                                        <div class="mb-3">
-                                            <label class="form-label">Email</label>
-                                            <input class="form-control form-control-lg" type="email" name="email" placeholder="Enter your email" />
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="form-label">Password</label>
-                                            <input class="form-control form-control-lg" type="password" name="password" placeholder="Enter your password" />
-                                        </div>
-                                        <div>
-                                            <div class="form-check align-items-center">
-                                                <input id="customControlInline" type="checkbox" class="form-check-input" value="remember-me" name="remember-me" checked>
-                                                <label class="form-check-label text-small" for="customControlInline">
-                                                    Remember me
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="d-grid gap-2 mt-3">
-                                            <a href="index.html" class="btn btn-lg btn-primary">Sign in</a>
-                                        </div>
-                                    </form> *}
                                 </div>
                             </div>
                         </div>

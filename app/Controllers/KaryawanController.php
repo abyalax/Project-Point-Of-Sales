@@ -3,16 +3,15 @@ namespace Abya\PointOfSales\Controllers;
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-use Abya\PointOfSales\Config\SmartyConfig;
 use Abya\PointOfSales\Config\LoggerConfig;
+use Abya\PointOfSales\Config\BaseController;
 
-class KaryawanController {
+class KaryawanController extends BaseController {
 
     public function index() {
-        $smarty = SmartyConfig::getInstance();
         LoggerConfig::getInstance()->debug('Get Karyawan Page');
-        $smarty->assign('page', 'Karyawan Page');
-        $smarty->display('pages/karyawan.tpl');
+        $this->smarty->assign('page', 'Karyawan Page');
+        $this->smarty->display('pages/karyawan.tpl');
     }
 
 };

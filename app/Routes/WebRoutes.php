@@ -32,16 +32,18 @@ class WebRoutes {
                     [AuthMiddleware::class, 'checkSession'],
                     [DashboardController::class, 'index']
                 ],
-                // // Dengan middleware (dieksekusi berurutan)
-                // 'settings' => [
-                //     [AuthMiddleware::class, 'checkSession'],  // Middleware 1
-                //     // [RBACMiddleware::class, 'checkAdmin'],    // Middleware 2 
-                //     [SettingController::class, 'index']       // Controller utama
-                // ],
+                'products/create' => [
+                    [AuthMiddleware::class, 'checkSession'],
+                    [ProductController::class, 'create']
+                ],
+                'products/update/(\d+)' => [
+                    [AuthMiddleware::class, 'checkSession'],
+                    [ProductController::class, 'update']
+                ],
                 // Dynamic route /number
                 'products/(\d+)' => [
                     [AuthMiddleware::class, 'checkSession'],
-                    [ProductController::class, 'manageProducts']
+                    [ProductController::class, 'manageProducts'] // example http://localhost/point-of-sales/products/2
                 ],
                 // Dynamic route /word
                 'products/(\w+)' => [

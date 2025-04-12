@@ -3,6 +3,7 @@
 namespace Abya\PointOfSales\Config;
 
 use Monolog\Logger;
+use Monolog\Level;
 use Monolog\Handler\StreamHandler;
 use Monolog\Formatter\LineFormatter;
 
@@ -18,8 +19,8 @@ class LoggerConfig {
 
             $formatter = new LineFormatter('%message% %context%' . PHP_EOL, null, false, true);
 
-            $handler = new StreamHandler(__DIR__ . '../../../logs/app.log', Logger::DEBUG);
-            // $handler = new StreamHandler(__DIR__ . '../../../logs/app.log', Logger::WARNING);
+            $handler = new StreamHandler(__DIR__ . '../../../logs/app.log', Level::Debug);
+            // $handler = new StreamHandler(__DIR__ . '../../../logs/app.log', Level::Warning);
             $handler->setFormatter($formatter);
 
             self::$instance->pushHandler($handler);

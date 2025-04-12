@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
-    <meta name="author" content="AdminKit">
+    <meta name="author" content="Abya">
     <meta name="keywords"
-        content="abya, point-of-sales, pos, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+        content="abya, point-of-sales, pos, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, web">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-
     {* JQuery CSS*}
-    <link rel="stylesheet" href="/vendor/components/jqueryui/themes/smoothness/jquery-ui.min.css" />
-    <link rel="stylesheet" href="/vendor/components/jqueryui/themes/smoothness/theme.css" />
+    <link rel="stylesheet" href="/vendor/components/jqueryui/themes/base/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/vendor/components/jqueryui/themes/base/theme.css" />
     {* JQuery JS*}
     <script src="/vendor/components/jquery/jquery.min.js"></script>
     <script src="/vendor/components/jqueryui/jquery-ui.min.js"></script>
@@ -31,14 +30,13 @@
     {* CSS root *}
     <link rel="stylesheet" href="/public/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    {* Awesomplete *}
-    <link rel="stylesheet" href="/vendor/components/awesomplete/awesomplete.css">
-    <link rel="stylesheet" href="/vendor/components/awesomplete/awesomplete.base.css">
-    <script src="/vendor/components/awesomplete/awesomplete.min.js"></script>
-    <!-- Mode Development -->
-    <script type="module" src="http://localhost:5173/src/main.ts"></script>
-    <!-- Mode Production -->
-    {* <script src="/resources/js/dist/app.es.js" type="module"></script> *}
+
+    {* For Development *}
+    {* <script src="http://localhost:5173/src/auth/index.ts" type="module"></script> *}
+    {* For Production *}
+    <script src="../../js/dist/auth.js" type="module"></script>
+
+    {block name="head"}{/block}
 
     <title>Point Of Sales</title>
 </head>
@@ -46,12 +44,11 @@
 <body>
     <div class="wrapper">
         {include file="../ui/sidebar.tpl"}
-        <div class="main">
-            <nav class="navbar navbar-expand navbar-light navbar-bg">
+        <div class="main position-relative">
+            <nav class="navbar position-sticky top-0 navbar-expand navbar-light navbar-bg">
                 <a class="sidebar-toggle js-sidebar-toggle">
                     <i class="hamburger align-self-center"></i>
                 </a>
-
                 <div class="navbar-collapse collapse">
                     <ul class="navbar-nav navbar-align">
                         <li class="nav-item dropdown">
@@ -210,7 +207,7 @@
                                 data-bs-toggle="dropdown">
                                 <img src="/vendor/components/adminkit/img/avatars/avatar.jpg"
                                     class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span
-                                    class="text-dark">Charles Hall</span>
+                                    class="text-dark">{$auth_user['name']|default:''}</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1"
@@ -230,13 +227,11 @@
                 </div>
             </nav>
 
-            <main class="content">
+            <main class="content" style="padding: 1rem;">
                 {block name="scripts"}{/block}
                 {block name="content"}
-                    <p> No Content Extends (Default Content)</p>
+                    <p> No Content Extends at Dashboard layouts (Default Content)</p>
                 {/block}
-                {* {include file="../ui/cart.tpl"} *}
-                {* {$children nofilter} *}
             </main>
 
             <footer class="footer">

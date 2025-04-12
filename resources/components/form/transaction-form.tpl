@@ -34,7 +34,7 @@
     </script>
 {/literal}
 
-<div id="dialog-content" style="display:none;width: 800px;">
+<div id="box-login-form" style="display:none;width: 800px;">
     <h2>Post Data with JQuery</h2>
     <form id="updateUserForm" class="w-100">
         <div class="mb-3">

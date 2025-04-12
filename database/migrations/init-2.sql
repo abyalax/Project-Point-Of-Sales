@@ -42,12 +42,12 @@ CREATE TABLE
 -- Products Entity
 CREATE TABLE
     products (
+        category_id INT,
         id INT AUTO_INCREMENT PRIMARY KEY,
         name VARCHAR(100) NOT NULL,
         price DECIMAL(10, 2) NOT NULL,
         discount DECIMAL(10, 2) NOT NULL DEFAULT 0,
         barcode VARCHAR(50) NOT NULL UNIQUE,
-        category_id INT,
         stock_qty INT NOT NULL DEFAULT 0,
         is_active BOOLEAN DEFAULT TRUE,
         cost_price DECIMAL(10, 2),

@@ -5,6 +5,9 @@ namespace Abya\PointOfSales\Config;
 use ReflectionMethod;
 
 class Helper {
+
+    
+
     /**
      * Send HTTP response with optional redirect
      * 
@@ -15,40 +18,40 @@ class Helper {
      * @param string|null $redirectUrl URL for redirect (only for 302 status)
      */
     static function sendResponse(
-        int $statusCode,
-        string $status,
-        string $message,
-        ?array $data = null,
-        ?string $redirectUrl = null
-    ): void {
-        http_response_code($statusCode);
+            int $statusCode,
+            string $status,
+            string $message,
+            ?array $data = null,
+            ?string $redirectUrl = null
+        ): void {
+            http_response_code($statusCode);
 
-        if ($statusCode === 302 && $redirectUrl) {
-            // For AJAX requests, include redirect in JSON response
-            if (self::isAjaxRequest()) {
-                header('Content-Type: application/json');
-                echo json_encode([
-                    'status' => $status,
-                    'message' => $message,
-                    'data' => $data,
-                    'redirect' => $redirectUrl
-                ]);
+            if ($statusCode === 302 && $redirectUrl) {
+                // For AJAX requests, include redirect in JSON response
+                if (self::isAjaxRequest()) {
+                    header('Content-Type: application/json');
+                    echo json_encode([
+                        'status' => $status,
+                        'message' => $message,
+                        'data' => $data,
+                        'redirect' => $redirectUrl
+                    ]);
+                    exit;
+                }
+
+                // For normal requests, do actual redirect
+                header("Location: $redirectUrl");
                 exit;
             }
 
-            // For normal requests, do actual redirect
-            header("Location: $redirectUrl");
+            // Standard JSON response
+            header('Content-Type: application/json');
+            echo json_encode([
+                'status' => $status,
+                'message' => $message,
+                'data' => $data
+            ]);
             exit;
-        }
-
-        // Standard JSON response
-        header('Content-Type: application/json');
-        echo json_encode([
-            'status' => $status,
-            'message' => $message,
-            'data' => $data
-        ]);
-        exit;
     }
 
     private static function isAjaxRequest(): bool {
@@ -56,7 +59,7 @@ class Helper {
             strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest';
     }
 
-    static function handleMatchQuery($routePattern, $handlers, $path) {
+    static function handleMatchQuery($routePattern, $handlers, $path, $query) {
         if (preg_match("#^{$routePattern}$#", $path, $matches)) {
 
             foreach ($handlers as $handler) {
@@ -68,13 +71,10 @@ class Helper {
                 $methodParts = explode(':', $methodWithParams);
                 $methodName = $methodParts[0];
                 $param = $methodParts[1] ?? null;
-
                 // Instansiasi class
                 $instance = new $class();
-
                 // Handle parameter passing
                 $args = [];
-
                 // Jika ini adalah controller utama (handler terakhir)
                 if ($handler === end($handlers)) {
                     $refMethod = new ReflectionMethod($instance, $methodName);
@@ -83,22 +83,21 @@ class Helper {
                             $args[] = $matches[$param->getPosition() + 1];
                         }
                     }
+                    $args[] = $query;
                 }
                 // Jika middleware dengan parameter
                 elseif ($param !== null) {
                     $args[] = $param;
+                    $args[] = $query;
                 }
-
-                // Eksekusi method
+                LoggerConfig::getInstance()->debug('Call Method', compact('instance', 'methodName', 'args'));
                 $result = $instance->{$methodName}(...$args);
-
                 // Handle return value
                 if ($result === false) {
                     Helper::sendResponse(403, 'error', 'Forbidden');
                     exit;
                 }
             }
-
             return true;
         }
         return false;

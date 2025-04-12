@@ -8,8 +8,9 @@ use Respect\Validation\Exceptions\NestedValidationException;
 use Abya\PointOfSales\Config\LoggerConfig;
 use Abya\PointOfSales\Config\Helper;
 use Abya\PointOfSales\Models\User;
+use Abya\PointOfSales\Config\BaseController;
 
-class UserController {
+class UserController extends BaseController {
     public function index() { }
 
     public function getAllUsers() {
@@ -21,7 +22,7 @@ class UserController {
                 $data = new User();
                 $result = $data->findAll();
 
-                LoggerConfig::getInstance()->debug('Result Searching Data', compact('result'));
+                LoggerConfig::getInstance()->debug('Result Searching Data Users', compact('result'));
                 Helper::sendResponse(200, 'success', 'Success get data', $result);
             } else {
                 Helper::sendResponse(405, 'error', 'Method not allowed');

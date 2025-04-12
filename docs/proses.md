@@ -271,7 +271,7 @@ use Abya\PointOfSales\Config\SmartyConfig;
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-class HomeController {
+class HomeController extends BaseController {
     public function index() {
         $smarty = SmartyConfig::getInstance();
 

@@ -1,5 +1,6 @@
 {literal}
     <script>
+        let base_url = '';
         function handleLogout() {
             fetch('api/logout', {
                     method: 'POST', // Lebih aman pakai POST untuk aksi perubahan state
@@ -23,7 +24,14 @@
                 });
         }
 
+        async function getConfig() {
+            const fechData = await fetch('/point-of-sales/api/config')            
+            const res = await fechData.json()
+            base_url = res.data[0].base_url
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
+            getConfig()
             const currentPath = window.location.pathname;
             const sidebarItems = document.querySelectorAll('.sidebar-item');
 
@@ -34,8 +42,7 @@
                 item.classList.remove('active');
                 link.classList.remove('active');
 
-                if (currentPath === href ||
-                    (currentPath.startsWith(href) && href !== '/point-of-sales/')) {
+                if (currentPath === href || (currentPath.startsWith(href) && href !== base_url)) {
                     item.classList.add('active');
                     link.classList.add('active');
                 }
@@ -47,7 +54,7 @@
 <nav id="sidebar" class="sidebar js-sidebar">
     <div class="sidebar-content js-simplebar">
         <a class="sidebar-brand" href="/point-of-sales/">
-            <span class="align-middle">Abya's Point Of Sales</span>
+            <span class="align-middle">Abya's POS</span>
         </a>
         <ul class="sidebar-nav">
             <li class="sidebar-header">
@@ -55,7 +62,7 @@
             </li>
 
             <li class="sidebar-item active">
-                <a class="sidebar-link" href="/point-of-sales/">
+                <a class="sidebar-link" href="/point-of-sales/dashboard">
                     <i class="align-middle" data-feather="monitor"></i> <span class="align-middle">Dashboard</span>
                 </a>
             </li>
