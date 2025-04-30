@@ -4,35 +4,44 @@ namespace Abya\PointOfSales\Config;
 
 use ReflectionMethod;
 
-class Helper {
+enum StatusResponse: string {
+    case success = 'Success';
+    case created = 'Created';
+    case error = 'Error';
+    case badrequest = 'Bad Request';
+    case badvalidation = 'Validation Error';
+    case unauthorized = 'Unauthorized';
+    case denied = 'Access Denied';
+    case notfound = 'Not Found';
+    case redirect = 'Redirect';
+    case notallowed = 'Not Allowed';
+}
 
-    
+class Helper {
 
     /**
      * Send HTTP response with optional redirect
      * 
      * @param int $statusCode HTTP status code
-     * @param string $status Response status (success/error)
-     * @param string $message Response message
+     * @param StatusResponse $status Response status (success/error)
      * @param array|null $data Additional data
      * @param string|null $redirectUrl URL for redirect (only for 302 status)
      */
     static function sendResponse(
             int $statusCode,
-            string $status,
-            string $message,
+            StatusResponse $status,
             ?array $data = null,
             ?string $redirectUrl = null
         ): void {
             http_response_code($statusCode);
 
-            if ($statusCode === 302 && $redirectUrl) {
+            if ($statusCode === 303 && $redirectUrl) {
                 // For AJAX requests, include redirect in JSON response
                 if (self::isAjaxRequest()) {
                     header('Content-Type: application/json');
                     echo json_encode([
                         'status' => $status,
-                        'message' => $message,
+                        'message' => $status->value,
                         'data' => $data,
                         'redirect' => $redirectUrl
                     ]);
@@ -48,7 +57,7 @@ class Helper {
             header('Content-Type: application/json');
             echo json_encode([
                 'status' => $status,
-                'message' => $message,
+                'message' => $status->value,
                 'data' => $data
             ]);
             exit;
@@ -94,7 +103,7 @@ class Helper {
                 $result = $instance->{$methodName}(...$args);
                 // Handle return value
                 if ($result === false) {
-                    Helper::sendResponse(403, 'error', 'Forbidden');
+                    Helper::sendResponse(403, StatusResponse::denied);
                     exit;
                 }
             }

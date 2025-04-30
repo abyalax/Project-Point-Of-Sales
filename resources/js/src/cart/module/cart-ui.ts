@@ -2,6 +2,7 @@ import CartManager from "./cart-manager";
 import { CartState } from "../../types/cart";
 import { getUserSession } from "../../auth";
 import { getProductByID, getProducts } from "../../product/module/product-manager";
+import { calculateTransaction } from "../../calculation/transaction";
 
 export default class CartUI {
     private debounceTimer: number = 0;
@@ -65,7 +66,7 @@ export default class CartUI {
         if (!dates.length) return;
         const today = new Date().toISOString().split("T")[0];
         dates.forEach(el => el.textContent = today);
-      };
+    };
 
     private bindAddToCartBtn = () => {
         const buttons = document.querySelectorAll('.box-search-products-addcart') as NodeListOf<HTMLButtonElement>;
@@ -157,10 +158,10 @@ export default class CartUI {
         `).join('');
 
         totalPriceEl.textContent = `Rp${carts.total.toLocaleString()}`;
-        totalDiscountEl.textContent = `Rp${carts.totalDiscount.toLocaleString()}`;
+        totalDiscountEl.textContent = `Rp${carts.total_discount.toLocaleString()}`;
         subTotalPriceEl.textContent = `Rp${carts.subtotal.toLocaleString()}`;
         totalTaxEl.textContent = `Rp${carts.tax.toLocaleString()}`;
-        totalItemEl.textContent = carts.totalItem.toLocaleString();
+        totalItemEl.textContent = carts.total_item.toLocaleString();
 
         document.querySelectorAll<HTMLButtonElement>('.qty-minus').forEach(btn => {
             btn.removeEventListener('click', this.handleDecreaseQty);
@@ -263,16 +264,24 @@ export default class CartUI {
                 <span>${carts.subtotal.toLocaleString("id-ID")}</span>
             </div>
             <div style="display: flex; justify-content: space-between;">
+                <span>Total Tax</span>
+                <span>${carts.tax.toLocaleString("id-ID")}</span>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <span>Total Discount</span>
+                <span>${carts.total_discount.toLocaleString("id-ID")}</span>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
                 <strong>Total</strong>
                 <strong>${carts.total.toLocaleString("id-ID")}</strong>
             </div>
             <div style="display: flex; justify-content: space-between;">
                 <span>Bayar (Cash)</span>
-                <span>${carts.payReceived.toLocaleString("id-ID")}</span>
+                <span>${carts.pay_received.toLocaleString("id-ID")}</span>
             </div>
             <div style="display: flex; justify-content: space-between;">
                 <span>Kembali</span>
-                <span>${carts.payChange.toLocaleString("id-ID")}</span>
+                <span>${carts.pay_change.toLocaleString("id-ID")}</span>
             </div>
             <br>
             <div style="text-align: center;">Terimakasih Telah Berbelanja</div>
@@ -321,11 +330,12 @@ export default class CartUI {
     private handleSaveTransaction = (e: Event) => {
         e.preventDefault();
         console.log('Masuk handleSaveTransaction...');
-        const data = {
-            cart: this.cartManager.getCart(),
-            notes: '',
-        };
-        CartManager.createTransaction(data)
+        alert('Belum selesai');
+        console.log(this.cartManager.getCart());
+        // CartManager.createTransaction(data)
+        const transaction = calculateTransaction(this.cartManager.getCart());
+        console.log(JSON.stringify(transaction));
+        
     }
 
     private handleQuantityChange = (e: Event) => {

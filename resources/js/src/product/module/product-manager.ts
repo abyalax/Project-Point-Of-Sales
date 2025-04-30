@@ -37,6 +37,24 @@ export const getCategories = async (): Promise<Category[]> => {
     }
 }
 
+export const getCategoryByID = async (id: number) => {
+    try {
+        const fetchData = await fetch(`/point-of-sales/api/product/category/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            credentials: 'include',
+        });
+        const response = await fetchData.json();
+        console.log('Get CategoryByID Response: ', response);
+        return response.data;
+    } catch (error) {
+        console.log('Get CategoryByID Error: ', error);
+        return;
+    }
+}
+
 export const addProduct = async (product: Product) => {
     try {
         const fetchData = await fetch('/point-of-sales/api/product/create', {
@@ -53,6 +71,23 @@ export const addProduct = async (product: Product) => {
     } catch (error) {
         console.log('Get Product Error: ', error);
         return 'failed';
+    }
+}
+
+export const updateProduct = async (product: Product): Promise<number> => {
+    try {
+        const fetchData = await fetch(`/point-of-sales/api/product/update/${product.id}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            credentials: 'include',
+            body: JSON.stringify(product)
+        });
+        return fetchData.status;
+    } catch (error) {
+        console.log('Update Product Error: ', error);
+        return 400;
     }
 }
 

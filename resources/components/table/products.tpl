@@ -24,6 +24,7 @@
                 <tr>
                     <th class="d-xl-table-cell">Barcode</th>
                     <th class="d-xl-table-cell">Name</th>
+                    <th class="d-xl-table-cell">Category</th>
                     <th class="d-xl-table-cell">Price</th>
                     <th class="d-xl-table-cell">Tax</th>
                     <th class="d-xl-table-cell">Discount</th>
@@ -36,6 +37,7 @@
                     <tr class="odd product-item" data-id="{$item['id']}">
                         <td class="d-xl-table-cell">{$item['barcode']}</td>
                         <td class="d-xl-table-cell">{$item['name']}</td>
+                        <td class="d-xl-table-cell">{$item['category']}</td>
 
                         <td class="d-xl-table-cell">Rp {number_format($item['price'], 0, ',', '.')}</td>
 

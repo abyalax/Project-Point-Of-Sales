@@ -347,7 +347,7 @@ if (isset($routes[$request])) {
 ```
 ---
 
-## Check Progress
+## ✅ Check Progress
 **✅Project berhasil berjalan di web server**
 
 **✅Smarty berhasil diintegrasikan.**

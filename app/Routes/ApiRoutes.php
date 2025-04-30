@@ -39,6 +39,10 @@ class ApiRoutes {
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'getCategories'],
                 ],
+                'api/product/category/(\d+)' => [
+                    [AuthMiddleware::class, 'checkSession'],
+                    [ProductController::class, 'getCategoryByID'],
+                ],
             ],
             'POST' => [
                 'api/home' => [
@@ -58,7 +62,7 @@ class ApiRoutes {
                 ],
                 'api/product/create' => [
                     [AuthMiddleware::class, 'checkSession'],
-                    [ProductController::class, 'createProducts'],
+                    [ProductController::class, 'createProduct'],
                 ],
                 'api/transaction/create' => [
                     [AuthMiddleware::class, 'checkSession'],
@@ -77,6 +81,12 @@ class ApiRoutes {
                     [ProductController::class, 'addCategoryProducts'],
                 ],
             ],
+            'PUT' => [
+                'api/product/update/(\d+)' => [
+                    [AuthMiddleware::class, 'checkSession'],
+                    [ProductController::class, 'updateProduct'],
+                ],
+            ]
         ];
     }
 }

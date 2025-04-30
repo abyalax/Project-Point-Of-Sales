@@ -44,8 +44,8 @@
 <body>
     <div class="wrapper">
         {include file="../ui/sidebar.tpl"}
-        <div class="main position-relative">
-            <nav class="navbar position-sticky top-0 navbar-expand navbar-light navbar-bg">
+        <div class="main position-relative" style="z-index: 1;">
+            <nav style="z-index: 3;" class="navbar position-sticky top-0 navbar-expand navbar-light navbar-bg">
                 <a class="sidebar-toggle js-sidebar-toggle">
                     <i class="hamburger align-self-center"></i>
                 </a>
@@ -206,8 +206,8 @@
                             <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#"
                                 data-bs-toggle="dropdown">
                                 <img src="/vendor/components/adminkit/img/avatars/avatar.jpg"
-                                    class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span
-                                    class="text-dark">{$auth_user['name']|default:''}</span>
+                                    class="avatar img-fluid rounded me-1" alt="Charles Hall" />
+                                <span class="text-dark">{$auth_user['name']|default:'Nama Cashier'}</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1"
@@ -227,10 +227,10 @@
                 </div>
             </nav>
 
-            <main class="content" style="padding: 1rem;">
+            <main style="padding:1rem;z-index: 2;min-height: 85vh;">
                 {block name="scripts"}{/block}
                 {block name="content"}
-                    <p> No Content Extends at Dashboard layouts (Default Content)</p>
+                <p> No Content Extends at Dashboard layouts (Default Content)</p>
                 {/block}
             </main>
 
@@ -240,9 +240,10 @@
                         <div class="col-6 text-start">
                             <p class="mb-0">
                                 <a class="text-muted" href="https://adminkit.io/"
-                                    target="_blank"><strong>AdminKit</strong></a> - <a class="text-muted"
-                                    href="https://adminkit.io/" target="_blank"><strong>Bootstrap Admin
-                                        Template</strong></a> &copy;
+                                    target="_blank"><strong>Developer</strong></a> - <a class="text-muted"
+                                    href="https://adminkit.io/" target="_blank">
+                                    <strong>Abya Capss😎</strong>
+                                </a> &copy;
                             </p>
                         </div>
                         <div class="col-6 text-end">
@@ -267,7 +268,7 @@
         </div>
     </div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
             const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(
                 tooltipTriggerEl))

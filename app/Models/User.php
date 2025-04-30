@@ -39,7 +39,7 @@ class User {
     
     public function findAll(): array {
         try {
-            $stmt = $this->db->prepare("SELECT * FROM users LIMIT 10");
+            $stmt = $this->db->prepare("SELECT * FROM users;");
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {

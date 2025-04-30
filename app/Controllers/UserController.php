@@ -9,6 +9,7 @@ use Abya\PointOfSales\Config\LoggerConfig;
 use Abya\PointOfSales\Config\Helper;
 use Abya\PointOfSales\Models\User;
 use Abya\PointOfSales\Config\BaseController;
+use Abya\PointOfSales\Config\StatusResponse;
 
 class UserController extends BaseController {
     public function index() { }
@@ -23,22 +24,22 @@ class UserController extends BaseController {
                 $result = $data->findAll();
 
                 LoggerConfig::getInstance()->debug('Result Searching Data Users', compact('result'));
-                Helper::sendResponse(200, 'success', 'Success get data', $result);
+                Helper::sendResponse(200, StatusResponse::success, $result);
             } else {
-                Helper::sendResponse(405, 'error', 'Method not allowed');
+                Helper::sendResponse(405, StatusResponse::notallowed);
             }
         } catch (NestedValidationException $exception) {
             $errors = $exception->getMessages();
             if (!is_array($errors)) {
                 $errors = [$errors];
             }
-            Helper::sendResponse(400, 'error', 'Bad Request', $errors);
+            Helper::sendResponse(400, StatusResponse::badrequest);
         } catch (\Exception $exception) {
             $errors = $exception->getMessage();
             if (!is_array($errors)) {
                 $errors = [$errors];
             }
-            Helper::sendResponse(500, 'error', 'Internal Server Error', $errors);
+            Helper::sendResponse(500, StatusResponse::error);
         }
     }
 }

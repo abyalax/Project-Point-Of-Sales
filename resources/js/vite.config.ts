@@ -1,23 +1,3 @@
-// import { defineConfig } from 'vite';
-// import path from 'path';
-
-// export default defineConfig({
-//   build: {
-//     outDir: './dist',
-//     emptyOutDir: true,
-//     rollupOptions: {
-//       input: {
-//         cart: path.resolve(__dirname, 'src/cart/index.ts'),
-//         product: path.resolve(__dirname, 'src/product/index.ts'),
-//         bind: path.resolve(__dirname, 'src/bind/index.ts'),
-//       },
-//       output: {
-//         entryFileNames: '[name].js', // hasil: cart.js, product.js, etc
-//       }
-//     }
-//   }
-
-// });
 import { defineConfig } from 'vite'
 import path from 'path'
 import { glob } from 'glob'

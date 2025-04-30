@@ -5,7 +5,6 @@ namespace Abya\PointOfSales\Routes;
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 use Abya\PointOfSales\Controllers\AnalyticsController;
-use Abya\PointOfSales\Controllers\HomeController;
 use Abya\PointOfSales\Controllers\DashboardController;
 use Abya\PointOfSales\Controllers\InventarisController;
 use Abya\PointOfSales\Controllers\KaryawanController;
@@ -26,39 +25,35 @@ class WebRoutes {
             'GET' => [
                 // Tanpa middleware
                 '' => [
-                    [HomeController::class, 'index']
+                    [DashboardController::class, 'index']
                 ],
                 'dashboard' => [
                     [AuthMiddleware::class, 'checkSession'],
-                    [DashboardController::class, 'index']
+                    [DashboardController::class, 'dashboard']
                 ],
-                'products/create' => [
-                    [AuthMiddleware::class, 'checkSession'],
-                    [ProductController::class, 'create']
-                ],
-                'products/update/(\d+)' => [
-                    [AuthMiddleware::class, 'checkSession'],
-                    [ProductController::class, 'update']
-                ],
-                // Dynamic route /number
-                'products/(\d+)' => [
-                    [AuthMiddleware::class, 'checkSession'],
-                    [ProductController::class, 'manageProducts'] // example http://localhost/point-of-sales/products/2
-                ],
-                // Dynamic route /word
-                'products/(\w+)' => [
-                    [AuthMiddleware::class, 'checkSession'],
-                    [ProductController::class, 'manageProducts']
-                ],
+                // // Dynamic route /number
+                // 'products/(\d+)' => [
+                //     [AuthMiddleware::class, 'checkSession'],
+                //     [ProductController::class, 'manageProducts'] // example http://localhost/point-of-sales/products/2
+                // ],
+                // // Dynamic route /word
+                // 'products/(\w+)' => [
+                //     [AuthMiddleware::class, 'checkSession'],
+                //     [ProductController::class, 'manageProducts']
+                // ],
                 'login' => [
                     [AuthController::class, 'loginView']
                 ],
                 'register' => [
                     [AuthController::class, 'registerView']
                 ],
-                'transactions' => [
+                'transaction' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [TransactionController::class, 'index']
+                ],
+                'transactions' => [
+                    [AuthMiddleware::class, 'checkSession'],
+                    [TransactionController::class, 'get']
                 ],
                 'inventaris' => [
                     [AuthMiddleware::class, 'checkSession'],
@@ -80,9 +75,21 @@ class WebRoutes {
                     [AuthMiddleware::class, 'checkSession'],
                     [KaryawanController::class, 'index']
                 ],
-                'products' => [
+                'product' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'index']
+                ],
+                'products' => [
+                    [AuthMiddleware::class, 'checkSession'],
+                    [ProductController::class, 'get']
+                ],
+                'products/create' => [
+                    [AuthMiddleware::class, 'checkSession'],
+                    [ProductController::class, 'create']
+                ],
+                'products/edit/(\d+)' => [
+                    [AuthMiddleware::class, 'checkSession'],
+                    [ProductController::class, 'edit']
                 ],
                 'payments' => [
                     [AuthMiddleware::class, 'checkSession'],

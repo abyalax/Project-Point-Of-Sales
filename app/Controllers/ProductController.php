@@ -10,60 +10,133 @@ use Abya\PointOfSales\Config\LoggerConfig;
 use Abya\PointOfSales\Config\Helper;
 use Abya\PointOfSales\Models\Product;
 use Abya\PointOfSales\Config\BaseController;
-use Monolog\Logger;
+use Abya\PointOfSales\Config\StatusResponse;
 
 class ProductController extends BaseController {
 
     public function index() {
         $data = new Product();
         $find = $data->findAll();
-        LoggerConfig::getInstance()->debug('Get Products Page', compact('find'));
+        LoggerConfig::getInstance()->debug('Index Products Page', compact('find'));
         $this->smarty->assign('products', $find);
         $this->smarty->assign('page', 'Products Page');
+        $this->smarty->assign('url', '/point-of-sales/product');
         $this->smarty->display('pages/product/index.tpl');
     }
 
+    public function get() {
+        $data = new Product();
+        $find = $data->findAll();
+        LoggerConfig::getInstance()->debug('Get Products Page', compact('find'));
+        $this->smarty->assign('products', $find);
+        $this->smarty->assign('page', 'Products Page');
+        $this->smarty->assign('url', '/point-of-sales/products');
+        $this->smarty->display('pages/product/get.tpl');
+    }
+
     public function create() {
-        LoggerConfig::getInstance()->debug('Get Create Products Page');
+        LoggerConfig::getInstance()->debug('Create Products Page');
         $this->smarty->assign('page', 'Create Products Page');
+        $this->smarty->assign('url', '/point-of-sales/products/create');
         $this->smarty->display('pages/product/create.tpl');
     }
 
-    public function update($paramID) {
-        LoggerConfig::getInstance()->debug('Get Update Products Page', ['param ID' => $paramID]);
+    public function edit($paramID) {
+        LoggerConfig::getInstance()->debug('Edit Products Page', ['param ID' => $paramID]);
         $product = new Product();
         $data = $product->findById($paramID);
+        LoggerConfig::getInstance()->debug('Found Product by ID', $data);
         $this->smarty->assign('product', $data);
         $this->smarty->assign('page', 'Update Products Page');
-        $this->smarty->display('pages/product/update.tpl');
+        $this->smarty->assign('url', '/point-of-sales/products/edit/' . $paramID);
+        $this->smarty->display('pages/product/edit.tpl');
     }
 
-    public function createProducts() {
+    public function updateProduct($paramID) {
         try {
             $json = file_get_contents('php://input');
             $data = json_decode($json, true);
             if (!$data) {
-                Helper::sendResponse(400, 'error', 'Invalid JSON');
+                Helper::sendResponse(400, StatusResponse::badrequest);
                 return;
             }
-            LoggerConfig::getInstance()->debug('Creating Product', compact('data'));
+
+            V::digit()->assert($data['barcode']);
+            V::stringType()->length(2, 50)->assert($data['name']);
+            V::numericVal()->assert($data['category_id']);
+            V::numericVal()->assert($data['price']);
+            V::numericVal()->assert($data['cost_price']);
+            V::decimal(2)->assert($data['tax_rate']);
+            V::decimal(2)->assert($data['discount']);
+            V::numericVal()->assert($data['stock_qty']);
+
+            LoggerConfig::getInstance()->debug('Updating Product', compact('data'));
+            $product = new Product();
+            $updt = $product->update($paramID, $data);
+            if ($updt) {
+                Helper::sendResponse(200, StatusResponse::success);
+            } else {
+                Helper::sendResponse(400, StatusResponse::badrequest);
+            }
+        } catch (NestedValidationException $exception) {
+            $errors = $exception->getMessages();
+            if (!is_array($errors)) {
+                $errors = [$errors];
+            }
+            LoggerConfig::getInstance()->debug('Error Creating Product', compact('errors'));
+            Helper::sendResponse(400, StatusResponse::badrequest);
+        } catch (\Throwable $th) {
+            LoggerConfig::getInstance()->debug('Error updateProduct', compact('th'));
+            Helper::sendResponse(500, StatusResponse::error);
+        }
+    }
+
+    public function createProduct() {
+        try {
+            $json = file_get_contents('php://input');
+            $data = json_decode($json, true);
+
+            LoggerConfig::getInstance()->debug('Init Creating Product', compact('data'));
+
+            if (!$data) {
+                Helper::sendResponse(400, StatusResponse::badrequest);
+                return;
+            }
+
+            V::digit()->assert($data['barcode']);
+            V::stringType()->length(2, 50)->assert($data['name']);
+            V::numericVal()->assert($data['category_id']);
+            V::numericVal()->assert($data['price']);
+            V::numericVal()->assert($data['cost_price']);
+            V::decimal(2)->assert($data['tax_rate']);
+            V::decimal(2)->assert($data['discount']);
+            V::numericVal()->assert($data['stock_qty']);
+
+            LoggerConfig::getInstance()->debug('Pass Validation, Creating Product', compact('data'));
             $product = new Product();
             $add = $product->insert($data);
             if ($add) {
-                Helper::sendResponse(200, 'success', 'Product created successfully');
+                Helper::sendResponse(200, StatusResponse::success);
             } else {
-                Helper::sendResponse(400, 'error', 'Failed add new product');
+                Helper::sendResponse(400, StatusResponse::badrequest);
             }
+        } catch (NestedValidationException $exception) {
+            $errors = $exception->getMessages();
+            if (!is_array($errors)) {
+                $errors = [$errors];
+            }
+            LoggerConfig::getInstance()->debug('Error Creating Product', compact('errors'));
+            Helper::sendResponse(400, StatusResponse::badrequest);
         } catch (\Throwable $th) {
             LoggerConfig::getInstance()->debug('Error addProducts', compact('th'));
-            Helper::sendResponse(500, 'error', 'Internal Server Error');
+            Helper::sendResponse(500, StatusResponse::error);
         }
     }
 
     public function getProducts() {
         $products = new Product();
         $find = $products->findAll();
-        Helper::sendResponse(200, 'success', 'Success get Data', $find);
+        Helper::sendResponse(200, StatusResponse::success, $find);
     }
 
     public function getProductByID() {
@@ -72,7 +145,7 @@ class ProductController extends BaseController {
         $product = new Product();
         $find = $product->findById($id);
         LoggerConfig::getInstance()->debug('Found Product by ID', $find);
-        Helper::sendResponse(200, 'success', 'Success get Data', $find);
+        Helper::sendResponse(200, StatusResponse::success, $find);
     }
 
     public function getProductByName() {
@@ -81,13 +154,19 @@ class ProductController extends BaseController {
         $products = new Product();
         $find = $products->findByName($name);
         LoggerConfig::getInstance()->debug('Found Product by Name', $find);
-        Helper::sendResponse(200, 'success', 'Success get Data', $find);
+        Helper::sendResponse(200, StatusResponse::success, $find);
     }
 
     public function getCategories() {
         $categories = new Product();
         $find = $categories->findAllCategories();
-        Helper::sendResponse(200, 'success', 'Success get Data', $find);
+        Helper::sendResponse(200, StatusResponse::success, $find);
+    }
+
+    public function getCategoryByID($paramID) {
+        $product = new Product();
+        $find = $product->findCategoryById($paramID);
+        Helper::sendResponse(200, StatusResponse::success, $find);
     }
 
     public function addCategoryProducts() {
@@ -96,54 +175,52 @@ class ProductController extends BaseController {
             $data = json_decode($json, true);
             LoggerConfig::getInstance()->debug('POST Add Category Products Page', $data);
             if (!$data) {
-                Helper::sendResponse(400, 'error', 'Invalid JSON');
+                Helper::sendResponse(400, StatusResponse::badrequest);
                 return;
             }
             LoggerConfig::getInstance()->debug('Creating Category', compact('data'));
             $product = new Product();
-            $add = $product->addCategoryProducts($data['name']);
-            if ($add) {
-                Helper::sendResponse(200, 'success', 'Success add category', ['data' => $add]);
+            $data = $product->insertCategory($data['name']);
+            if ($data) {
+                Helper::sendResponse(200, StatusResponse::success, compact('data'));
             } else {
-                Helper::sendResponse(400, 'error', 'Failed add new category', ['data' => $add]);
+                Helper::sendResponse(400, StatusResponse::badrequest);
             }
         } catch (\Throwable $th) {
-            LoggerConfig::getInstance()->debug('Error addCategoryProducts', compact('th'));
-            Helper::sendResponse(500, 'error', 'Internal Server Error');
+            LoggerConfig::getInstance()->debug('Error insertCategory', compact('th'));
+            Helper::sendResponse(500, StatusResponse::error);
         }
-    }
-
-    public function manageProducts($first, $second) {
-        LoggerConfig::getInstance()->debug('Get Manage Products Page');
-        Helper::sendResponse(200, 'success', 'Success get Data', ['fisrt' => $first, 'second' => $second]);
     }
 
     public function search() {
         header('Content-Type: application/json');
         try {
             $keyword = $_POST['keyword'];
-
             LoggerConfig::getInstance()->debug('Search data with keyword', compact('keyword'));
-
             V::stringType()->length(2, 50)->assert($keyword);
             $data = new Product();
-
             $result = $data->search($keyword);
-
             LoggerConfig::getInstance()->debug('Result Searching Data', compact('result'));
-            Helper::sendResponse(200, 'success', 'Success get Data', $result);
+            Helper::sendResponse(200, StatusResponse::success, $result);
         } catch (NestedValidationException $exception) {
             $errors = $exception->getMessages();
             if (!is_array($errors)) {
                 $errors = [$errors];
             }
-            Helper::sendResponse(400, 'error', 'Bad Request', ['Error: ' => $errors]);
+            LoggerConfig::getInstance()->debug('Error Searching Data', compact('errors'));
+            Helper::sendResponse(400, StatusResponse::badrequest);
         } catch (\Exception $exception) {
             $errors = $exception->getMessage();
             if (!is_array($errors)) {
                 $errors = [$errors];
             }
-            Helper::sendResponse(500, 'error', 'Internal Server Error', ['Error: ' => $errors]);
+            LoggerConfig::getInstance()->debug('Error Searching Data', compact('errors'));
+            Helper::sendResponse(500, StatusResponse::error);
         }
+    }
+
+    public function manageProducts($first, $second) {
+        LoggerConfig::getInstance()->debug('Get Manage Products Page ( just for testing )', compact('first', 'second'));
+        Helper::sendResponse(200, StatusResponse::success, ['fisrt' => $first, 'second' => $second]);
     }
 }

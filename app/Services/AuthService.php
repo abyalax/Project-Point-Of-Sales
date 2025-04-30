@@ -8,6 +8,7 @@ use Abya\PointOfSales\Models\User;
 use Abya\PointOfSales\Models\Role;
 use Abya\PointOfSales\Config\Helper;
 use Abya\PointOfSales\Config\LoggerConfig;
+use Abya\PointOfSales\Config\StatusResponse;
 
 class AuthService {
     public static function login($email, $password) {
@@ -18,7 +19,8 @@ class AuthService {
         LoggerConfig::getInstance()->debug('User Data', ['data' => $user]);
 
         if (!$user) {
-            Helper::sendResponse(404, 'error', 'Email tidak ditemukan');
+            LoggerConfig::getInstance()->debug('Email tidak ditemukan');
+            Helper::sendResponse(404, StatusResponse::notfound);
             return false;
         }
 

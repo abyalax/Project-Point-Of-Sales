@@ -9,6 +9,7 @@ use Abya\PointOfSales\Config\Helper;
 use Abya\PointOfSales\Config\LoggerConfig;
 use Abya\PointOfSales\Config\BaseController;
 use Abya\PointOfSales\Config\Database;
+use Abya\PointOfSales\Config\StatusResponse;
 use Abya\PointOfSales\Models\User;
 use Respect\Validation\Validator as V;
 use Respect\Validation\Exceptions\NestedValidationException;
@@ -20,7 +21,7 @@ class AuthController extends BaseController {
         $user = new User(Database::getConnection());
         $data = $user->findById($id);
         LoggerConfig::getInstance()->debug('Get User Session', compact('data'));
-        Helper::sendResponse(200, 'success', 'Success get data', $data);
+        Helper::sendResponse(200, StatusResponse::success, $data);
     }
 
     public function loginView() {
@@ -38,22 +39,14 @@ class AuthController extends BaseController {
             $email = $_POST['email'] ?? null;
             $password = $_POST['password'] ?? null;
 
-            // V::stringType()->length(6, 30)
-            //     ->length(8, 30)->setTemplate('Password setidaknya memiliki panjang 6 karakter')
-            //     ->regex('/[A-Z]/')->setTemplate('Password setidaknya memiliki huruf besar')
-            //     ->regex('/[a-z]/')->setTemplate('Password setidaknya memiliki huruf kecil')
-            //     ->regex('/[0-9]/')->setTemplate('Password setidaknya memiliki angka')
-            //     ->assert($password);
-            
-            
             V::stringType()->length(6, 30)->assert($password);
             V::email()->assert($email);
 
             if (AuthService::login($email, $password)) {
                 LoggerConfig::getInstance()->debug('Controller: Login berhasil');
-                Helper::sendResponse(302, 'redirect', 'Login berhasil', null, '/point-of-sales/');
+                Helper::sendResponse(303, StatusResponse::redirect, null, '/point-of-sales/transaction');
             } else {
-                Helper::sendResponse(403, 'error', 'Email atau password salah');
+                Helper::sendResponse(403, StatusResponse::unauthorized);
             }
         } catch (NestedValidationException $exception) {
             $errors = $exception->getMessages();
@@ -61,19 +54,19 @@ class AuthController extends BaseController {
                 $errors = [$errors];
             }
             LoggerConfig::getInstance()->debug('Validation error', $exception->getMessages());
-            Helper::sendResponse(400, 'error', 'Validation error', $errors);
+            Helper::sendResponse(400, StatusResponse::badrequest, $errors);
         } catch (\Exception $exception) {
             $errors = $exception->getMessage();
             if (!is_array($errors)) {
                 $errors = [$errors];
             }
             LoggerConfig::getInstance()->debug('Validation error', $errors);
-            Helper::sendResponse(400, 'error', 'Validation error', $errors);
+            Helper::sendResponse(400, StatusResponse::badrequest, $errors);
         }
     }
 
     public function logout() {
         AuthService::logout();
-        Helper::sendResponse(302, 'redirect', 'Logout berhasil', null, '/point-of-sales/login');
+        Helper::sendResponse(303, StatusResponse::redirect, null, '/point-of-sales/login');
     }
 }

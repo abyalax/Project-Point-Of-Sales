@@ -2,6 +2,6 @@
 
 {block name="content"}
     <main>
-        <h1>{$page|default:'Suppliers (default)'}</h1>
+        <h3>{$page|default:'Suppliers (default)'}</h3>
     </main>
 {/block}

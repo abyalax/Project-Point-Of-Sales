@@ -5,6 +5,7 @@ export interface CartItem {
     barcode: number;
     name: string;
     price: number;
+    cost_price: number;
     tax_rate: number;
     discount: number;
     quantity: number;
@@ -14,11 +15,10 @@ export interface CartState {
     items: CartItem[];
     subtotal: number;
     total: number;
-    totalItem: number;
-    totalDiscount: number;
-    paymentMethod: PaymentMethod;
-    payReceived: number;
-    payChange: number;
+    total_item: number;
+    total_discount: number;
+    payment_method: PaymentMethod;
+    pay_received: number;
+    pay_change: number;
     tax: number;
-    lastUpdated: string;
 }

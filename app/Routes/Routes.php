@@ -6,6 +6,7 @@ require_once __DIR__ . '/../../vendor/autoload.php';
 
 use Abya\PointOfSales\Config\Helper;
 use Abya\PointOfSales\Config\LoggerConfig;
+use Abya\PointOfSales\Config\StatusResponse;
 use Abya\PointOfSales\Routes\WebRoutes;
 use Abya\PointOfSales\Routes\ApiRoutes;
 
@@ -29,6 +30,6 @@ class Routes {
                 return;
             }
         }
-        Helper::sendResponse(404, 'error', 'Endpoint not found', ['request' => $path]);
+        Helper::sendResponse(404, StatusResponse::notfound, ['request' => $path]);
     }
 }
