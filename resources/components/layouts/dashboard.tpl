@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
     <meta name="author" content="Abya">
-    <meta name="keywords"
-        content="abya, point-of-sales, pos, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, web">
-
+    <meta name="keywords" content="abya, point-of-sales, pos, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, web">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     {* JQuery CSS*}
     <link rel="stylesheet" href="/vendor/components/jqueryui/themes/base/jquery-ui.min.css" />

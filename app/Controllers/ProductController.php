@@ -4,13 +4,13 @@ namespace Abya\PointOfSales\Controllers;
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-use Respect\Validation\Validator as V;
-use Respect\Validation\Exceptions\NestedValidationException;
 use Abya\PointOfSales\Config\LoggerConfig;
 use Abya\PointOfSales\Config\Helper;
 use Abya\PointOfSales\Models\Product;
 use Abya\PointOfSales\Config\BaseController;
 use Abya\PointOfSales\Config\StatusResponse;
+use Respect\Validation\Validator as V;
+use Respect\Validation\Exceptions\NestedValidationException;
 
 class ProductController extends BaseController {
 

@@ -18,7 +18,7 @@
         <div class="row row-cols-md-4 row-cols-sm-3 row-cols-1 justify-content-center gap-4">
 
             {include file="../components/ui/card.tpl"
-            link="transactions"
+            link="transaction"
             title="Create Transaction"
             menu="Menu Transaction"
             role="Cashier"

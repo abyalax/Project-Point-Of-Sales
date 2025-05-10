@@ -8,7 +8,7 @@
 {/block}
 
 {block name="content"}
-<main style="z-index: 0;">
+<main style="z-index: 0;" data-testid='page-transaction'>
     <h3>{$page|default:'Transactions'}</h3>
     <div class="row">
         <div class="col-12 col-lg-8 col-xxl-9 d-flex">
@@ -29,11 +29,14 @@
                                         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                                     </svg>
                                 </button>
-                                <input id="fm-search-products" class="form-control form-control-lg" type="text"
+                                <input id="fm-search-products" data-testid="input-search-product" class="form-control form-control-lg" type="text"
                                     placeholder="Search Products..." />
                             </div>
                         </div>
-                        <button type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        <button type="submit" 
+                            data-testid="btn-insert-cart"
+                            data-bs-toggle="tooltip" 
+                            data-bs-placement="bottom"
                             data-bs-title="Insert this product to cart"
                             class="btn btn-lg btn-secondary d-flex gap-1 flex-nowrap align-items-center">
                             Insert
@@ -95,14 +98,14 @@
                                 <div class="mb-3 row d-flex justify-content-start">
                                     <label class="col-form-label col-sm-4 text-sm-end">Bayar</label>
                                     <div class="col-sm-8">
-                                        <input id="pay-transaction" class="form-control form-control-lg" type="number"
+                                        <input id="pay-transaction" data-testid="pay-transaction" class="form-control form-control-lg" type="number"
                                             placeholder="Jumlah Pembayaran..." />
                                     </div>
                                 </div>
                                 <div class="mb-3 row d-flex justify-content-start">
                                     <label class="col-form-label col-sm-4 text-sm-end">Kembali</label>
                                     <div class="col-sm-8">
-                                        <input id="return-transaction" class="form-control form-control-lg" type="text"
+                                        <input id="return-transaction" data-testid="return-transaction" class="form-control form-control-lg" type="text"
                                             disabled placeholder="Kembalian.." />
                                     </div>
                                 </div>
@@ -179,7 +182,7 @@
                                 <p>Cash</p>
                             </div>
                             <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
-                                <button class="btn btn-secondary" id="print-struct-btn" data-bs-toggle="tooltip"
+                                <button class="btn btn-secondary" data-testid="btn-preview-struct" id="print-struct-btn" data-bs-toggle="tooltip"
                                     data-bs-placement="bottom" data-bs-title="View Struct before print">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"

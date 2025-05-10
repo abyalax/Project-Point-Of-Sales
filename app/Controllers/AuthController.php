@@ -10,6 +10,7 @@ use Abya\PointOfSales\Config\LoggerConfig;
 use Abya\PointOfSales\Config\BaseController;
 use Abya\PointOfSales\Config\Database;
 use Abya\PointOfSales\Config\StatusResponse;
+use Abya\PointOfSales\Models\Role;
 use Abya\PointOfSales\Models\User;
 use Respect\Validation\Validator as V;
 use Respect\Validation\Exceptions\NestedValidationException;
@@ -43,8 +44,33 @@ class AuthController extends BaseController {
             V::email()->assert($email);
 
             if (AuthService::login($email, $password)) {
-                LoggerConfig::getInstance()->debug('Controller: Login berhasil');
-                Helper::sendResponse(303, StatusResponse::redirect, null, '/point-of-sales/transaction');
+                $role = Role::getUserRoles($_SESSION['user_id']);
+                LoggerConfig::getInstance()->debug('Controller: Login berhasil as ', ['role' => $role]);
+
+                switch ($role) {
+                    case 'Super Admin':
+                        Helper::sendResponse(303, StatusResponse::redirect, null, '/point-of-sales/dashboard');
+                        break;
+                    case 'Owner':
+                        Helper::sendResponse(303, StatusResponse::redirect, null, '/point-of-sales/dashboard');
+                        break;
+                    case 'Admin':
+                        Helper::sendResponse(303, StatusResponse::redirect, null, '/point-of-sales/products');
+                        break;
+                    case 'Manager':
+                        Helper::sendResponse(303, StatusResponse::redirect, null, '/point-of-sales/product');
+                        break;
+                    case 'Kasir':
+                        Helper::sendResponse(303, StatusResponse::redirect, null, '/point-of-sales/transaction');
+                        break;
+                    case 'Karyawan':
+                        Helper::sendResponse(303, StatusResponse::redirect, null, '/point-of-sales/karyawans');
+                        break;
+                    default:
+                        Helper::sendResponse(303, StatusResponse::redirect, null, '/point-of-sales/transaction');
+                        break;
+                }
+
             } else {
                 Helper::sendResponse(403, StatusResponse::unauthorized);
             }

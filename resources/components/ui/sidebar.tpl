@@ -433,7 +433,7 @@
                     Are you sure for logout ?
                 </div>
                 <div class="d-grid">
-                    <button type="button" onclick="handleLogout()"
+                    <button type="button" data-testid="btn-logout" onclick="handleLogout()"
                         class="btn btn-primary px-5 d-flex gap-2 justify-content-center align-items-center">
                         Logout
                         <i class="align-middle" data-feather="log-out"></i>

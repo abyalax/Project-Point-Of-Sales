@@ -41,12 +41,12 @@
 <form id="loginForm">
     <div class="mb-3">
         <label class="form-label">Email</label>
-        <input id="emailInput" class="form-control form-control-lg" type="email" name="email"
+        <input id="emailInput" class="form-control form-control-lg" type="email" data-testid="login-email" name="email"
             placeholder="Enter your email" />
     </div>
     <div class="mb-3">
         <label class="form-label">Password</label>
-        <input id="passwordInput" class="form-control form-control-lg" type="password" name="password"
+        <input id="passwordInput" class="form-control form-control-lg" type="password" data-testid="login-password" name="password"
             placeholder="Enter your password" />
     </div>
     <div>
@@ -59,7 +59,7 @@
         </div>
     </div>
     <div class="d-grid gap-2 mt-3">
-        <button type="submit" class="btn btn-lg btn-primary">Sign in</button>
+        <button type="submit" data-testid="btn-login" class="btn btn-lg btn-primary">Sign in</button>
     </div>
     <p id="response" class="my-3"></p>
 </form>
