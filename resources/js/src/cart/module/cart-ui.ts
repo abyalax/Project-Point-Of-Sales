@@ -1,8 +1,10 @@
 import CartManager from "./cart-manager";
-import { CartState } from "../../types/cart";
+import { CartItem, CartState } from "../../types/cart";
 import { getUserSession } from "../../auth";
 import { getProductByID, getProducts } from "../../product/module/product-manager";
 import { calculateTransaction } from "../../calculation/transaction";
+import { formatPrice } from "../../helper";
+import TransactionManager from "../../transaction/module/transaction-manager";
 
 export default class CartUI {
     private debounceTimer: number = 0;
@@ -138,10 +140,9 @@ export default class CartUI {
                         </button>
                     </div>
                 </td>
-                <td class="item-price  d-xl-table-cell">Rp${Number(item.price).toLocaleString()}</td>
+                <td class="item-price  d-xl-table-cell">${formatPrice(item.price)}</td>
                 <td class=" d-md-table-cell">${item.discount * 100}%</td>
-                <td class="item-price  d-xl-table-cell">Rp${((item.price - (item.price * item.discount)) *
-                item.quantity).toLocaleString()}</td>
+                <td class="item-price  d-xl-table-cell">${formatPrice((item.price - (item.price * item.discount)) * item.quantity)}</td>
                 <td class="table-action d-xl-table-cell d-flex flex-wrap gap-2 justify-content-center align-items-center">
                     <button type="button" class="item-remove btn btn-secondary my-1" style="text-decoration: none;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="width:1rem;height:1rem;"
@@ -157,11 +158,11 @@ export default class CartUI {
             </tr>
         `).join('');
 
-        totalPriceEl.textContent = `Rp${carts.total.toLocaleString()}`;
-        totalDiscountEl.textContent = `Rp${carts.total_discount.toLocaleString()}`;
-        subTotalPriceEl.textContent = `Rp${carts.subtotal.toLocaleString()}`;
-        totalTaxEl.textContent = `Rp${carts.tax.toLocaleString()}`;
-        totalItemEl.textContent = carts.total_item.toLocaleString();
+        totalPriceEl.textContent = formatPrice(carts.total);
+        totalDiscountEl.textContent = formatPrice(carts.total_discount)
+        subTotalPriceEl.textContent = formatPrice(carts.subtotal)
+        totalTaxEl.textContent = formatPrice(carts.tax)
+        totalItemEl.textContent = carts.total_item.toString();
 
         document.querySelectorAll<HTMLButtonElement>('.qty-minus').forEach(btn => {
             btn.removeEventListener('click', this.handleDecreaseQty);
@@ -191,8 +192,19 @@ export default class CartUI {
         try {
             const response = await this.cartManager.fetchByName(searchInput.value)
             const product = response.data
+            console.log('Found Product by Name : ', product);
+            
+            const parsedProduct: CartItem = {
+                ...product,
+                cost_price: Number(product.cost_price),
+                price: Number(product.price),
+                discount: Number(product.discount),
+                tax_rate: Number(product.tax_rate),
+                quantity: 1
+            }
+
             searchInput.value = '';
-            this.cartManager.addItem(product);
+            this.cartManager.addItem(parsedProduct);
             this.renderInterface();
         } catch (error) {
             console.log('addToCart error: ', error);
@@ -281,7 +293,7 @@ export default class CartUI {
             </div>
             <div style="display: flex; justify-content: space-between;">
                 <span>Kembali</span>
-                <span>${carts.pay_change.toLocaleString("id-ID")}</span>
+                <span>${carts.pay_return.toLocaleString("id-ID")}</span>
             </div>
             <br>
             <div style="text-align: center;">Terimakasih Telah Berbelanja</div>
@@ -327,15 +339,26 @@ export default class CartUI {
         }, 200);
     }
 
-    private handleSaveTransaction = (e: Event) => {
+    private handleSaveTransaction = async (e: Event) => {
         e.preventDefault();
         console.log('Masuk handleSaveTransaction...');
-        alert('Belum selesai');
-        console.log(this.cartManager.getCart());
-        // CartManager.createTransaction(data)
-        const transaction = calculateTransaction(this.cartManager.getCart());
-        console.log(JSON.stringify(transaction));
-        
+        const cart = this.cartManager.getCart();
+        console.log('Transaksi at state ' ,cart);
+        const payInput = document.getElementById('pay-transaction') as HTMLInputElement;
+        const received = parseInt(payInput.value);
+
+        if (!received) {
+            alert('Jumlah pembayaran tidak boleh kosong.');
+            return
+        } else if (received < cart.total) {
+            alert('Jumlah Pembayaran kurang.');
+            return
+        } else {
+            const transaction = calculateTransaction(cart);
+            console.log('Result of calculation transaction ' ,transaction);
+            const result = await TransactionManager.insert(transaction);
+            alert(`Transaksi ${result.data.transaction_id} berhasil disimpan`);
+        }
     }
 
     private handleQuantityChange = (e: Event) => {
@@ -381,8 +404,8 @@ export default class CartUI {
         this.debounceTimer = window.setTimeout(() => {
             const bayar = parseFloat(target.value) || 0;
             const kembali = bayar - cart.total;
-            const kembalian = kembali > 0 ? kembali.toLocaleString('id-ID') : '0';
-            returnInput.value = "Rp " + kembalian;
+            const kembalian = kembali > 0 ? kembali : 0
+            returnInput.value = formatPrice(kembalian);
             this.cartManager.setPayReceived(bayar);
             this.cartManager.setPayChange(kembali);
         }, 300);

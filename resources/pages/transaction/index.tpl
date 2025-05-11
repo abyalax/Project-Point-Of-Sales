@@ -157,7 +157,7 @@
                                 <p>Tanggal</p>
                                 <p class="date-time">0</p>
                             </div>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-contetn-between">
                                 <p>Total Items</p>
                                 <p id="cart-total-item">0</p>
                             </div>

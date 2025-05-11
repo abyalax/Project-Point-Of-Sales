@@ -29,9 +29,9 @@
     <link rel="stylesheet" href="/public/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-    {* For Development *}
+    <!-- Mode Development -->
     {* <script src="http://localhost:5173/src/auth/index.ts" type="module"></script> *}
-    {* For Production *}
+    <!-- Mode Production -->
     <script src="../../js/dist/auth.js" type="module"></script>
 
     {block name="head"}{/block}

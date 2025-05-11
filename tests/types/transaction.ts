@@ -35,7 +35,7 @@ export interface TransactionState {
     last_price: number;
     payment_method: string;
     pay_received: number;
-    pay_change: number;
+    pay_return: number;
     createdAt?: string;
     notes?: string;
 }

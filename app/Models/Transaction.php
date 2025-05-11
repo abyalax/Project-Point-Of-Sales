@@ -20,31 +20,67 @@ class Transaction {
 
             $stmt = $this->db->prepare("
                 INSERT INTO
-                    transactions (id, user_id, transaction_id, status, payment_method, subtotal, total, total_discount, pay_received, pay_change, tax, total_profit)
+                    transactions (user_id, transaction_id, status, payment_method, subtotal, total_discount, 
+                    total_price, total_profit, total_tax, last_price, pay_received, pay_return, notes)
                 VALUES
-                    (:id, :user_id, :transaction_id, :status, :payment_method, :subtotal, :total, :total_discount, :pay_received, :pay_change, :tax, :total_profit );
+                    (:user_id, :transaction_id, :status, :payment_method, :subtotal, :total_discount, 
+                    :total_price, :total_profit, :total_tax, :last_price, :pay_received, :pay_return, :notes);
             ");
 
-            // TODO
-            // $totalProfit
+            $stmt->execute([
+                'user_id'         => $data['cashier']['id'],
+                'transaction_id'  => $data['transaction_id'],
+                'status'          => $data['status'],
+                'payment_method'  => $data['payment_method'],
+                'subtotal'        => $data['subtotal'],
+                'total_discount'  => $data['total_discount'],
+                'total_price'     => $data['total_price'],
+                'total_profit'    => $data['total_profit'],
+                'total_tax'       => $data['total_tax'],
+                'last_price'      => $data['last_price'],
+                'pay_received'    => $data['pay_received'],
+                'pay_return'      => $data['pay_return'],
+                'notes'           => $data['notes'],
+            ]);
 
-            $stmt->bindParam(':id', $data['id']);
-            $stmt->bindParam(':user_id', $data['user_id']);
-            $stmt->bindParam(':transaction_id', $data['transaction_id']);
-            $stmt->bindParam(':status', $data['status']);
-            $stmt->bindParam(':payment_method', $data['payment_method']);
-            $stmt->bindParam(':subtotal', $data['subtotal']);
-            $stmt->bindParam(':total', $data['total']);
-            $stmt->bindParam(':total_discount', $data['total_discount']);
-            $stmt->bindParam(':pay_received', $data['pay_received']);
-            $stmt->bindParam(':pay_change', $data['pay_change']);
-            $stmt->bindParam(':tax', $data['tax']);
-            $stmt->bindParam(':total_profit', $data['total_profit']);
 
-            $stmt->execute();
+            $transactionId = $this->db->lastInsertId();
+
+            /**
+             * INSERT INTO
+             *     transaction_items (transaction_id, product_id, barcode, name, quantity, cost_price, sell_price, discount, tax_rate, final_price)
+             * VALUES
+             *     (1, 1, '8991001101234', 'Biskuit Roma Kelapa 300g', 1, 8500.00, 12000.00, 0.00, 0.10, 13200.00);
+             */
+
+            $stmtItems = $this->db->prepare("
+                INSERT INTO transaction_items (
+                    transaction_id, product_id, barcode, name,
+                    quantity, cost_price, sell_price, discount, tax_rate, final_price
+                ) VALUES (
+                    :transaction_id, :product_id, :barcode, :name,
+                    :quantity, :cost_price, :sell_price, :discount, :tax_rate, :final_price
+                )   
+            ");
+
+            foreach ($data['item'] as $item) {
+                $stmtItems->execute([
+                    'transaction_id' => $transactionId,
+                    'product_id'     => $item['product_id'],
+                    'barcode'        => $item['barcode'],
+                    'name'           => $item['name'],
+                    'quantity'       => $item['qty'],
+                    'cost_price'     => $item['cost_price'],
+                    'sell_price'     => $item['price'],
+                    'discount'       => $item['discount'] * $item['qty'],
+                    'tax_rate'       => $item['tax_rate'],
+                    'final_price'    => $item['summary']['last_price'],
+                ]);
+            }
 
             $this->db->commit();
-            return $stmt->rowCount();
+
+            return ['transaction_id' => $data['transaction_id']];
         } catch (PDOException $e) {
             LoggerConfig::getInstance()->debug('Error Query insert product ', compact('e'));
             $this->db->rollBack();

@@ -18,8 +18,9 @@ export default defineConfig({
   use: {
     headless: false,
     launchOptions: {
-      headless: true,
+      headless: false,
       slowMo: 2000,
+      args: ['--start-maximized'],
     },
     baseURL: process.env.BASE_URL,
     trace: 'on-first-retry',
@@ -29,6 +30,8 @@ export default defineConfig({
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
+        viewport: { width: 1920, height: 1080 },
+        deviceScaleFactor: 1.25,
       },
     },
   ],

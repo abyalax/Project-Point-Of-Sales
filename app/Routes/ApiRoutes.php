@@ -61,7 +61,7 @@ class ApiRoutes {
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'createProduct'],
                 ],
-                'api/transaction/create' => [
+                'api/transaction/insert' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [TransactionController::class, 'createTransaction'],
                 ],

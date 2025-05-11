@@ -1,472 +1,6 @@
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyaadmin@gmail.com","password":"abya-admin"}
-User Data {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","nip":"00000000003","phone":"087765290292","password":"c980806539effac27d4b938deada573ec54a3e4c713b6514dbcc4b942c684a2e","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Admin"}
-Request Entry Point:  {"method":"GET","path":"products","query":[]}
-WebRoutes:  {"method":"GET","path":"products","query":[]}
-handleRoutes with :  {"method":"GET","path":"products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"Admin"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"get","args":[[]]}
-Get Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
-Request Entry Point:  {"method":"GET","path":"products","query":[]}
-WebRoutes:  {"method":"GET","path":"products","query":[]}
-handleRoutes with :  {"method":"GET","path":"products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"Admin"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"get","args":[[]]}
-Get Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/products","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/products","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"Admin"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"getProducts","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/logout","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/logout","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/logout","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":{"stdClass":{"name_role":"Admin"}}}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"logout","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyaadmin@gmail.com","password":"abya-admin"}
-User Data {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","nip":"00000000003","phone":"087765290292","password":"c980806539effac27d4b938deada573ec54a3e4c713b6514dbcc4b942c684a2e","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":[{"stdClass":{"name_role":"Admin"}}]}
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":{"stdClass":{"name_role":"Admin"}}}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":{"stdClass":{"name_role":"Admin"}}}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/logout","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/logout","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/logout","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"logout","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyaadmin@gmail.com","password":"abya-admin"}
-User Data {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","nip":"00000000003","phone":"087765290292","password":"c980806539effac27d4b938deada573ec54a3e4c713b6514dbcc4b942c684a2e","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Admin"}
-Request Entry Point:  {"method":"GET","path":"products","query":[]}
-WebRoutes:  {"method":"GET","path":"products","query":[]}
-handleRoutes with :  {"method":"GET","path":"products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"get","args":[[]]}
-Get Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
-Request Entry Point:  {"method":"GET","path":"products","query":[]}
-WebRoutes:  {"method":"GET","path":"products","query":[]}
-handleRoutes with :  {"method":"GET","path":"products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"get","args":[[]]}
-Get Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-Request Entry Point:  {"method":"GET","path":"api/products","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/products","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"getProducts","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakasir@gmail.com","password":"abya-kasir"}
-User Data {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Kasir"}
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-Masuk Login Service {"email":"abyamanager@gmail.com","password":"abya-manager"}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Data {"data":{"id":4,"name":"abya manager","email":"abyamanager@gmail.com","nip":"00000000004","phone":"087765290293","password":"5372618539aaa7c33f5e677bfa4e27bbdae61604519e37ecef006b896f5b35c2","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Masuk Login Service {"email":"abyaadmin@gmail.com","password":"abya-admin"}
-Controller: Login berhasil as  {"role":"Manager"}
-Masuk Login Service {"email":"abyaowner@gmail.com","password":"abya-owner"}
-User Data {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","nip":"00000000003","phone":"087765290292","password":"c980806539effac27d4b938deada573ec54a3e4c713b6514dbcc4b942c684a2e","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-User Data {"data":{"id":2,"name":"abya owner","email":"abyaowner@gmail.com","nip":"00000000002","phone":"087765290291","password":"d9c2fea9c513e9fb70aeebd9e73e3c56baaee19ea66d22a618fe1857c36f02ef","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Admin"}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Owner"}
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"product","query":[]}
-WebRoutes:  {"method":"GET","path":"product","query":[]}
-handleRoutes with :  {"method":"GET","path":"product","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-Request Entry Point:  {"method":"GET","path":"products","query":[]}
-WebRoutes:  {"method":"GET","path":"products","query":[]}
-handleRoutes with :  {"method":"GET","path":"products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-Request Entry Point:  {"method":"GET","path":"dashboard","query":[]}
-WebRoutes:  {"method":"GET","path":"dashboard","query":[]}
-handleRoutes with :  {"method":"GET","path":"dashboard","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":4,"name":"abya manager","email":"abyamanager@gmail.com","phone":"087765290293","nip":"00000000004","role":"M"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"index","args":[[]]}
-Index Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
-User Authenticated :  {"data":{"id":2,"name":"abya owner","email":"abyaowner@gmail.com","phone":"087765290291","nip":"00000000002","role":"O"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"get","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"dashboard","args":[[]]}
-Get Dashboard Page 
-Get Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"products","query":[]}
-WebRoutes:  {"method":"GET","path":"products","query":[]}
-handleRoutes with :  {"method":"GET","path":"products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"get","args":[[]]}
-Get Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Request Entry Point:  {"method":"GET","path":"product","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-WebRoutes:  {"method":"GET","path":"product","query":[]}
-handleRoutes with :  {"method":"GET","path":"product","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-Request Entry Point:  {"method":"GET","path":"dashboard","query":[]}
-WebRoutes:  {"method":"GET","path":"dashboard","query":[]}
-handleRoutes with :  {"method":"GET","path":"dashboard","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":4,"name":"abya manager","email":"abyamanager@gmail.com","phone":"087765290293","nip":"00000000004","role":"M"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"index","args":[[]]}
-Index Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
-User Authenticated :  {"data":{"id":2,"name":"abya owner","email":"abyaowner@gmail.com","phone":"087765290291","nip":"00000000002","role":"O"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"dashboard","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/products","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/products","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"getProducts","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"api/products","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/products","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":4,"name":"abya manager","email":"abyamanager@gmail.com","phone":"087765290293","nip":"00000000004","role":"M"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"getProducts","args":[[]]}
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakaryawan@gmail.com","password":"abya-karyawan"}
-User Data {"data":{"id":6,"name":"abya karyawan","email":"abyakaryawan@gmail.com","nip":"00000000006","phone":"087765290295","password":"304573104bdc32266977a7f6b4cc0d0f5cd62b75ffac2d2ceabc6bb36e6c4bc2","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Karyawan"}
-Request Entry Point:  {"method":"GET","path":"karyawans","query":[]}
-WebRoutes:  {"method":"GET","path":"karyawans","query":[]}
-handleRoutes with :  {"method":"GET","path":"karyawans","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":6,"name":"abya karyawan","email":"abyakaryawan@gmail.com","phone":"087765290295","nip":"00000000006","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\KaryawanController":[]},"methodName":"index","args":[[]]}
-Get Karyawan Page 
-Request Entry Point:  {"method":"GET","path":"karyawans","query":[]}
-WebRoutes:  {"method":"GET","path":"karyawans","query":[]}
-handleRoutes with :  {"method":"GET","path":"karyawans","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":6,"name":"abya karyawan","email":"abyakaryawan@gmail.com","phone":"087765290295","nip":"00000000006","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\KaryawanController":[]},"methodName":"index","args":[[]]}
-Get Karyawan Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-Masuk Login Controller 
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Masuk Login Service {"email":"abyakasir@gmail.com","password":"abya-kasir"}
-User Data {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Kasir"}
-trollers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakasir@gmail.com","password":"abya-kasir"}
-User Data {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Kasir"}
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"POST","path":"api/logout","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/logout","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/logout","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"logout","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
+
+Creating Transaction {"data":{"cashier":{"id":3,"name":"Admin"},"transactionId":"TRX-001","item":[{"name":"Biskuit Roma Kelapa 300g","qty":1,"price":12000,"cost_price":8500,"discount":0,"tax_rate":0.1,"summary":{"name":"Biskuit Roma Kelapa 300g","sub_total":12000,"total_discount":0,"total_price":12000,"unit_profit":3500,"total_profit":3500,"total_tax":1200,"last_price":13200}}],"subtotal":12000,"total_discount":0,"total_price":12000,"total_profit":3500,"total_tax":1200,"pay_return":6800,"pay_received":20000,"payment_method":"cash","last_price":13200}}
+Error Query insert product  {"e":"[object] (PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null at D:\\Documents\\Programs\\php\\point-of-sales\\app\\Models\\Transaction.php:43)"}
 Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
 WebRoutes:  {"method":"GET","path":"transaction","query":[]}
 handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
@@ -475,1015 +9,229 @@ Pass auth middleware
 User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
 Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
 Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
 Request Entry Point:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
 WebRoutes:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
 handleRoutes with :  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
-Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
+ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
+handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
+Get Dashboard Page 
+Request Entry Point:  {"method":"POST","path":"api/transaction/insert","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/transaction/insert","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/transaction/insert","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
 User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"search","args":[[]]}
-Search data with keyword {"keyword":"Sun"}
-Result Searching Data {"result":["Sabun Cuci Piring Sunlight 755ml"]}
-Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"createTransaction","args":[[]]}
+Creating Transaction {"data":{"cashier":{"id":3,"name":"Admin"},"transaction_id":"TRX-001","status":"PAID","item":[{"name":"Biskuit Roma Kelapa 300g","qty":1,"price":12000,"cost_price":8500,"discount":0,"tax_rate":0.1,"summary":{"name":"Biskuit Roma Kelapa 300g","sub_total":12000,"total_discount":0,"total_price":12000,"unit_profit":3500,"total_profit":3500,"total_tax":1200,"last_price":13200}}],"subtotal":12000,"total_discount":0,"total_price":12000,"total_profit":3500,"total_tax":1200,"pay_return":6800,"pay_received":20000,"payment_method":"cash","last_price":13200}}
+Error Query insert product  {"e":"[object] (PDOException(code: HY093): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens at D:\\Documents\\Programs\\php\\point-of-sales\\app\\Models\\Transaction.php:43)"}
+Request Entry Point:  {"method":"POST","path":"api/transaction/insert","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/transaction/insert","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/transaction/insert","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
 User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"getProductByName","args":[[]]}
-Get Product By Name {"name":"Sabun Cuci Piring Sunlight 755ml"}
-Found Product by Name {"id":5,"barcode":"8999264832","name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","tax_rate":"0.12","discount":"0.05"}
-Request Entry Point:  {"method":"GET","path":"api/session","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/session","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/session","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"createTransaction","args":[[]]}
+Creating Transaction {"data":{"cashier":{"id":3,"name":"Admin"},"transaction_id":"TRX-001","status":"PAID","item":[{"name":"Biskuit Roma Kelapa 300g","qty":1,"price":12000,"cost_price":8500,"discount":0,"tax_rate":0.1,"summary":{"name":"Biskuit Roma Kelapa 300g","sub_total":12000,"total_discount":0,"total_price":12000,"unit_profit":3500,"total_profit":3500,"total_tax":1200,"last_price":13200}}],"subtotal":12000,"total_discount":0,"total_price":12000,"total_profit":3500,"total_tax":1200,"pay_return":6800,"pay_received":20000,"payment_method":"cash","last_price":13200}}
+Error Query insert product  {"e":"[object] (PDOException(code: HY093): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens at D:\\Documents\\Programs\\php\\point-of-sales\\app\\Models\\Transaction.php:43)"}
+Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
+WebRoutes:  {"method":"GET","path":"transaction","query":[]}
+handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
 User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"getUserSession","args":[[]]}
-Get User Session {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","nip":"00000000003","phone":"087765290292","password":"c980806539effac27d4b938deada573ec54a3e4c713b6514dbcc4b942c684a2e","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakasir@gmail.com","password":"abya-kasir"}
-User Data {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Kasir"}
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
 Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
 Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+WebRoutes:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+handleRoutes with :  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
+ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
+handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
 Request Entry Point:  {"method":"GET","path":"","query":[]}
 WebRoutes:  {"method":"GET","path":"","query":[]}
 handleRoutes with :  {"method":"GET","path":"","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
 Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakasir@gmail.com","password":"abya-kasir"}
-User Data {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Kasir"}
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"api/products","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/products","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/products","query":[]}
+Request Entry Point:  {"method":"POST","path":"api/transaction/insert","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/transaction/insert","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/transaction/insert","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
 User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"getProducts","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakasir@gmail.com","password":"abya-kasir"}
-User Data {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Kasir"}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"createTransaction","args":[[]]}
+Creating Transaction {"data":{"cashier":{"id":3,"name":"Admin"},"transaction_id":"TRX-001","status":"PAID","item":[{"name":"Biskuit Roma Kelapa 300g","qty":1,"price":12000,"cost_price":8500,"discount":0,"tax_rate":0.1,"summary":{"name":"Biskuit Roma Kelapa 300g","sub_total":12000,"total_discount":0,"total_price":12000,"unit_profit":3500,"total_profit":3500,"total_tax":1200,"last_price":13200}}],"subtotal":12000,"total_discount":0,"total_price":12000,"total_profit":3500,"total_tax":1200,"pay_return":6800,"pay_received":20000,"payment_method":"cash","last_price":13200,"notes":""}}
+Error Query insert product  {"e":"[object] (PDOException(code: HY093): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens at D:\\Documents\\Programs\\php\\point-of-sales\\app\\Models\\Transaction.php:43)"}
 Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
 WebRoutes:  {"method":"GET","path":"transaction","query":[]}
 handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"getProductByName","args":[[]]}
-Get Product By Name {"name":"Sabun Cuci Piring Sunlight 755ml"}
-Found Product by Name {"id":5,"barcode":"8999264832","name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","tax_rate":"0.12","discount":"0.05"}
-Request Entry Point:  {"method":"GET","path":"api/session","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/session","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/session","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"getUserSession","args":[[]]}
-Get User Session {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakasir@gmail.com","password":"abya-kasir"}
-User Data {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Kasir"}
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakasir@gmail.com","password":"abya-kasir"}
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Data {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Kasir"}
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakasir@gmail.com","password":"abya-kasir"}
-User Data {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Kasir"}
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/logout","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/logout","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/logout","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"logout","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyaadmin@gmail.com","password":"abya-admin"}
-User Data {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","nip":"00000000003","phone":"087765290292","password":"c980806539effac27d4b938deada573ec54a3e4c713b6514dbcc4b942c684a2e","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Admin"}
-Request Entry Point:  {"method":"GET","path":"products","query":[]}
-WebRoutes:  {"method":"GET","path":"products","query":[]}
-handleRoutes with :  {"method":"GET","path":"products","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
 User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"get","args":[[]]}
-Get Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
+Get Transaction Page 
 Request Entry Point:  {"method":"GET","path":"","query":[]}
 WebRoutes:  {"method":"GET","path":"","query":[]}
 handleRoutes with :  {"method":"GET","path":"","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
 Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"products","query":[]}
-WebRoutes:  {"method":"GET","path":"products","query":[]}
-handleRoutes with :  {"method":"GET","path":"products","query":[]}
+Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
+WebRoutes:  {"method":"GET","path":"transaction","query":[]}
+handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
+Pass auth middleware 
+Request Entry Point:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+WebRoutes:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+handleRoutes with :  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
+WebRoutes:  {"method":"GET","path":"transaction","query":[]}
+handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
 User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"get","args":[[]]}
-Get Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+WebRoutes:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+handleRoutes with :  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
 Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
 ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
 handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Request Entry Point:  {"method":"GET","path":"api/products","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/products","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-handleRoutes with :  {"method":"GET","path":"api/products","query":[]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
+Get Dashboard Page 
+Request Entry Point:  {"method":"POST","path":"api/transaction/insert","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/transaction/insert","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/transaction/insert","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
 User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"getProducts","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyaowner@gmail.com","password":"abya-owner"}
-User Data {"data":{"id":2,"name":"abya owner","email":"abyaowner@gmail.com","nip":"00000000002","phone":"087765290291","password":"d9c2fea9c513e9fb70aeebd9e73e3c56baaee19ea66d22a618fe1857c36f02ef","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Owner"}
-Request Entry Point:  {"method":"GET","path":"dashboard","query":[]}
-WebRoutes:  {"method":"GET","path":"dashboard","query":[]}
-handleRoutes with :  {"method":"GET","path":"dashboard","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":2,"name":"abya owner","email":"abyaowner@gmail.com","phone":"087765290291","nip":"00000000002","role":"O"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"dashboard","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"dashboard","query":[]}
-WebRoutes:  {"method":"GET","path":"dashboard","query":[]}
-handleRoutes with :  {"method":"GET","path":"dashboard","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":2,"name":"abya owner","email":"abyaowner@gmail.com","phone":"087765290291","nip":"00000000002","role":"O"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"dashboard","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Masuk Login Service {"email":"abyamanager@gmail.com","password":"abya-manager"}
-User Data {"data":{"id":4,"name":"abya manager","email":"abyamanager@gmail.com","nip":"00000000004","phone":"087765290293","password":"5372618539aaa7c33f5e677bfa4e27bbdae61604519e37ecef006b896f5b35c2","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Manager"}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"product","query":[]}
-WebRoutes:  {"method":"GET","path":"product","query":[]}
-handleRoutes with :  {"method":"GET","path":"product","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":4,"name":"abya manager","email":"abyamanager@gmail.com","phone":"087765290293","nip":"00000000004","role":"M"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"index","args":[[]]}
-Index Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
-Request Entry Point:  {"method":"GET","path":"product","query":[]}
-WebRoutes:  {"method":"GET","path":"product","query":[]}
-handleRoutes with :  {"method":"GET","path":"product","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":4,"name":"abya manager","email":"abyamanager@gmail.com","phone":"087765290293","nip":"00000000004","role":"M"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"index","args":[[]]}
-Index Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-}
-ApiRoutes:  {"method":"GET","path":"api/products","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-User Authenticated :  {"data":{"id":4,"name":"abya manager","email":"abyamanager@gmail.com","phone":"087765290293","nip":"00000000004","role":"M"}}
-Get Dashboard Page 
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"getProducts","args":[[]]}
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakaryawan@gmail.com","password":"abya-karyawan"}
-User Data {"data":{"id":6,"name":"abya karyawan","email":"abyakaryawan@gmail.com","nip":"00000000006","phone":"087765290295","password":"304573104bdc32266977a7f6b4cc0d0f5cd62b75ffac2d2ceabc6bb36e6c4bc2","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Karyawan"}
-Request Entry Point:  {"method":"GET","path":"karyawans","query":[]}
-WebRoutes:  {"method":"GET","path":"karyawans","query":[]}
-handleRoutes with :  {"method":"GET","path":"karyawans","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":6,"name":"abya karyawan","email":"abyakaryawan@gmail.com","phone":"087765290295","nip":"00000000006","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\KaryawanController":[]},"methodName":"index","args":[[]]}
-Get Karyawan Page 
-Request Entry Point:  {"method":"GET","path":"karyawans","query":[]}
-WebRoutes:  {"method":"GET","path":"karyawans","query":[]}
-handleRoutes with :  {"method":"GET","path":"karyawans","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":6,"name":"abya karyawan","email":"abyakaryawan@gmail.com","phone":"087765290295","nip":"00000000006","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\KaryawanController":[]},"methodName":"index","args":[[]]}
-Get Karyawan Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakasir@gmail.com","password":"abya-kasir"}
-User Data {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Kasir"}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"createTransaction","args":[[]]}
+Creating Transaction {"data":{"cashier":{"id":3,"name":"Admin"},"transaction_id":"TRX-001","status":"PAID","item":[{"name":"Biskuit Roma Kelapa 300g","qty":1,"price":12000,"cost_price":8500,"discount":0,"tax_rate":0.1,"summary":{"name":"Biskuit Roma Kelapa 300g","sub_total":12000,"total_discount":0,"total_price":12000,"unit_profit":3500,"total_profit":3500,"total_tax":1200,"last_price":13200}}],"subtotal":12000,"total_discount":0,"total_price":12000,"total_profit":3500,"total_tax":1200,"pay_return":6800,"pay_received":20000,"payment_method":"cash","last_price":13200,"notes":""}}
+Error Query insert product  {"e":"[object] (PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'product_id' cannot be null at D:\\Documents\\Programs\\php\\point-of-sales\\app\\Models\\Transaction.php:70)"}
 Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
 WebRoutes:  {"method":"GET","path":"transaction","query":[]}
 handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"search","args":[[]]}
-Search data with keyword {"keyword":"Sabun Cuci Piring Sunlight 755ml"}
-Result Searching Data {"result":["Sabun Cuci Piring Sunlight 755ml"]}
-Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"getProductByName","args":[[]]}
-Get Product By Name {"name":"Sabun Cuci Piring Sunlight 755ml"}
-Found Product by Name {"id":5,"barcode":"8999264832","name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","tax_rate":"0.12","discount":"0.05"}
-Request Entry Point:  {"method":"GET","path":"api/session","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/session","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/session","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"getUserSession","args":[[]]}
-Get User Session {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakasir@gmail.com","password":"abya-kasir"}
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakasir@gmail.com","password":"abya-kasir"}
-User Data {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Kasir"}
-User Data {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Kasir"}
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakasir@gmail.com","password":"abya-kasir"}
-User Data {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Kasir"}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"search","args":[[]]}
-Search data with keyword {"keyword":"Sabun Cuci Piring Sunlight 755ml"}
-Result Searching Data {"result":["Sabun Cuci Piring Sunlight 755ml"]}
-Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"getProductByName","args":[[]]}
-Get Product By Name {"name":"Sabun Cuci Piring Sunlight 755ml"}
-Found Product by Name {"id":5,"barcode":"8999264832","name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","tax_rate":"0.12","discount":"0.05"}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyaadmin@gmail.com","password":"abya-admin"}
-User Data {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","nip":"00000000003","phone":"087765290292","password":"c980806539effac27d4b938deada573ec54a3e4c713b6514dbcc4b942c684a2e","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Admin"}
-Request Entry Point:  {"method":"GET","path":"products","query":[]}
-WebRoutes:  {"method":"GET","path":"products","query":[]}
-handleRoutes with :  {"method":"GET","path":"products","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
 User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"get","args":[[]]}
-Get Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
-Request Entry Point:  {"method":"GET","path":"products","query":[]}
-WebRoutes:  {"method":"GET","path":"products","query":[]}
-handleRoutes with :  {"method":"GET","path":"products","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+WebRoutes:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+handleRoutes with :  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
+ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
+handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
+Get Dashboard Page 
+Request Entry Point:  {"method":"POST","path":"api/transaction/insert","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/transaction/insert","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/transaction/insert","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
 User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"get","args":[[]]}
-Get Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/session","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/session","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/session","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"createTransaction","args":[[]]}
+Creating Transaction {"data":{"cashier":{"id":3,"name":"Admin"},"transaction_id":"TRX-001","status":"PAID","item":[{"name":"Biskuit Roma Kelapa 300g","product_id":1,"barcode":"8991001101234","qty":1,"price":12000,"cost_price":8500,"discount":0,"tax_rate":0.1,"summary":{"name":"Biskuit Roma Kelapa 300g","sub_total":12000,"total_discount":0,"total_price":12000,"unit_profit":3500,"total_profit":3500,"total_tax":1200,"last_price":13200}}],"subtotal":12000,"total_discount":0,"total_price":12000,"total_profit":3500,"total_tax":1200,"pay_return":6800,"pay_received":20000,"payment_method":"cash","last_price":13200,"notes":""}}
+Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
+WebRoutes:  {"method":"GET","path":"transaction","query":[]}
+handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"getUserSession","args":[[]]}
-Get User Session {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"api/products","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/products","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
 User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
+Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+WebRoutes:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+handleRoutes with :  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
+ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
+handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"getProducts","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakasir@gmail.com","password":"abya-kasir"}
-User Data {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Kasir"}
+Get Dashboard Page 
+Request Entry Point:  {"method":"POST","path":"api/transaction/insert","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/transaction/insert","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/transaction/insert","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
+Pass auth middleware 
+User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"createTransaction","args":[[]]}
+Creating Transaction {"data":{"cashier":{"id":3,"name":"Admin"},"transaction_id":"TRX-001","status":"PAID","item":[{"name":"Biskuit Roma Kelapa 300g","product_id":1,"barcode":"8991001101234","qty":1,"price":12000,"cost_price":8500,"discount":0,"tax_rate":0.1,"summary":{"name":"Biskuit Roma Kelapa 300g","sub_total":12000,"total_discount":0,"total_price":12000,"unit_profit":3500,"total_profit":3500,"total_tax":1200,"last_price":13200}}],"subtotal":12000,"total_discount":0,"total_price":12000,"total_profit":3500,"total_tax":1200,"pay_return":4800,"pay_received":18000,"payment_method":"cash","last_price":13200,"notes":""}}
+Request Entry Point:  {"method":"POST","path":"api/transaction/insert","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/transaction/insert","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/transaction/insert","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
+Pass auth middleware 
+User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"createTransaction","args":[[]]}
+Creating Transaction {"data":{"cashier":{"id":3,"name":"Admin"},"transaction_id":"TRX-001","status":"PAID","item":[{"name":"Biskuit Roma Kelapa 300g","product_id":1,"barcode":"8991001101234","qty":1,"price":12000,"cost_price":8500,"discount":0,"tax_rate":0.1,"summary":{"name":"Biskuit Roma Kelapa 300g","sub_total":12000,"total_discount":0,"total_price":12000,"unit_profit":3500,"total_profit":3500,"total_tax":1200,"last_price":13200}}],"subtotal":12000,"total_discount":0,"total_price":12000,"total_profit":3500,"total_tax":1200,"pay_return":4800,"pay_received":18000,"payment_method":"cash","last_price":13200,"notes":""}}
 Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
 WebRoutes:  {"method":"GET","path":"transaction","query":[]}
 handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
+User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
 Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
 Get Transaction Page 
+Request Entry Point:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+WebRoutes:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+handleRoutes with :  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
+ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
+handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
+Request Entry Point:  {"method":"GET","path":"","query":[]}
+WebRoutes:  {"method":"GET","path":"","query":[]}
+handleRoutes with :  {"method":"GET","path":"","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
+Get Dashboard Page 
+Request Entry Point:  {"method":"POST","path":"api/transaction/insert","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/transaction/insert","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/transaction/insert","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
+Pass auth middleware 
+User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"createTransaction","args":[[]]}
+Creating Transaction {"data":{"cashier":{"id":3,"name":"Admin"},"transaction_id":"TRX-001","status":"PAID","item":[{"name":"Biskuit Roma Kelapa 300g","product_id":1,"barcode":"8991001101234","qty":1,"price":12000,"cost_price":8500,"discount":0,"tax_rate":0.1,"summary":{"name":"Biskuit Roma Kelapa 300g","sub_total":12000,"total_discount":0,"total_price":12000,"unit_profit":3500,"total_profit":3500,"total_tax":1200,"last_price":13200}}],"subtotal":12000,"total_discount":0,"total_price":12000,"total_profit":3500,"total_tax":1200,"pay_return":4800,"pay_received":18000,"payment_method":"cash","last_price":13200,"notes":""}}
+Request Entry Point:  {"method":"POST","path":"api/transaction/insert","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/transaction/insert","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/transaction/insert","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
+Pass auth middleware 
+User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"createTransaction","args":[[]]}
+Creating Transaction {"data":{"cashier":{"id":3,"name":"Admin"},"transaction_id":"TRX-001","status":"PAID","item":[{"name":"Biskuit Roma Kelapa 300g","product_id":1,"barcode":"8991001101234","qty":1,"price":12000,"cost_price":8500,"discount":0,"tax_rate":0.1,"summary":{"name":"Biskuit Roma Kelapa 300g","sub_total":12000,"total_discount":0,"total_price":12000,"unit_profit":3500,"total_profit":3500,"total_tax":1200,"last_price":13200}}],"subtotal":12000,"total_discount":0,"total_price":12000,"total_profit":3500,"total_tax":1200,"pay_return":-13200,"pay_received":0,"payment_method":"cash","last_price":13200,"notes":""}}
 Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
 WebRoutes:  {"method":"GET","path":"transaction","query":[]}
 handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
+User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
 Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
 Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
+Request Entry Point:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+WebRoutes:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+handleRoutes with :  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
 Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
 ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
 handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
@@ -1493,207 +241,26 @@ WebRoutes:  {"method":"GET","path":"","query":[]}
 handleRoutes with :  {"method":"GET","path":"","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
 Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/logout","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/logout","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/logout","query":[]}
+Request Entry Point:  {"method":"POST","path":"api/transaction/insert","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/transaction/insert","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/transaction/insert","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"logout","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyaowner@gmail.com","password":"abya-owner"}
-User Data {"data":{"id":2,"name":"abya owner","email":"abyaowner@gmail.com","nip":"00000000002","phone":"087765290291","password":"d9c2fea9c513e9fb70aeebd9e73e3c56baaee19ea66d22a618fe1857c36f02ef","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Owner"}
-Request Entry Point:  {"method":"GET","path":"dashboard","query":[]}
-WebRoutes:  {"method":"GET","path":"dashboard","query":[]}
-handleRoutes with :  {"method":"GET","path":"dashboard","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":2,"name":"abya owner","email":"abyaowner@gmail.com","phone":"087765290291","nip":"00000000002","role":"O"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"dashboard","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"dashboard","query":[]}
-WebRoutes:  {"method":"GET","path":"dashboard","query":[]}
-handleRoutes with :  {"method":"GET","path":"dashboard","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":2,"name":"abya owner","email":"abyaowner@gmail.com","phone":"087765290291","nip":"00000000002","role":"O"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"dashboard","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyamanager@gmail.com","password":"abya-manager"}
-User Data {"data":{"id":4,"name":"abya manager","email":"abyamanager@gmail.com","nip":"00000000004","phone":"087765290293","password":"5372618539aaa7c33f5e677bfa4e27bbdae61604519e37ecef006b896f5b35c2","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Manager"}
-Request Entry Point:  {"method":"GET","path":"product","query":[]}
-WebRoutes:  {"method":"GET","path":"product","query":[]}
-handleRoutes with :  {"method":"GET","path":"product","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":4,"name":"abya manager","email":"abyamanager@gmail.com","phone":"087765290293","nip":"00000000004","role":"M"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"index","args":[[]]}
-Index Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
-Request Entry Point:  {"method":"GET","path":"product","query":[]}
-WebRoutes:  {"method":"GET","path":"product","query":[]}
-handleRoutes with :  {"method":"GET","path":"product","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":4,"name":"abya manager","email":"abyamanager@gmail.com","phone":"087765290293","nip":"00000000004","role":"M"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"index","args":[[]]}
-Index Products Page {"find":[{"id":1,"name":"Biskuit Roma Kelapa 300g","price":"12000.00","discount":"0.00","barcode":"8991001101234","category_id":1,"category":"Makanan","stock_qty":50,"is_active":1,"cost_price":"8500.00","tax_rate":"0.10"},{"id":2,"name":"Chitato BBQ 68g","price":"9500.00","discount":"0.05","barcode":"8998866201234","category_id":1,"category":"Makanan","stock_qty":30,"is_active":1,"cost_price":"7000.00","tax_rate":"0.10"},{"id":3,"name":"Aqua Botol 600ml","price":"4000.00","discount":"0.00","barcode":"8998765432101","category_id":2,"category":"Minuman","stock_qty":100,"is_active":1,"cost_price":"2500.00","tax_rate":"0.10"},{"id":4,"name":"Teh Botol Sosro 450ml","price":"5000.00","discount":"0.00","barcode":"8992711234567","category_id":2,"category":"Minuman","stock_qty":70,"is_active":1,"cost_price":"3200.00","tax_rate":"0.10"},{"id":5,"name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","discount":"0.05","barcode":"8999264832","category_id":3,"category":"Perlengkapan Rumah","stock_qty":40,"is_active":1,"cost_price":"11000.00","tax_rate":"0.12"},{"id":6,"name":"Lampu LED Philips 10W","price":"29000.00","discount":"0.00","barcode":"8998765987654","category_id":4,"category":"Elektronik","stock_qty":20,"is_active":1,"cost_price":"22000.00","tax_rate":"0.10"},{"id":7,"name":"Shampoo Pantene 180ml","price":"23000.00","discount":"0.13","barcode":"8999991122334","category_id":5,"category":"Perawatan Pribadi","stock_qty":25,"is_active":1,"cost_price":"17000.00","tax_rate":"0.10"},{"id":8,"name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","discount":"0.08","barcode":"8999777888350","category_id":5,"category":"Perawatan Pribadi","stock_qty":53,"is_active":1,"cost_price":"15000.00","tax_rate":"0.10"},{"id":9,"name":"Gatsby Powder Clay Unbrekable smooth 20g","price":"49000.00","discount":"0.01","barcode":"899222205670","category_id":6,"category":"Hair Styling","stock_qty":75,"is_active":1,"cost_price":"45000.00","tax_rate":"0.12"},{"id":10,"name":"Nourishing Pomade 40g","price":"28000.00","discount":"0.00","barcode":"878908907090","category_id":6,"category":"Hair Styling","stock_qty":45,"is_active":1,"cost_price":"25000.00","tax_rate":"0.00"},{"id":11,"name":"Vaseline Repairing Jelly","price":"35700.00","discount":"0.02","barcode":"899999502942","category_id":5,"category":"Perawatan Pribadi","stock_qty":90,"is_active":1,"cost_price":"33000.00","tax_rate":"0.10"}]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"api/products","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/products","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-User Authenticated :  {"data":{"id":4,"name":"abya manager","email":"abyamanager@gmail.com","phone":"087765290293","nip":"00000000004","role":"M"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"getProducts","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakaryawan@gmail.com","password":"abya-karyawan"}
-User Data {"data":{"id":6,"name":"abya karyawan","email":"abyakaryawan@gmail.com","nip":"00000000006","phone":"087765290295","password":"304573104bdc32266977a7f6b4cc0d0f5cd62b75ffac2d2ceabc6bb36e6c4bc2","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Karyawan"}
-Request Entry Point:  {"method":"GET","path":"karyawans","query":[]}
-WebRoutes:  {"method":"GET","path":"karyawans","query":[]}
-handleRoutes with :  {"method":"GET","path":"karyawans","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":6,"name":"abya karyawan","email":"abyakaryawan@gmail.com","phone":"087765290295","nip":"00000000006","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\KaryawanController":[]},"methodName":"index","args":[[]]}
-Get Karyawan Page 
-Request Entry Point:  {"method":"GET","path":"karyawans","query":[]}
-WebRoutes:  {"method":"GET","path":"karyawans","query":[]}
-handleRoutes with :  {"method":"GET","path":"karyawans","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":6,"name":"abya karyawan","email":"abyakaryawan@gmail.com","phone":"087765290295","nip":"00000000006","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\KaryawanController":[]},"methodName":"index","args":[[]]}
-Get Karyawan Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"login","query":[]}
-WebRoutes:  {"method":"GET","path":"login","query":[]}
-handleRoutes with :  {"method":"GET","path":"login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"loginView","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/login","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/login","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/login","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"login","args":[[]]}
-Masuk Login Controller 
-Masuk Login Service {"email":"abyakasir@gmail.com","password":"abya-kasir"}
-User Data {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
-Services: Login berhasil 
-Controller: Login berhasil as  {"role":"Kasir"}
+User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"createTransaction","args":[[]]}
+Creating Transaction {"data":{"cashier":{"id":3,"name":"Admin"},"transaction_id":"TRX-001","status":"PAID","item":[{"name":"Biskuit Roma Kelapa 300g","product_id":1,"barcode":"8991001101234","qty":1,"price":12000,"cost_price":8500,"discount":0,"tax_rate":0.1,"summary":{"name":"Biskuit Roma Kelapa 300g","sub_total":12000,"total_discount":0,"total_price":12000,"unit_profit":3500,"total_profit":3500,"total_tax":1200,"last_price":13200}}],"subtotal":12000,"total_discount":0,"total_price":12000,"total_profit":3500,"total_tax":1200,"pay_return":-8200,"pay_received":5000,"payment_method":"cash","last_price":13200,"notes":""}}
+Error Query insert product  {"e":"[object] (PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'TRX-001' for key 'transactions.transaction_id' at D:\\Documents\\Programs\\php\\point-of-sales\\app\\Models\\Transaction.php:43)"}
 Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
 WebRoutes:  {"method":"GET","path":"transaction","query":[]}
 handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
+User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
 Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
 Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
+Request Entry Point:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+WebRoutes:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
+handleRoutes with :  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
 Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
 ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
 handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
@@ -1703,54 +270,6 @@ WebRoutes:  {"method":"GET","path":"","query":[]}
 handleRoutes with :  {"method":"GET","path":"","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
 Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"transaction","query":[]}
-WebRoutes:  {"method":"GET","path":"transaction","query":[]}
-handleRoutes with :  {"method":"GET","path":"transaction","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"index","args":[[]]}
-Get Transaction Page 
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"GET","path":"api/config","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/config","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/config","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ConfigController":[]},"methodName":"config","args":[[]]}
-Request Entry Point:  {"method":"GET","path":"","query":[]}
-WebRoutes:  {"method":"GET","path":"","query":[]}
-handleRoutes with :  {"method":"GET","path":"","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\DashboardController":[]},"methodName":"index","args":[[]]}
-Get Dashboard Page 
-Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"search","args":[[]]}
-Search data with keyword {"keyword":"Sabun Cuci Piring Sunlight 755ml"}
-Result Searching Data {"result":["Sabun Cuci Piring Sunlight 755ml"]}
-Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"getProductByName","args":[[]]}
-Get Product By Name {"name":"Sabun Cuci Piring Sunlight 755ml"}
-Found Product by Name {"id":5,"barcode":"8999264832","name":"Sabun Cuci Piring Sunlight 755ml","price":"14500.00","tax_rate":"0.12","discount":"0.05"}
-Request Entry Point:  {"method":"GET","path":"api/session","query":[]}
-ApiRoutes:  {"method":"GET","path":"api/session","query":[]}
-handleRoutes with :  {"method":"GET","path":"api/session","query":[]}
-Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
-Pass auth middleware 
-User Authenticated :  {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","phone":"087765290294","nip":"00000000005","role":"K"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\AuthController":[]},"methodName":"getUserSession","args":[[]]}
-Get User Session {"data":{"id":5,"name":"abya kasir","email":"abyakasir@gmail.com","nip":"00000000005","phone":"087765290294","password":"534464a301d3dba627ff297b0e5c4848e6894d731e605685076115c1e7b2dbf0","created_at":"2025-04-10 11:23:17","updated_at":"2025-04-10 11:23:17"}}
 Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
 ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
 handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
@@ -1760,24 +279,20 @@ User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gma
 Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"search","args":[[]]}
 Search data with keyword {"keyword":"nivea"}
 Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
-Request Entry Point:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
-WebRoutes:  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
-handleRoutes with :  {"method":"GET","path":"specific/com.chrome.devtools.json","query":[]}
-Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Request Entry Point:  {"method":"POST","path":"api/product/name","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/product/name","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/product/name","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
 User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"search","args":[[]]}
-Search data with keyword {"keyword":"nivea "}
-Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
-Request Entry Point:  {"method":"POST","path":"api/products","query":[]}
-ApiRoutes:  {"method":"POST","path":"api/products","query":[]}
-handleRoutes with :  {"method":"POST","path":"api/products","query":[]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"getProductByName","args":[[]]}
+Get Product By Name {"name":"NIVEA MEN Extra Bright 50ml"}
+Found Product by Name {"id":8,"barcode":"8999777888350","name":"NIVEA MEN Extra Bright 50ml","price":"25000.00","cost_price":"15000.00","tax_rate":"0.10","discount":"0.08"}
+Request Entry Point:  {"method":"POST","path":"api/transaction/insert","query":[]}
+ApiRoutes:  {"method":"POST","path":"api/transaction/insert","query":[]}
+handleRoutes with :  {"method":"POST","path":"api/transaction/insert","query":[]}
 Call Method {"instance":{"Abya\\PointOfSales\\Middlewares\\AuthMiddleware":[]},"methodName":"checkSession","args":[]}
 Pass auth middleware 
 User Authenticated :  {"data":{"id":3,"name":"abya admin","email":"abyaadmin@gmail.com","phone":"087765290292","nip":"00000000003","role":"A"}}
-Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\ProductController":[]},"methodName":"search","args":[[]]}
-Search data with keyword {"keyword":"nivea"}
-Result Searching Data {"result":["NIVEA MEN Extra Bright 50ml"]}
+Call Method {"instance":{"Abya\\PointOfSales\\Controllers\\TransactionController":[]},"methodName":"createTransaction","args":[[]]}
+Creating Transaction {"data":{"cashier":{"id":3,"name":"Admin"},"transaction_id":"TRX-001","status":"PAID","item":[{"name":"Biskuit Roma Kelapa 300g","product_id":1,"barcode":"8991001101234","qty":1,"price":12000,"cost_price":8500,"discount":0,"tax_rate":0.1,"summary":{"name":"Biskuit Roma Kelapa 300g","sub_total":12000,"total_discount":0,"total_price":12000,"unit_profit":3500,"total_profit":3500,"total_tax":1200,"last_price":13200}},{"name":"NIVEA MEN Extra Bright 50ml","product_id":8,"barcode":"8999777888350","qty":2,"price":25000,"cost_price":15000,"discount":0.08,"tax_rate":0.1,"summary":{"name":"NIVEA MEN Extra Bright 50ml","sub_total":50000,"total_discount":4000,"total_price":46000,"unit_profit":8000,"total_profit":16000,"total_tax":5000,"last_price":51000}}],"subtotal":62000,"total_discount":4000,"total_price":58000,"total_profit":19500,"total_tax":6200,"pay_return":35800,"pay_received":100000,"payment_method":"cash","last_price":64200,"notes":""}}

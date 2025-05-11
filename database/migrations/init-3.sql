@@ -63,20 +63,14 @@ CREATE TABLE
         transaction_id VARCHAR(50) NOT NULL UNIQUE,
         status VARCHAR(50) NOT NULL,
         payment_method VARCHAR(50) NOT NULL,
-
         subtotal DECIMAL(10, 2) NOT NULL,
         total_discount DECIMAL(10, 2) NOT NULL DEFAULT 0,
         total_price DECIMAL(10, 2) NOT NULL,
-
         total_profit DECIMAL(10, 2) NOT NULL DEFAULT 0,
-
         total_tax DECIMAL(10, 2) NOT NULL DEFAULT 0,
         last_price DECIMAL(10, 2) NOT NULL,
-
         pay_received DECIMAL(10, 2) NOT NULL,
-        pay_change DECIMAL(10, 2) NOT NULL DEFAULT 0,
-        
-
+        pay_return DECIMAL(10, 2) NOT NULL DEFAULT 0,
         notes VARCHAR(255),
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP

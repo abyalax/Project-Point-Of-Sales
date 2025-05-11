@@ -1,7 +1,5 @@
 import { ItemSummary, ItemTransaction, TransactionState } from "../types/transaction";
 import { CartState } from "../types/cart";
-// import { CartItem } from "../types/cart";
-// import { PaymentMethod } from "../types/payment";
 
 export function calculateTransaction(cartState: CartState): TransactionState {
 
@@ -51,6 +49,8 @@ export function calculateTransaction(cartState: CartState): TransactionState {
 
     const item_transaction: ItemTransaction[] = cartState.items.map((item, i) => ({
         name: item.name,
+        product_id: item.id,
+        barcode: item.barcode,
         qty: item.quantity,
         price: item.price,
         cost_price: item.cost_price,
@@ -61,17 +61,19 @@ export function calculateTransaction(cartState: CartState): TransactionState {
 
     const transaction: TransactionState = {
         cashier: { id: 3, name: 'Admin' },
-        transactionId: 'TRX-001',
+        transaction_id: 'TRX-001',
+        status: 'PAID',
         item: item_transaction,
         subtotal: subtotal_transaction,
         total_discount: total_discount_transaction,
         total_price: total_price_transaction,
         total_profit: total_profit_transaction,
         total_tax: total_tax_transaction,
-        pay_change: cartState.pay_change,
+        pay_return: cartState.pay_return,
         pay_received: cartState.pay_received,
         payment_method: cartState.payment_method,
         last_price: last_price_transaction,
+        notes: '',
     }
 
     return transaction;
@@ -106,7 +108,7 @@ export function calculateTransaction(cartState: CartState): TransactionState {
 //     total_discount: 0,
 //     payment_method: PaymentMethod.Cash,
 //     pay_received: 100000,
-//     pay_change: 19600,
+//     pay_return: 19600,
 //     tax: 0
 // } as CartState;
 

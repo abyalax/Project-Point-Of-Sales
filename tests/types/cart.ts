@@ -19,6 +19,6 @@ export interface CartState {
     total_discount: number;
     payment_method: PaymentMethod;
     pay_received: number;
-    pay_change: number;
+    pay_return: number;
     tax: number;
 }

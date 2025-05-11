@@ -6,7 +6,7 @@
             <th class="d-xl-table-cell">total</th>
             <th class="d-xl-table-cell">discount</th>
             <th class="d-xl-table-cell">pay_received</th>
-            <th class="d-xl-table-cell">pay_change</th>
+            <th class="d-xl-table-cell">pay_return</th>
             <th class="d-xl-table-cell">tax</th>
             <th class="d-xl-table-cell">action</th>
         </tr>
@@ -19,7 +19,7 @@
                 <td class="d-xl-table-cell">{$item['total']}</td>
                 <td class="d-xl-table-cell">{$item['discount']}</td>
                 <td class="d-xl-table-cell">{$item['pay_received']}</td>
-                <td class="d-xl-table-cell">{$item['pay_change']}</td>
+                <td class="d-xl-table-cell">{$item['pay_return']}</td>
                 <td class="d-xl-table-cell">{$item['tax']}</td>
 
                 <td class="d-xl-table-cell table-action">

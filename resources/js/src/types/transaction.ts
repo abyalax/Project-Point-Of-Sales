@@ -21,7 +21,8 @@ export interface ItemTransaction {
 }
 
 export interface TransactionState {
-    transactionId: string;
+    transaction_id: string;
+    status: string;
     cashier: {
         id: number;
         name: string;
@@ -35,7 +36,7 @@ export interface TransactionState {
     last_price: number;
     payment_method: string;
     pay_received: number;
-    pay_change: number;
+    pay_return: number;
     createdAt?: string;
     notes?: string;
 }

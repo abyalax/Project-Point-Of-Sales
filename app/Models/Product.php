@@ -94,7 +94,7 @@ class Product {
 
     public function findByName($name) {
         try {
-            $stmt = $this->db->prepare("SELECT id, barcode, name, price, tax_rate, discount FROM products WHERE name LIKE :name");
+            $stmt = $this->db->prepare("SELECT id, barcode, name, price, cost_price, tax_rate, discount FROM products WHERE name LIKE :name");
             $stmt->execute(['name' => "%$name%"]);
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
             return $result;

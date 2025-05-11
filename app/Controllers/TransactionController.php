@@ -32,10 +32,17 @@ class TransactionController extends BaseController {
         $data = json_decode($json, true);
         if (!$data) {
             Helper::sendResponse(400, StatusResponse::badrequest);
-            return;
         }
+
         LoggerConfig::getInstance()->debug('Creating Transaction', compact('data'));
-        // note simpan ke database
-        Helper::sendResponse(201, StatusResponse::created);
+
+        $model = new Transaction();
+        $query = $model->insert($data);
+
+        if ($query) {
+            Helper::sendResponse(201, StatusResponse::created, $query);
+        } else {
+            Helper::sendResponse(400, StatusResponse::badrequest);
+        }
     }
 };

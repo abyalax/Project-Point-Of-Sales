@@ -6,33 +6,26 @@ export default class CartManager {
 
     constructor() {
         this._stateCart = {
-            items: [],
             subtotal: 0,
             tax: 0,
             total: 0,
             total_item: 0,
             total_discount: 0,
             payment_method: PaymentMethod.Cash,
-            pay_change: 0,
+            pay_return: 0,
             pay_received: 0,
+            items: [{
+                barcode: 0,
+                cost_price: 0,
+                discount: 0,
+                id: 0,
+                name: '',
+                price: 0,
+                quantity: 0,
+                tax_rate: 0
+            }],
         }
         this.loadFromStorage();
-    }
-
-    public getCart(): CartState {
-        return this._stateCart;
-    }
-
-    public setPaymentMethod(paymentMethod: PaymentMethod) {
-        this._stateCart.payment_method = paymentMethod
-    }
-
-    public setPayReceived(pay: number) {
-        this._stateCart.pay_received = pay
-    }
-
-    public setPayChange(pay: number) {
-        this._stateCart.pay_change = pay
     }
 
     public fetchByName(name: string) {
@@ -90,7 +83,7 @@ export default class CartManager {
         let total_discount = 0;
         let tax = 0;
         let total_item = 0;
-        
+
         for (const item of items) {
             const itemTotal = item.price * item.quantity;
             const itemDiscount = item.price * (item.discount || 0) * item.quantity;
@@ -140,10 +133,26 @@ export default class CartManager {
             total_item: 0,
             total_discount: 0,
             payment_method: PaymentMethod.Cash,
-            pay_change: 0,
+            pay_return: 0,
             pay_received: 0,
         };
         this.save();
         console.log('Cart cleared...');
+    }
+
+    public getCart(): CartState {
+        return this._stateCart;
+    }
+
+    public setPaymentMethod(paymentMethod: PaymentMethod) {
+        this._stateCart.payment_method = paymentMethod
+    }
+
+    public setPayReceived(pay: number) {
+        this._stateCart.pay_received = pay
+    }
+
+    public setPayChange(pay: number) {
+        this._stateCart.pay_return = pay
     }
 }

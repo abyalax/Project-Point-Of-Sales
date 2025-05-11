@@ -247,31 +247,49 @@ VALUES
     -- Hair Styling
     ('GATSBY Powder Clay Unbrekable smooth 20g', 49000.00, 0.00, '8992222056700', 6, 75, true, 45000.00, 0.10);
 
--- Transaction 1
+-- Transaksi
 INSERT INTO
     transactions (
-        id,
         user_id,
         transaction_id,
         status,
         payment_method,
-        subtotal, -- 36000.0
-        total, -- 36800.0
-        total_discount, -- 0.0
-        pay_received, -- 40000.0
-        pay_change, -- 3200.0
-        tax, -- 800.0
-        total_profit -- 6000.0
+        subtotal,
+        total_discount,
+        total_price,
+        total_profit,
+        total_tax,
+        last_price,
+        pay_received,
+        pay_return,
+        notes
     )
 VALUES
-    (1, 3, 'TRX202504001', 'completed', 'cash', 36000.0, 36800.0, 0.0, 40000.0, 3200.0, 800.0, 6000.0);
+    (
+        1,
+        'TRX20250511001',
+        'paid',
+        'cash',
+        21500.00,
+        475.00,
+        21025.00,
+        763.00,
+        2.10,
+        23130.00,
+        25000.00,
+        1870.00,
+        'Pembelian makanan ringan'
+    );
 
+-- Anggap id transaksi yang barusan dimasukkan adalah id = 1
+-- Item: Roma Kelapa
 INSERT INTO
-    transaction_items (transaction_id, product_id, barcode, name, price, discount, tax_rate, quantity, cost_price)
+    transaction_items (transaction_id, product_id, barcode, name, quantity, cost_price, sell_price, discount, tax_rate, final_price)
 VALUES
-    (1, 3, '8999999998888', 'Aqua Botol 600ml', 4000.0, 0.0, 0.1, 2, 2500.0);
+    (1, 1, '8991001101234', 'Biskuit Roma Kelapa 300g', 1, 8500.00, 12000.00, 0.00, 0.10, 13200.00);
 
+-- Item: Chitato BBQ
 INSERT INTO
-    transaction_items (transaction_id, product_id, barcode, name, price, discount, tax_rate, quantity, cost_price)
+    transaction_items (transaction_id, product_id, barcode, name, quantity, cost_price, sell_price, discount, tax_rate, final_price)
 VALUES
-    (1, 10, '8992222056700', 'Nourishing Pomade 40g', 28000.0, 0.0, 0.1, 1, 25000.0);
+    (1, 2, '8998866201234', 'Chitato BBQ 68g', 1, 7000.00, 9500.00, 475.00, 0.10, 9930.00);
