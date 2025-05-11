@@ -18,7 +18,7 @@ export default class CartUI {
     private bindEvents(): void {
         console.log('Bind Events...');
         this.renderInterface();
-        this.hanldeDate();
+        this.handleDate();
         document.addEventListener('cartUpdated', this.renderInterface)
 
         const formSearchInput = document.getElementById('form-search-products') as HTMLFormElement
@@ -26,6 +26,9 @@ export default class CartUI {
 
         const payInput = document.getElementById('pay-transaction') as HTMLInputElement;
         payInput.addEventListener('input', this.handleInputPay);
+
+        const noteTextArea = document.getElementById('cart-notes') as HTMLTextAreaElement;
+        noteTextArea.addEventListener('input', this.handleAddNotes);
 
         const boxFormSearchInput = document.getElementById('box-search-products') as HTMLFormElement;
         boxFormSearchInput.addEventListener('submit', this.hanldeAddToCartBox);
@@ -63,7 +66,7 @@ export default class CartUI {
         resetCartBtn.addEventListener('click', this.handleClearCart);
     }
 
-    private hanldeDate = () => {
+    private handleDate = () => {
         const dates = document.querySelectorAll('.date-time');
         if (!dates.length) return;
         const today = new Date().toISOString().split("T")[0];
@@ -339,6 +342,11 @@ export default class CartUI {
         }, 200);
     }
 
+    private handleAddNotes = (e: Event) => {
+        const input = e.target as HTMLTextAreaElement;
+        this.cartManager.setNotes(input.value);
+    }
+
     private handleSaveTransaction = async (e: Event) => {
         e.preventDefault();
         console.log('Masuk handleSaveTransaction...');
@@ -357,7 +365,11 @@ export default class CartUI {
             const transaction = calculateTransaction(cart);
             console.log('Result of calculation transaction ' ,transaction);
             const result = await TransactionManager.insert(transaction);
-            alert(`Transaksi ${result.data.transaction_id} berhasil disimpan`);
+            if (result?.data?.transaction_id) {
+                alert(`Transaksi ${result.data.transaction_id} berhasil disimpan`);
+            } else {
+                alert('Transaksi gagal disimpan');
+            }
         }
     }
 

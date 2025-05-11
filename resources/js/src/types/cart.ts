@@ -21,4 +21,5 @@ export interface CartState {
     pay_received: number;
     pay_return: number;
     tax: number;
+    notes: string
 }

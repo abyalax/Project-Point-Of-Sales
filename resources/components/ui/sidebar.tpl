@@ -44,7 +44,7 @@
                 item.classList.remove('active');
                 link.classList.remove('active');
 
-                if (currentPath === href || (currentPath.startsWith(href) )) {
+                if (currentPath === href) {
                     item.classList.add('active');
                     link.classList.add('active');
                 }
@@ -96,6 +96,18 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
+                        <a class="sidebar-link" href="/point-of-sales/transaction/dashboard">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-arrow-right">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                            Transactions
+                        </a>
+                    </li>
+                    <li class="sidebar-item ps-3">
                         <a class="sidebar-link" href="/point-of-sales/transactions">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
@@ -104,8 +116,7 @@
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
-                            History Transactions
-                            <span class="sidebar-badge badge bg-primary">Pro</span>
+                            Transactions Lists
                         </a>
                     </li>
                 </ul>
@@ -142,7 +153,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/product/create">
+                        <a class="sidebar-link" href="/point-of-sales/products/create">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -151,7 +162,6 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Add New Products
-                            <span class="sidebar-badge badge bg-primary">Pro</span>
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
@@ -164,7 +174,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Categories
-                            <span class="sidebar-badge badge bg-primary">Pro</span>
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                 </ul>
@@ -186,6 +196,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Inventory
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
@@ -198,7 +209,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Suppliers
-                            <span class="sidebar-badge badge bg-primary">Pro</span>
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
@@ -211,7 +222,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Stock
-                            <span class="sidebar-badge badge bg-primary">Pro</span>
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                 </ul>
@@ -233,6 +244,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Daily Sales
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
@@ -245,7 +257,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Monthly Summary
-                            <span class="sidebar-badge badge bg-primary">Pro</span>
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
@@ -258,7 +270,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Sales Performance
-                            <span class="sidebar-badge badge bg-primary">Pro</span>
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
@@ -271,7 +283,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Analytics
-                            <span class="sidebar-badge badge bg-primary">Pro</span>
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                 </ul>
@@ -293,6 +305,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Member Management
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
@@ -305,7 +318,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Add New Member
-                            <span class="sidebar-badge badge bg-primary">Pro</span>
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                 </ul>
@@ -327,6 +340,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Karyawan
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
@@ -339,7 +353,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Account
-                            <span class="sidebar-badge badge bg-primary">Pro</span>
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
@@ -352,7 +366,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Roles
-                            <span class="sidebar-badge badge bg-primary">Pro</span>
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                 </ul>
@@ -386,7 +400,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Login
-                            <span class="sidebar-badge badge bg-primary">Pro</span>
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                 </ul>
@@ -408,6 +422,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Payments
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
@@ -420,6 +435,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Configuration
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                 </ul>

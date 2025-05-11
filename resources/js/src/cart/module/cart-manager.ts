@@ -14,15 +14,16 @@ export default class CartManager {
             payment_method: PaymentMethod.Cash,
             pay_return: 0,
             pay_received: 0,
+            notes: '',
             items: [{
                 barcode: 0,
-                cost_price: 0,
-                discount: 0,
+                cost_price: 0.0,
+                discount: 0.0,
                 id: 0,
                 name: '',
-                price: 0,
+                price: 0.0,
                 quantity: 0,
-                tax_rate: 0
+                tax_rate: 0.0
             }],
         }
         this.loadFromStorage();
@@ -135,6 +136,7 @@ export default class CartManager {
             payment_method: PaymentMethod.Cash,
             pay_return: 0,
             pay_received: 0,
+            notes: '',
         };
         this.save();
         console.log('Cart cleared...');
@@ -154,5 +156,9 @@ export default class CartManager {
 
     public setPayChange(pay: number) {
         this._stateCart.pay_return = pay
+    }
+
+    public setNotes(notes: string) {
+        this._stateCart.notes = notes
     }
 }

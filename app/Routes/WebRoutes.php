@@ -51,6 +51,10 @@ class WebRoutes {
                     [AuthMiddleware::class, 'checkSession'],
                     [TransactionController::class, 'index']
                 ],
+                'transaction/dashboard' => [
+                    [AuthMiddleware::class, 'checkSession'],
+                    [TransactionController::class, 'dashboard']
+                ],
                 'transactions' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [TransactionController::class, 'get']

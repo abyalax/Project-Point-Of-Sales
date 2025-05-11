@@ -27,6 +27,16 @@ class AuthService {
         $isValid = Helper::verifySha256Password($password, $user['password']);
 
         if ($isValid) {
+            ini_set('session.cookie_httponly', 1);
+            // ini_set('session.cookie_secure', 1); // Hanya kalau sudah HTTPS
+            ini_set('session.use_only_cookies', 1);
+            session_set_cookie_params([
+                'lifetime' => 86400, // 24 jam
+                'path' => '/',
+                // 'secure' => true,   // HTTPS only
+                'httponly' => true, // JS tidak bisa baca cookie
+                'samesite' => 'Strict'
+            ]);
             session_start();
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['roles'] = Role::getUserRoles($user['id']);

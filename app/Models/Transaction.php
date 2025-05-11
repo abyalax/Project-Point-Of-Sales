@@ -6,6 +6,7 @@ use Abya\PointOfSales\Config\Database;
 use Abya\PointOfSales\Config\LoggerConfig;
 use PDO;
 use PDOException;
+use Throwable;
 
 class Transaction {
     private $db;
@@ -14,23 +15,46 @@ class Transaction {
         $this->db = Database::getConnection();
     }
 
+    public function findAll() {
+        try {
+            $stmt = $this->db->prepare("
+                SELECT 
+                    user_id, cashier, transaction_id, status, payment_method, subtotal, total_discount, 
+                    total_price, total_profit, total_tax, last_price, pay_received, pay_return, notes
+                FROM transactions 
+                LIMIT 50;
+            ");
+            $stmt->execute();
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            LoggerConfig::getInstance()->debug('Error Query findAll transactions', compact('e'));
+            throw $e;
+        }
+    }
+
     public function insert($data) {
         try {
+            $modelUser = new User();
+            $user = $modelUser->findById($_SESSION['user_id']);
+            $cashier = $user['name'];
+
             $this->db->beginTransaction();
+            $generatedTransactionId = self::generateIdTransaction();
 
             $stmt = $this->db->prepare("
                 INSERT INTO
-                    transactions (user_id, transaction_id, status, payment_method, subtotal, total_discount, 
+                    transactions (user_id, cashier, transaction_id, status, payment_method, subtotal, total_discount, 
                     total_price, total_profit, total_tax, last_price, pay_received, pay_return, notes)
                 VALUES
-                    (:user_id, :transaction_id, :status, :payment_method, :subtotal, :total_discount, 
+                    (:user_id, :cashier, :transaction_id, :status, :payment_method, :subtotal, :total_discount, 
                     :total_price, :total_profit, :total_tax, :last_price, :pay_received, :pay_return, :notes);
             ");
 
             $stmt->execute([
-                'user_id'         => $data['cashier']['id'],
-                'transaction_id'  => $data['transaction_id'],
-                'status'          => $data['status'],
+                'user_id'         => $_SESSION['user_id'],
+                'cashier'         => $cashier,
+                'transaction_id'  => $generatedTransactionId,
+                'status'          => 'completed',
                 'payment_method'  => $data['payment_method'],
                 'subtotal'        => $data['subtotal'],
                 'total_discount'  => $data['total_discount'],
@@ -43,15 +67,7 @@ class Transaction {
                 'notes'           => $data['notes'],
             ]);
 
-
             $transactionId = $this->db->lastInsertId();
-
-            /**
-             * INSERT INTO
-             *     transaction_items (transaction_id, product_id, barcode, name, quantity, cost_price, sell_price, discount, tax_rate, final_price)
-             * VALUES
-             *     (1, 1, '8991001101234', 'Biskuit Roma Kelapa 300g', 1, 8500.00, 12000.00, 0.00, 0.10, 13200.00);
-             */
 
             $stmtItems = $this->db->prepare("
                 INSERT INTO transaction_items (
@@ -78,24 +94,31 @@ class Transaction {
                 ]);
             }
 
-            $this->db->commit();
+            $query = $this->db->commit();
 
-            return ['transaction_id' => $data['transaction_id']];
+            if ($query) {
+                return ['transaction_id' => $generatedTransactionId];
+            } else {
+                return false;
+            }
         } catch (PDOException $e) {
             LoggerConfig::getInstance()->debug('Error Query insert product ', compact('e'));
             $this->db->rollBack();
             throw $e;
+            return false;
+        } catch (Throwable $e) {
+            LoggerConfig::getInstance()->debug('Error Data Query insert product', compact('e'));
+            $this->db->rollBack();
+            throw $e;
+            return false;
         }
     }
 
-    public function findAll() {
-        try {
-            $stmt = $this->db->prepare("SELECT * FROM transactions LIMIT 25");
-            $stmt->execute();
-            return $stmt->fetchAll(PDO::FETCH_ASSOC);
-        } catch (PDOException $e) {
-            LoggerConfig::getInstance()->debug('Error Query findAll transactions', compact('e'));
-            throw $e;
-        }
+    private function generateIdTransaction() {
+        $lastIdStmt = $this->db->query("SELECT MAX(id) as last_id FROM transactions");
+        $lastId = $lastIdStmt->fetch(PDO::FETCH_ASSOC)['last_id'] ?? 0;
+        $year = substr(date('Y'), -2);
+        $result = "TRX" . str_pad($lastId + 1, 3, '0', STR_PAD_LEFT) . $year;
+        return $result;
     }
 }

@@ -30,9 +30,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Mode Development -->
-    {* <script src="http://localhost:5173/src/auth/index.ts" type="module"></script> *}
+    <script src="http://localhost:5173/src/auth/index.ts" type="module"></script>
     <!-- Mode Production -->
-    <script src="../../js/dist/auth.js" type="module"></script>
+    {* <script src="../../js/dist/auth.js" type="module"></script> *}
 
     {block name="head"}{/block}
 

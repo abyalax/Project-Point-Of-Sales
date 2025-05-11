@@ -21,12 +21,10 @@ export interface ItemTransaction {
 }
 
 export interface TransactionState {
-    transaction_id: string;
-    status: string;
-    cashier: {
-        id: number;
-        name: string;
-    };
+    transaction_id?: string;
+    status: 'draft' | 'pending' | 'completed' | 'cancelled' | 'refunded';
+    cashier?: string;
+    user_id?: number;
     item: ItemTransaction[];
     subtotal: number;
     total_discount: number;

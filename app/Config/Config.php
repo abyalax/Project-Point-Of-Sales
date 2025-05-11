@@ -10,4 +10,7 @@ class Config {
     public static function getBaseUrl(): string {
         return $_ENV['BASE_URL'];
     }
+    public static function getLastIdTransaction() {
+
+    }
 }

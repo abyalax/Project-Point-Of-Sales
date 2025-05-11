@@ -2,6 +2,6 @@
 
 {block name="transaction-content"}
     <div data-testid="page-transactions">
-        {include file="../../components/table/transactions.tpl" transactions=$transactions}
+        <h1>Dashboard</h1>
     </div>
 {/block}

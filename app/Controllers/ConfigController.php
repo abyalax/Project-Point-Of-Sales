@@ -10,7 +10,8 @@ class ConfigController {
     
     public function config() {
         Helper::sendResponse(200, StatusResponse::success, [
-            ['base_url' => Config::getBaseUrl()]
+            ['base_url' => Config::getBaseUrl()],
+            ['last_id_transaction' => Config::getLastIdTransaction()]
         ]);
     }
 }

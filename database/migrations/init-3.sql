@@ -60,6 +60,7 @@ CREATE TABLE
     transactions (
         id INT AUTO_INCREMENT PRIMARY KEY,
         user_id INT NOT NULL,
+        cashier VARCHAR(100) NOT NULL,
         transaction_id VARCHAR(50) NOT NULL UNIQUE,
         status VARCHAR(50) NOT NULL,
         payment_method VARCHAR(50) NOT NULL,

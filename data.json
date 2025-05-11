@@ -1,10 +1,5 @@
 {
-    "cashier": {
-        "id": 3,
-        "name": "Admin"
-    },
-    "transaction_id": "TRX-001",
-    "status": "PAID",
+    "status": "pending",
     "item": [
         {
             "name": "Biskuit Roma Kelapa 300g",
@@ -34,5 +29,5 @@
     "pay_received": 20000,
     "payment_method": "cash",
     "last_price": 13200,
-    "notes": ""
+    "notes": "Pembelian Makanan Ringan"
 }

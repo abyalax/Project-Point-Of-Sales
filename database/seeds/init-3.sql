@@ -251,6 +251,7 @@ VALUES
 INSERT INTO
     transactions (
         user_id,
+        cashier,
         transaction_id,
         status,
         payment_method,
@@ -266,7 +267,8 @@ INSERT INTO
     )
 VALUES
     (
-        1,
+        5,
+        'abya kasir',
         'TRX20250511001',
         'paid',
         'cash',
