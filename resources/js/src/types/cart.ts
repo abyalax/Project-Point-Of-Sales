@@ -4,6 +4,7 @@ export interface CartItem {
     id: number;
     barcode: number;
     name: string;
+    category: string;
     price: number;
     cost_price: number;
     tax_rate: number;

@@ -48,6 +48,7 @@ export function calculateTransaction(cartState: CartState): TransactionState {
 
     const item_transaction: ItemTransaction[] = items.map((item, i) => ({
         name: item.name,
+        category: item.category,
         product_id: item.id,
         barcode: item.barcode,
         qty: item.quantity,

@@ -41,6 +41,10 @@ class ApiRoutes {
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'getCategoryByID'],
                 ],
+                'api/transactions' => [
+                    [AuthMiddleware::class, 'checkSession'],
+                    [TransactionController::class, 'get'],
+                ],
             ],
             'POST' => [
                 'api/home' => [
@@ -60,6 +64,10 @@ class ApiRoutes {
                 'api/product/create' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'createProduct'],
+                ],
+                'api/transactions/(\d+)' => [
+                    [AuthMiddleware::class, 'checkSession'],
+                    [TransactionController::class, 'getByID']
                 ],
                 'api/transaction/insert' => [
                     [AuthMiddleware::class, 'checkSession'],

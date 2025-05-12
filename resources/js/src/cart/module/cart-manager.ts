@@ -21,6 +21,7 @@ export default class CartManager {
                 discount: 0.0,
                 id: 0,
                 name: '',
+                category: '',
                 price: 0.0,
                 quantity: 0,
                 tax_rate: 0.0
@@ -42,7 +43,6 @@ export default class CartManager {
     }
 
     public addItem(product: CartItem): void {
-        alert(product.name + ' ditambahkan ke keranjang')
         const existingItem = this._stateCart.items.find(item => item.id === product.id);
         if (existingItem) {
             existingItem.quantity += product.quantity ?? 1;
@@ -123,6 +123,10 @@ export default class CartManager {
             this._stateCart = JSON.parse(savedCart);
             console.log('stateCart : ', this._stateCart);
         }
+    }
+
+    public isEmptyCart(): boolean {
+        return this._stateCart.items.length === 0
     }
 
     public clearCart(): void {

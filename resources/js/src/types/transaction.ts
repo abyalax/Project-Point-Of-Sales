@@ -12,6 +12,7 @@ export interface ItemSummary {
 
 export interface ItemTransaction {
     name: string;
+    category: string;
     qty: number;
     price: number;
     cost_price: number;

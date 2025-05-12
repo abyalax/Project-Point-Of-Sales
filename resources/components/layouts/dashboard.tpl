@@ -25,6 +25,9 @@
     {* Template AdminKit *}
     <script src="/vendor/components/adminkit/js/app.js"></script>
     <link rel="stylesheet" href="/vendor/components/adminkit/css/app.css" />
+    {* Native Toast *}
+    <link rel="stylesheet" href="/vendor/components/native-toast/dist/native-toast.css" />
+    <script src="/vendor/components/native-toast/dist/native-toast.min.js"></script>
     {* CSS root *}
     <link rel="stylesheet" href="/public/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">

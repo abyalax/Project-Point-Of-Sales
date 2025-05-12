@@ -8,6 +8,12 @@ use Abya\PointOfSales\Config\BaseController;
 
 class AnalyticsController extends BaseController {
 
+    public function dashboard() {
+        LoggerConfig::getInstance()->debug('Get Analytics Page');
+        $this->smarty->assign('page', 'Dashboard Analytics Page');
+        $this->smarty->display('pages/transaction/dashboard.tpl');
+    }
+
     public function index() {
         LoggerConfig::getInstance()->debug('Get Analytics Page');
         $this->smarty->assign('page', 'Analytics Page');

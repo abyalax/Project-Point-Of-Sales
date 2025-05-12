@@ -14,4 +14,16 @@ export default class TransactionManager {
         const response = await res.json();
         return response
     }
-}
+
+    public static async get() {
+        const res = await fetch('api/transaction/insert', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            credentials: 'include',
+        })
+        const response = await res.json();
+        return response
+    }
+}   

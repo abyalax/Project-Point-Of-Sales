@@ -24,6 +24,9 @@
     <script src="/vendor/components/adminkit/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 
+    <link rel="stylesheet" href="/vendor/components/native-toast/dist/native-toast.css" />
+    <script src="/vendor/components/native-toast/dist/native-toast.min.js"></script>
+
     <title>Sign Up | POS</title>
 </head>
 

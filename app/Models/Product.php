@@ -94,7 +94,22 @@ class Product {
 
     public function findByName($name) {
         try {
-            $stmt = $this->db->prepare("SELECT id, barcode, name, price, cost_price, tax_rate, discount FROM products WHERE name LIKE :name");
+            $stmt = $this->db->prepare("
+                SELECT 
+                    p.id, 
+                    p.barcode, 
+                    p.name, 
+                    p.price, 
+                    p.cost_price, 
+                    p.tax_rate, 
+                    p.discount,
+                    pc.name as category 
+                FROM 
+                    products p 
+                JOIN 
+                    product_categories pc ON p.category_id = pc.id;
+                WHERE name LIKE :name
+            ");
             $stmt->execute(['name' => "%$name%"]);
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
             return $result;

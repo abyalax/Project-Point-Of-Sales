@@ -23,8 +23,8 @@
                         text-decoration: underline;
                     }
                 </style>
-                <a class="breadcrumb-item {$url == '/point-of-sales/transaction/dashboard' ? " breadcrum-active" : "" }"
-                    style="text-decoration:none;color:gray;" href="/point-of-sales/transaction/dashboard">Home</a>
+                <a class="breadcrumb-item {$url == '/point-of-sales/dashboard' ? " breadcrum-active" : "" }"
+                    style="text-decoration:none;color:gray;" href="/point-of-sales/dashboard">Home</a>
                 <a class="breadcrumb-item {$url == '/point-of-sales/transactions' ? " breadcrum-active" : "" }"
                     style="text-decoration:none;color:gray;" href="/point-of-sales/transactions">Transaction</a>
             </ol>

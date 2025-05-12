@@ -5,8 +5,7 @@ use Abya\PointOfSales\Config\Config;
 use Abya\PointOfSales\Config\LoggerConfig;
 use Abya\PointOfSales\Routes\Routes;
 
-// hide logs error yang muncul
-ini_set('display_errors', 0); 
+Config::initApplication();
 
 $method = $_SERVER['REQUEST_METHOD'];
 $url = $_SERVER['REQUEST_URI'];

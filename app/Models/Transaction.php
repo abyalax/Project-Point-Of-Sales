@@ -32,6 +32,26 @@ class Transaction {
         }
     }
 
+    public function findByID($id) {
+        LoggerConfig::getInstance()->debug('Find Transaction by ID', [$id]);
+        try {
+            $stmt = $this->db->prepare("
+                SELECT 
+                    user_id, cashier, transaction_id, status, payment_method, subtotal, total_discount, 
+                    total_price, total_profit, total_tax, last_price, pay_received, pay_return, notes
+                FROM transactions 
+                WHERE id = :id;
+            ");
+            $stmt->execute(['id' => $id]);
+            $find = $stmt->fetch(PDO::FETCH_ASSOC);
+            LoggerConfig::getInstance()->debug('Found Transaction by ID', [$find]);
+            return $find;
+        } catch (PDOException $e) {
+            LoggerConfig::getInstance()->debug('Error Query findAll transactions', compact('e'));
+            throw $e;
+        }
+    }
+
     public function insert($data) {
         try {
             $modelUser = new User();
@@ -64,7 +84,7 @@ class Transaction {
                 'last_price'      => $data['last_price'],
                 'pay_received'    => $data['pay_received'],
                 'pay_return'      => $data['pay_return'],
-                'notes'           => $data['notes'],
+                'notes'           => $data['notes'] ?? null,
             ]);
 
             $transactionId = $this->db->lastInsertId();
@@ -118,7 +138,9 @@ class Transaction {
         $lastIdStmt = $this->db->query("SELECT MAX(id) as last_id FROM transactions");
         $lastId = $lastIdStmt->fetch(PDO::FETCH_ASSOC)['last_id'] ?? 0;
         $year = substr(date('Y'), -2);
-        $result = "TRX" . str_pad($lastId + 1, 3, '0', STR_PAD_LEFT) . $year;
+        $month = date('m');
+        $date = date('d');
+        $result = "TRX" . $date . $month . $year . str_pad($lastId + 1, 3, '0', STR_PAD_LEFT);
         return $result;
     }
 }

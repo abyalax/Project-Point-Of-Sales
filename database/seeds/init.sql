@@ -286,12 +286,12 @@ VALUES
 -- Anggap id transaksi yang barusan dimasukkan adalah id = 1
 -- Item: Roma Kelapa
 INSERT INTO
-    transaction_items (transaction_id, product_id, barcode, name, quantity, cost_price, sell_price, discount, tax_rate, final_price)
+    transaction_items (transaction_id, product_id, barcode, name, category, quantity, cost_price, sell_price, discount, tax_rate, final_price)
 VALUES
-    (1, 1, '8991001101234', 'Biskuit Roma Kelapa 300g', 1, 8500.00, 12000.00, 0.00, 0.10, 13200.00);
+    (1, 1, '8991001101234', 'Biskuit Roma Kelapa 300g', 'Makanan', 1, 8500.00, 12000.00, 0.00, 0.10, 13200.00);
 
 -- Item: Chitato BBQ
 INSERT INTO
-    transaction_items (transaction_id, product_id, barcode, name, quantity, cost_price, sell_price, discount, tax_rate, final_price)
+    transaction_items (transaction_id, product_id, barcode, name, category, quantity, cost_price, sell_price, discount, tax_rate, final_price)
 VALUES
-    (1, 2, '8998866201234', 'Chitato BBQ 68g', 1, 7000.00, 9500.00, 475.00, 0.10, 9930.00);
+    (1, 2, '8998866201234', 'Chitato BBQ 68g', 'Makanan', 1, 7000.00, 9500.00, 475.00, 0.10, 9930.00);

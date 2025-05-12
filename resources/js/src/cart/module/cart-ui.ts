@@ -5,6 +5,7 @@ import { getProductByID, getProducts } from "../../product/module/product-manage
 import { calculateTransaction } from "../../calculation/transaction";
 import { formatPrice } from "../../helper";
 import TransactionManager from "../../transaction/module/transaction-manager";
+import { toast } from "../../helper/config";
 
 export default class CartUI {
     private debounceTimer: number = 0;
@@ -196,7 +197,7 @@ export default class CartUI {
             const response = await this.cartManager.fetchByName(searchInput.value)
             const product = response.data
             console.log('Found Product by Name : ', product);
-            
+
             const parsedProduct: CartItem = {
                 ...product,
                 cost_price: Number(product.cost_price),
@@ -209,8 +210,16 @@ export default class CartUI {
             searchInput.value = '';
             this.cartManager.addItem(parsedProduct);
             this.renderInterface();
+            toast({
+                message: `${product.name} ditambahkan ke keranjang`,
+                type: 'success',
+            })
         } catch (error) {
             console.log('addToCart error: ', error);
+            toast({
+                message: 'Something Wrong',
+                type: 'error',
+            })
         }
     }
 
@@ -351,24 +360,43 @@ export default class CartUI {
         e.preventDefault();
         console.log('Masuk handleSaveTransaction...');
         const cart = this.cartManager.getCart();
-        console.log('Transaksi at state ' ,cart);
+        console.log('Transaksi at state ', cart);
         const payInput = document.getElementById('pay-transaction') as HTMLInputElement;
         const received = parseInt(payInput.value);
-
-        if (!received) {
-            alert('Jumlah pembayaran tidak boleh kosong.');
+        if (this.cartManager.isEmptyCart()) {
+            toast({
+                message: 'Keranjang masih kosong',
+                type: 'warning',
+                position: 'center'
+            })
+        } else if (!received) {
+            toast({
+                message: 'Jumlah pembayaran tidak boleh kosong.',
+                type: 'warning'
+            })
             return
         } else if (received < cart.total) {
-            alert('Jumlah Pembayaran kurang.');
+            toast({
+                message: 'Jumlah Pembayaran kurang.',
+                type: 'warning'
+            });
             return
         } else {
             const transaction = calculateTransaction(cart);
-            console.log('Result of calculation transaction ' ,transaction);
+            console.log('Result of calculation transaction ', transaction);
             const result = await TransactionManager.insert(transaction);
             if (result?.data?.transaction_id) {
-                alert(`Transaksi ${result.data.transaction_id} berhasil disimpan`);
+                toast({
+                    message: `Transaksi ${result.data.transaction_id} berhasil disimpan`,
+                    type: 'success'
+                })
+                this.cartManager.clearCart();
+                this.renderInterface();
             } else {
-                alert('Transaksi gagal disimpan');
+                toast({
+                    message: 'Transaksi gagal disimpan',
+                    type: 'error'
+                })
             }
         }
     }
@@ -386,7 +414,10 @@ export default class CartUI {
         const item = carts.items.find(item => item.id === itemId);
         console.log('Found item', item);
         if (isNaN(newQty) || newQty < 1) {
-            alert("Jumlah tidak boleh kosong atau kurang dari 1.");
+            toast({
+                message: 'Jumlah tidak boleh kosong atau kurang dari 1',
+                type: 'warning'
+            })
             input.value = "1"; return;
         } this.cartManager.updateQuantity(itemId, newQty);
         this.renderInterface();
@@ -434,6 +465,13 @@ export default class CartUI {
 
         if (item && item.quantity > 1) {
             this.cartManager.updateQuantity(itemId, item.quantity - 1);
+            this.renderInterface();
+        } else {
+            toast({
+                message: 'Product dihapus dari keranjang',
+                type: 'info'
+            })
+            this.cartManager.removeItem(itemId);
             this.renderInterface();
         }
     }

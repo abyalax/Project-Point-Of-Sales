@@ -10,8 +10,8 @@
                         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                     </svg>
                 </button>
-                <input id="fm-search-products" class="form-control form-control-lg" type="text"
-                    placeholder="Search Products..." />
+                <input id="fm-search-transactions" class="form-control form-control-lg" type="text"
+                    placeholder="Search Transactions..." />
             </div>
         </div>
         <button class="btn btn-primary" onclick="alert('Belum di Implement')">
@@ -22,9 +22,10 @@
         <table class="table table-hover table-striped table-responsive">
             <thead>
                 <tr>
-                    <th class="d-xl-table-cell">No Transactions</th>
+                    <th class="d-xl-table-cell">ID Transactions</th>
                     <th class="d-xl-table-cell">Cashier</th>
-                    <th class="d-xl-table-cell">Price</th>
+                    <th class="d-xl-table-cell">Subtotal Price</th>
+                    <th class="d-xl-table-cell">Total Price</th>
                     <th class="d-xl-table-cell">Tax</th>
                     <th class="d-xl-table-cell">Discount</th>
                     <th class="d-xl-table-cell">Final Price</th>
@@ -34,12 +35,13 @@
                     <th>Action</th>
                 </tr>
             </thead>
-            <tbody class="table-product">
+            <tbody class="table-transactions">
                 {foreach from=$transactions item=item}
-                    <tr class="odd product-item" data-id="{$item['id']}">
+                    <tr class="odd transaction-item" data-id="{$item['id']}">
                         <td class="d-xl-table-cell">{$item['transaction_id']}</td>
                         <td class="d-xl-table-cell">{$item['cashier']}</td>
 
+                        <td class="d-xl-table-cell">Rp {number_format($item['subtotal'], 0, ',', '.')}</td>
                         <td class="d-xl-table-cell">Rp {number_format($item['total_price'], 0, ',', '.')}</td>
                         <td class="d-xl-table-cell">Rp {number_format($item['total_tax'], 0, ',', '.')}</td>
                         <td class="d-xl-table-cell">Rp {number_format($item['total_discount'], 0, ',', '.')}</td>

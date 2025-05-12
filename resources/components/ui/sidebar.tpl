@@ -96,18 +96,6 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/transaction/dashboard">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                                class="feather feather-arrow-right">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                            Transactions
-                        </a>
-                    </li>
-                    <li class="sidebar-item ps-3">
                         <a class="sidebar-link" href="/point-of-sales/transactions">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
@@ -116,7 +104,7 @@
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
-                            Transactions Lists
+                            History Transactions
                         </a>
                     </li>
                 </ul>
@@ -379,7 +367,7 @@
                 </a>
                 <ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link"   onclick="alert('belum diimplement')">
+                        <a class="sidebar-link" href="/point-of-sales/settings">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -388,6 +376,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                             Profile
+                            <span class="sidebar-badge badge bg-primary">Soon</span>
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">

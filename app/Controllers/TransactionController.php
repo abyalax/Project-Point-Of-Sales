@@ -11,10 +11,15 @@ use Abya\PointOfSales\Config\StatusResponse;
 use Abya\PointOfSales\Models\Transaction;
 use Respect\Validation\Exceptions\NestedValidationException;
 use Respect\Validation\Validator as V;
-use InvalidArgumentException;
 use Throwable;
 
 class TransactionController extends BaseController {
+
+    public function home() {
+        LoggerConfig::getInstance()->debug('Get Home Page');
+        $this->smarty->assign('page', 'Home Page');
+        $this->smarty->display('pages/index.tpl');
+    }
 
     public function index() {
         LoggerConfig::getInstance()->debug('Get Transaction Page');
@@ -25,7 +30,7 @@ class TransactionController extends BaseController {
         $this->smarty->display('pages/transaction/index.tpl');
     }
 
-    public function get() {
+    public function getView() {
         LoggerConfig::getInstance()->debug('Get Transaction List Page');
         $transaction = new Transaction();
         $data = $transaction->findAll();
@@ -33,14 +38,29 @@ class TransactionController extends BaseController {
         $this->smarty->assign('page', 'Transaction List Page');
         $this->smarty->display('pages/transaction/get.tpl');
     }
+    
+    public function getViewByID($paramID) {
+        LoggerConfig::getInstance()->debug('Get Transaction By ID Page');
+        $transaction = new Transaction();
+        $data = $transaction->findByID($paramID);
+        $this->smarty->assign('transaction', $data);
+        $this->smarty->assign('page', 'Transaction Page');
+        $this->smarty->display('pages/transaction/detail.tpl');
+    }
 
-    public function dashboard() {
-        LoggerConfig::getInstance()->debug('Get Dashboard Transaction Page');
-        $this->smarty->assign('page', 'Dashboard Transaction Page');
+    public function get() {
         $model = new Transaction();
-        $data = $model->findAll();
-        $this->smarty->assign('transactions', [$data]);
-        $this->smarty->display('pages/transaction/dashboard.tpl');
+        $find = $model->findAll();
+        LoggerConfig::getInstance()->debug('Found Transaction by ID', $find);
+        Helper::sendResponse(200, StatusResponse::success, $find);
+    }
+
+    public function getByID($paramID): void {
+        LoggerConfig::getInstance()->debug('Get Transaction By ID', compact('id'));
+        $model = new Transaction();
+        $find = $model->findByID($paramID);
+        LoggerConfig::getInstance()->debug('Found Transaction by ID', $find);
+        Helper::sendResponse(200, StatusResponse::success, $find);
     }
 
     public function createTransaction() {
@@ -60,7 +80,6 @@ class TransactionController extends BaseController {
             V::numericVal()->assert($data['last_price']);
             V::numericVal()->assert($data['pay_received']);
             V::numericVal()->assert($data['pay_return']);
-            V::nullable(V::stringType()->length(2, 255))->assert($data['notes']);
             V::stringType()->notEmpty()->assert($data['payment_method']);
             V::arrayType()->notEmpty()->assert($data['item']);
 
