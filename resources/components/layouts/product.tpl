@@ -2,9 +2,9 @@
 
 {block name="head"}
     <!-- Mode Development -->
-    <script type="module" src="http://localhost:5173/src/product/index.ts"></script>
+    {* <script type="module" src="http://localhost:5173/src/product/index.ts"></script> *}
     <!-- Mode Production -->
-    {* <script src="/resources/js/dist/product.js" type="module"></script> *}
+    <script src="/resources/js/dist/product.js" type="module"></script>
 {/block}
 
 {block name="content"}

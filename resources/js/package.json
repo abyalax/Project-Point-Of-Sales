@@ -3,6 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": {
+    "name": "abya",
+    "email": "abyalaxx@gmail.com",
+    "url": "https://profile-abya.vercel.app"
+  },
+  "engines": {
+    "node": ">=22.15.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build --emptyOutDir",
@@ -15,7 +23,6 @@
     "vite": "^6.2.0"
   },
   "dependencies": {
-    "awesomplete": "^1.1.7",
     "chart.js": "^4.4.9",
     "glob": "^11.0.1",
     "jquery-ui": "^1.14.1",

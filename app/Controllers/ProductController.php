@@ -11,6 +11,7 @@ use Abya\PointOfSales\Config\BaseController;
 use Abya\PointOfSales\Config\StatusResponse;
 use Respect\Validation\Validator as V;
 use Respect\Validation\Exceptions\NestedValidationException;
+use Throwable;
 
 class ProductController extends BaseController {
 
@@ -50,6 +51,158 @@ class ProductController extends BaseController {
         $this->smarty->assign('page', 'Update Products Page');
         $this->smarty->assign('url', '/point-of-sales/products/edit/' . $paramID);
         $this->smarty->display('pages/product/edit.tpl');
+    }
+
+    public function getProducts() {
+        try {
+            $model = new Product();
+            $find = $model->findAll();
+            if ($find == false) {
+                Helper::sendResponse(404, StatusResponse::notfound);
+            } else {
+                Helper::sendResponse(200, StatusResponse::success, $find);
+            }
+        } catch (NestedValidationException $exception) {
+            LoggerConfig::getInstance()->debug('Error Get Category By ID', ['errors' => $exception->getMessages()]);
+            Helper::sendResponse(400, StatusResponse::badrequest);
+        } catch (Throwable $th) {
+            LoggerConfig::getInstance()->error('Error getCategoryByID', compact('th'));
+            Helper::sendResponse(500, StatusResponse::error);
+        }
+    }
+
+    public function getProductByID() {
+        
+        try {
+            $id = $_POST['id'];
+            LoggerConfig::getInstance()->debug('Get Product By ID', compact('id'));
+            $product = new Product();
+            $find = $product->findById($id);
+
+            if ($find == false) {
+                Helper::sendResponse(404, StatusResponse::notfound);
+            } else {
+                LoggerConfig::getInstance()->debug('Found Product by ID', $find);
+                Helper::sendResponse(200, StatusResponse::success, $find);
+            }
+        } catch (NestedValidationException $exception) {
+            LoggerConfig::getInstance()->debug('Error Get Category By ID', ['errors' => $exception->getMessages()]);
+            Helper::sendResponse(400, StatusResponse::badrequest);
+        } catch (Throwable $th) {
+            LoggerConfig::getInstance()->error('Error getCategoryByID', compact('th'));
+            Helper::sendResponse(500, StatusResponse::error);
+        }
+    }
+
+    public function getProductByName() {
+        try {
+            $name = $_POST['name'];
+            LoggerConfig::getInstance()->debug('Get Product By Name', compact('name'));
+            $model = new Product();
+            $find = $model->findByName($name);
+            
+            if ($find == false) {
+                Helper::sendResponse(404, StatusResponse::notfound);
+            } else {
+                LoggerConfig::getInstance()->debug('Found Product by Name', $find);
+                Helper::sendResponse(200, StatusResponse::success, $find);
+            }
+        } catch (NestedValidationException $exception) {
+            LoggerConfig::getInstance()->debug('Error Get Category By ID', ['errors' => $exception->getMessages()]);
+            Helper::sendResponse(400, StatusResponse::badrequest);
+        } catch (Throwable $th) {
+            LoggerConfig::getInstance()->error('Error getCategoryByID', compact('th'));
+            Helper::sendResponse(500, StatusResponse::error);
+        }
+    }
+
+    public function getCategories() {
+        try {
+            $model = new Product();
+            $find = $model->findAllCategories();
+
+            if ($find == false) {
+                Helper::sendResponse(404, StatusResponse::notfound);
+            } else {
+                Helper::sendResponse(200, StatusResponse::success, $find);
+            }
+        } catch (NestedValidationException $exception) {
+            LoggerConfig::getInstance()->debug('Error Get Category By ID', ['errors' => $exception->getMessages()]);
+            Helper::sendResponse(400, StatusResponse::badrequest);
+        } catch (Throwable $th) {
+            LoggerConfig::getInstance()->error('Error getCategoryByID', compact('th'));
+            Helper::sendResponse(500, StatusResponse::error);
+        }
+    }
+
+    public function getCategoryByID($paramID) {
+        try {
+            LoggerConfig::getInstance()->debug('Get Category By ID', compact('id'));
+            V::numericVal()->assert($paramID);
+            $product = new Product();
+            $find = $product->findCategoryById($paramID);
+            if ($find == false) {
+                Helper::sendResponse(404, StatusResponse::notfound);
+            } else {
+                Helper::sendResponse(200, StatusResponse::success, $find);
+            }
+        } catch (NestedValidationException $exception) {
+            LoggerConfig::getInstance()->debug('Error Get Category By ID', ['errors' => $exception->getMessages()]);
+            Helper::sendResponse(400, StatusResponse::badrequest);
+        } catch (Throwable $th) {
+            LoggerConfig::getInstance()->error('Error getCategoryByID', compact('th'));
+            Helper::sendResponse(500, StatusResponse::error);
+        }
+    }
+
+    public function addCategoryProducts() {
+        try {
+            $json = file_get_contents('php://input');
+            $data = json_decode($json, true);
+            LoggerConfig::getInstance()->debug('POST Add Category Products Page', $data);
+            if (!$data) {
+                Helper::sendResponse(400, StatusResponse::badrequest);
+                return;
+            }
+            LoggerConfig::getInstance()->debug('Creating Category', compact('data'));
+            $product = new Product();
+            $data = $product->insertCategory($data['name']);
+            if ($data) {
+                Helper::sendResponse(200, StatusResponse::success, compact('data'));
+            } else {
+                Helper::sendResponse(400, StatusResponse::badrequest);
+            }
+        } catch (\Throwable $th) {
+            LoggerConfig::getInstance()->debug('Error insertCategory', compact('th'));
+            Helper::sendResponse(500, StatusResponse::error);
+        }
+    }
+
+    public function search() {
+        header('Content-Type: application/json');
+        try {
+            $keyword = $_POST['keyword'];
+            LoggerConfig::getInstance()->debug('Search data with keyword', compact('keyword'));
+            V::stringType()->length(2, 50)->assert($keyword);
+            $data = new Product();
+            $result = $data->search($keyword);
+            LoggerConfig::getInstance()->debug('Result Searching Data', compact('result'));
+            Helper::sendResponse(200, StatusResponse::success, $result);
+        } catch (NestedValidationException $exception) {
+            $errors = $exception->getMessages();
+            if (!is_array($errors)) {
+                $errors = [$errors];
+            }
+            LoggerConfig::getInstance()->debug('Error Searching Data', compact('errors'));
+            Helper::sendResponse(400, StatusResponse::badrequest);
+        } catch (\Exception $exception) {
+            $errors = $exception->getMessage();
+            if (!is_array($errors)) {
+                $errors = [$errors];
+            }
+            LoggerConfig::getInstance()->debug('Error Searching Data', compact('errors'));
+            Helper::sendResponse(500, StatusResponse::error);
+        }
     }
 
     public function updateProduct($paramID) {
@@ -129,92 +282,6 @@ class ProductController extends BaseController {
             Helper::sendResponse(400, StatusResponse::badrequest);
         } catch (\Throwable $th) {
             LoggerConfig::getInstance()->debug('Error addProducts', compact('th'));
-            Helper::sendResponse(500, StatusResponse::error);
-        }
-    }
-
-    public function getProducts() {
-        $products = new Product();
-        $find = $products->findAll();
-        Helper::sendResponse(200, StatusResponse::success, $find);
-    }
-
-    public function getProductByID() {
-        $id = $_POST['id'];
-        LoggerConfig::getInstance()->debug('Get Product By ID', compact('id'));
-        $product = new Product();
-        $find = $product->findById($id);
-        LoggerConfig::getInstance()->debug('Found Product by ID', $find);
-        Helper::sendResponse(200, StatusResponse::success, $find);
-    }
-
-    public function getProductByName() {
-        $name = $_POST['name'];
-        LoggerConfig::getInstance()->debug('Get Product By Name', compact('name'));
-        $products = new Product();
-        $find = $products->findByName($name);
-        LoggerConfig::getInstance()->debug('Found Product by Name', $find);
-        Helper::sendResponse(200, StatusResponse::success, $find);
-    }
-
-    public function getCategories() {
-        $categories = new Product();
-        $find = $categories->findAllCategories();
-        Helper::sendResponse(200, StatusResponse::success, $find);
-    }
-
-    public function getCategoryByID($paramID) {
-        $product = new Product();
-        $find = $product->findCategoryById($paramID);
-        Helper::sendResponse(200, StatusResponse::success, $find);
-    }
-
-    public function addCategoryProducts() {
-        try {
-            $json = file_get_contents('php://input');
-            $data = json_decode($json, true);
-            LoggerConfig::getInstance()->debug('POST Add Category Products Page', $data);
-            if (!$data) {
-                Helper::sendResponse(400, StatusResponse::badrequest);
-                return;
-            }
-            LoggerConfig::getInstance()->debug('Creating Category', compact('data'));
-            $product = new Product();
-            $data = $product->insertCategory($data['name']);
-            if ($data) {
-                Helper::sendResponse(200, StatusResponse::success, compact('data'));
-            } else {
-                Helper::sendResponse(400, StatusResponse::badrequest);
-            }
-        } catch (\Throwable $th) {
-            LoggerConfig::getInstance()->debug('Error insertCategory', compact('th'));
-            Helper::sendResponse(500, StatusResponse::error);
-        }
-    }
-
-    public function search() {
-        header('Content-Type: application/json');
-        try {
-            $keyword = $_POST['keyword'];
-            LoggerConfig::getInstance()->debug('Search data with keyword', compact('keyword'));
-            V::stringType()->length(2, 50)->assert($keyword);
-            $data = new Product();
-            $result = $data->search($keyword);
-            LoggerConfig::getInstance()->debug('Result Searching Data', compact('result'));
-            Helper::sendResponse(200, StatusResponse::success, $result);
-        } catch (NestedValidationException $exception) {
-            $errors = $exception->getMessages();
-            if (!is_array($errors)) {
-                $errors = [$errors];
-            }
-            LoggerConfig::getInstance()->debug('Error Searching Data', compact('errors'));
-            Helper::sendResponse(400, StatusResponse::badrequest);
-        } catch (\Exception $exception) {
-            $errors = $exception->getMessage();
-            if (!is_array($errors)) {
-                $errors = [$errors];
-            }
-            LoggerConfig::getInstance()->debug('Error Searching Data', compact('errors'));
             Helper::sendResponse(500, StatusResponse::error);
         }
     }

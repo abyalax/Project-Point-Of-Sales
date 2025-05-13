@@ -1,10 +1,7 @@
 {extends file="./dashboard.tpl"}
 
 {block name="head"}
-    <!-- Mode Development -->
-    <script type="module" src="http://localhost:5173/src/transaction/index.ts"></script>
-    <!-- Mode Production -->
-    {* <script src="/resources/js/dist/transaction.js" type="module"></script> *}
+    <!-- Block Import Script JS -->
 {/block}
 
 {block name="content"}

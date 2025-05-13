@@ -1,5 +1,5 @@
-import CartManager from "./module/cart-manager"
-import CartUI from "./module/cart-ui"
+import CartManager from "./core"
+import CartUI from "./ui"
 
 document.addEventListener('DOMContentLoaded', () => {
     const cartManager = new CartManager()

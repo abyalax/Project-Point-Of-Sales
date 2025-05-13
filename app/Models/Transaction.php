@@ -91,10 +91,10 @@ class Transaction {
 
             $stmtItems = $this->db->prepare("
                 INSERT INTO transaction_items (
-                    transaction_id, product_id, barcode, name,
+                    transaction_id, product_id, barcode, name, category,
                     quantity, cost_price, sell_price, discount, tax_rate, final_price
                 ) VALUES (
-                    :transaction_id, :product_id, :barcode, :name,
+                    :transaction_id, :product_id, :barcode, :name, :category,
                     :quantity, :cost_price, :sell_price, :discount, :tax_rate, :final_price
                 )   
             ");
@@ -105,6 +105,7 @@ class Transaction {
                     'product_id'     => $item['product_id'],
                     'barcode'        => $item['barcode'],
                     'name'           => $item['name'],
+                    'category'       => $item['category'],
                     'quantity'       => $item['qty'],
                     'cost_price'     => $item['cost_price'],
                     'sell_price'     => $item['price'],

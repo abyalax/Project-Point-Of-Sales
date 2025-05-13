@@ -107,8 +107,8 @@ class Product {
                 FROM 
                     products p 
                 JOIN 
-                    product_categories pc ON p.category_id = pc.id;
-                WHERE name LIKE :name
+                    product_categories pc ON p.category_id = pc.id
+                WHERE p.name LIKE :name;
             ");
             $stmt->execute(['name' => "%$name%"]);
             $result = $stmt->fetch(PDO::FETCH_ASSOC);

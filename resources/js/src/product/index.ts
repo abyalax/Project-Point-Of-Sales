@@ -1,4 +1,4 @@
-import ProductUI from "./module/product-ui"
+import ProductUI from "./ui"
 
 document.addEventListener('DOMContentLoaded', () => {
     new ProductUI()

@@ -16,13 +16,13 @@ use Throwable;
 class TransactionController extends BaseController {
 
     public function home() {
-        LoggerConfig::getInstance()->debug('Get Home Page');
+        LoggerConfig::getInstance()->debug('Get View Home Page');
         $this->smarty->assign('page', 'Home Page');
         $this->smarty->display('pages/index.tpl');
     }
 
     public function index() {
-        LoggerConfig::getInstance()->debug('Get Transaction Page');
+        LoggerConfig::getInstance()->debug('Get View Transaction Page');
         $this->smarty->assign('page', 'Transaction Page');
         $model = new Transaction();
         $data = $model->findAll();
@@ -31,16 +31,16 @@ class TransactionController extends BaseController {
     }
 
     public function getView() {
-        LoggerConfig::getInstance()->debug('Get Transaction List Page');
+        LoggerConfig::getInstance()->debug('Get View Transaction List Page');
         $transaction = new Transaction();
         $data = $transaction->findAll();
         $this->smarty->assign('transactions', $data);
         $this->smarty->assign('page', 'Transaction List Page');
         $this->smarty->display('pages/transaction/get.tpl');
     }
-    
+
     public function getViewByID($paramID) {
-        LoggerConfig::getInstance()->debug('Get Transaction By ID Page');
+        LoggerConfig::getInstance()->debug('Get View Transaction By ID Page');
         $transaction = new Transaction();
         $data = $transaction->findByID($paramID);
         $this->smarty->assign('transaction', $data);
@@ -48,19 +48,44 @@ class TransactionController extends BaseController {
         $this->smarty->display('pages/transaction/detail.tpl');
     }
 
-    public function get() {
-        $model = new Transaction();
-        $find = $model->findAll();
-        LoggerConfig::getInstance()->debug('Found Transaction by ID', $find);
-        Helper::sendResponse(200, StatusResponse::success, $find);
+    public function getTransactions() {
+        try {
+            $model = new Transaction();
+            $find = $model->findAll();
+
+            if ($find == false) {
+                Helper::sendResponse(404, StatusResponse::notfound);
+            } else {
+                Helper::sendResponse(200, StatusResponse::success, $find);
+            }
+        } catch (NestedValidationException $exception) {
+            LoggerConfig::getInstance()->debug('Error getTransactions', ['errors' => $exception->getMessages()]);
+            Helper::sendResponse(400, StatusResponse::badrequest);
+        } catch (Throwable $th) {
+            LoggerConfig::getInstance()->error('Error getTransactions', compact('th'));
+            Helper::sendResponse(500, StatusResponse::error);
+        }
     }
 
-    public function getByID($paramID): void {
-        LoggerConfig::getInstance()->debug('Get Transaction By ID', compact('id'));
-        $model = new Transaction();
-        $find = $model->findByID($paramID);
-        LoggerConfig::getInstance()->debug('Found Transaction by ID', $find);
-        Helper::sendResponse(200, StatusResponse::success, $find);
+    public function getTransactionByID($paramID): void {
+        try {
+            LoggerConfig::getInstance()->debug('Find Transaction By ID', compact('id'));
+            $model = new Transaction();
+            $find = $model->findByID($paramID);
+            LoggerConfig::getInstance()->debug('Found Transaction by ID: ', $find);
+            
+            if ($find == false) {
+                Helper::sendResponse(404, StatusResponse::notfound);
+            } else {
+                Helper::sendResponse(200, StatusResponse::success, $find);
+            }
+        } catch (NestedValidationException $exception) {
+            LoggerConfig::getInstance()->debug('Error getTransaction  By ID', ['errors' => $exception->getMessages()]);
+            Helper::sendResponse(400, StatusResponse::badrequest);
+        } catch (Throwable $th) {
+            LoggerConfig::getInstance()->error('Error getTransaction ByID', compact('th'));
+            Helper::sendResponse(500, StatusResponse::error);
+        }
     }
 
     public function createTransaction() {
