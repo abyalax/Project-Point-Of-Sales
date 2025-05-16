@@ -143,7 +143,13 @@ class Product {
 
     public function search($keyword) {
         try {
-            $stmt = $this->db->prepare("SELECT name FROM products WHERE name LIKE :keyword LIMIT 30");
+            $stmt = $this->db->prepare("
+                SELECT name FROM products
+                WHERE name LIKE :keyword
+                    AND stock_qty > 0 
+                    AND is_active = true
+                LIMIT 30;
+            ");
             $stmt->execute(['keyword' => "%$keyword%"]);
             $result = $stmt->fetchAll(PDO::FETCH_COLUMN);
             return $result;

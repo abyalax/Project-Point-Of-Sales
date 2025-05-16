@@ -1,0 +1,36 @@
+{
+    "status": "pending",
+    "item": [
+    {
+        "name": "Sabun Cuci Piring Sunlight 755ml",
+        "category": "Perlengkapan Rumah",
+        "product_id": 5,
+        "barcode": "8999999998888",
+        "qty": 1,
+        "price": 14500,
+        "cost_price": 11000,
+        "discount": 0.1,
+        "tax_rate": 0.1,
+        "summary": {
+            "name": "Sabun Cuci Piring Sunlight 755ml",
+            "sub_total": 14500,
+            "total_discount": 1450,
+            "total_price": 13050,
+            "unit_profit": 2050,
+            "total_profit": 2050,
+            "total_tax": 1450,
+            "last_price": 14500
+        }
+    }
+    ],
+    "subtotal": 14500,
+    "total_discount": 1450,
+    "total_price": 13050,
+    "total_profit": 2050,
+    "total_tax": 1450,
+    "pay_return": 5500,
+    "pay_received": 20000,
+    "payment_method": "cash",
+    "last_price": 14500,
+    "notes": ""
+}

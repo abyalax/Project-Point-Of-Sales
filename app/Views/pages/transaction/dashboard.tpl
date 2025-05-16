@@ -3,9 +3,10 @@
 {block name="transaction-content"}
 <div data-testid="page-dashboard" class="bg-[#f0f0f8]">
     <!-- Mode Development -->
-    <!-- <script src="http://localhost:5173/src/analytics/index" type="module"></script> -->
+    {* <script src="http://localhost:5173/src/analytics/index" type="module"></script> *}
     <!-- Mode Production -->
     <script src="/dist/analytics.js" type="module"></script>
+    
     <div style="display: grid;grid-template-columns: 2fr 1fr;grid-gap: 15px;">
         <div class="card">
             <div class="card-header">

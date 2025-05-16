@@ -137,7 +137,7 @@ class ProductController extends BaseController {
 
     public function getCategoryByID($paramID) {
         try {
-            LoggerConfig::getInstance()->debug('Get Category By ID', compact('id'));
+            LoggerConfig::getInstance()->debug('Get Category By ID', compact('paramID'));
             V::numericVal()->assert($paramID);
             $product = new Product();
             $find = $product->findCategoryById($paramID);

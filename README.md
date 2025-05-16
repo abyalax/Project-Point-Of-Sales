@@ -98,3 +98,9 @@ Penjelasan singkat tentang beberapa folder utama:
 - **docs/**: Dokumentasi tambahan dan diagram alur sistem.
 
 ---
+
+
+Generate Class Diagram
+```bash
+vendor/bin/phuml phuml:diagram -r -t -m -p dot app example.png
+```

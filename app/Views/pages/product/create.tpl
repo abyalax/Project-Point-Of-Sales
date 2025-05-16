@@ -101,7 +101,7 @@
                 <div class="mb-3 row">
                     <div class="col-sm-10 ms-sm-auto">
                         <button type="submit" class="btn btn-secondary"
-                            onclick="alert('belum diimplement')">Create</button>
+                            onclick="">Create</button>
                     </div>
                 </div>
             </form>

@@ -69,19 +69,7 @@ export default class ProductUI {
     private handleSelectCategories = async () => {
         const select = document.getElementById('select-categories') as HTMLSelectElement;
         if (!select) return;
-        // select.innerHTML = '';
         const defaultOption = document.createElement('option');
-
-        const pathSegments = window.location.pathname.split('/');
-        const id = pathSegments[pathSegments.length - 1];
-        console.log("ID Product:", id);
-
-        const getCategory = await getCategoryByID(parseInt(id))
-        defaultOption.value = getCategory.id ?? '';
-        console.log("ID Category:", getCategory.id);
-        defaultOption.textContent = getCategory.name ?? '-- Pilih Kategori --';
-        select.appendChild(defaultOption);
-
         const categories: Category[] = await getCategories();
 
         // Isi dengan data dari API
@@ -91,6 +79,17 @@ export default class ProductUI {
             option.textContent = category.name;
             select.appendChild(option);
         });
+
+        const pathSegments = window.location.pathname.split('/');
+        const id = pathSegments[pathSegments.length - 1];
+        if (!id) return
+        const getCategory = await getCategoryByID(parseInt(id))
+        if (getCategory) {
+            defaultOption.value = getCategory.id ?? '';
+            console.log("ID Category:", getCategory.id);
+            defaultOption.textContent = getCategory.name ?? '-- Pilih Kategori --';
+            select.appendChild(defaultOption);
+        }
     }
 
     private handleAddCategory = async (e: Event) => {
@@ -133,6 +132,7 @@ export default class ProductUI {
         console.log(stateProduct);
         await addProduct(stateProduct);
         alert('Product berhasil ditambahkan');
+
     }
 
     private handleUpdateProduct = async (e: Event) => {

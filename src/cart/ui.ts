@@ -37,7 +37,7 @@ export default class CartUI {
         const printStructBtn = document.getElementById('print-struct-btn') as HTMLButtonElement;
         printStructBtn.addEventListener('click', this.handlePrintStruct);
 
-        const saveTransactionBtn = document.getElementById('save-transaction-btn') as HTMLButtonElement;
+        const saveTransactionBtn = document.getElementById('btn-save-transaction') as HTMLButtonElement;
         saveTransactionBtn.addEventListener('click', this.handleSaveTransaction);
 
         const selectProductBtn = document.getElementById('select-product-btn') as HTMLButtonElement;
@@ -387,7 +387,7 @@ export default class CartUI {
             const result = await TransactionManager.insert(transaction);
             if (result?.data?.transaction_id) {
                 toast({
-                    message: `Transaksi ${result.data.transaction_id} berhasil disimpan`,
+                    message: 'Transaksi berhasil disimpan',
                     type: 'success'
                 })
                 payInput.value = '';

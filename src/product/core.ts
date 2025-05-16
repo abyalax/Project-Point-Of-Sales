@@ -38,6 +38,7 @@ export const getCategories = async (): Promise<Category[]> => {
 }
 
 export const getCategoryByID = async (id: number) => {
+    if (!id) return;
     try {
         const fetchData = await fetch(`/point-of-sales/api/product/category/${id}`, {
             method: 'GET',
@@ -57,7 +58,7 @@ export const getCategoryByID = async (id: number) => {
 
 export const addProduct = async (product: Product) => {
     try {
-        const fetchData = await fetch('/point-of-sales/api/product/create', {
+        const response = await fetch('/point-of-sales/api/product/create', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -65,12 +66,11 @@ export const addProduct = async (product: Product) => {
             credentials: 'include',
             body: JSON.stringify(product)
         });
-        const response = await fetchData.json();
         console.log('Add Product Response: ', response);
         return response.status;
     } catch (error) {
         console.log('Get Product Error: ', error);
-        return 'failed';
+        return false;
     }
 }
 

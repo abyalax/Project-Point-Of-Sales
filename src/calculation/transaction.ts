@@ -1,7 +1,9 @@
 import { ItemSummary, ItemTransaction, TransactionState } from "../types/transaction";
 import { CartState } from "../types/cart";
 
-export function calculateTransaction(cartState: CartState): TransactionState {
+export function calculateTransaction(
+        cartState: CartState
+    ): TransactionState {
 
     const items = cartState.items;
 
@@ -15,14 +17,23 @@ export function calculateTransaction(cartState: CartState): TransactionState {
     const item_summaries: ItemSummary[] = [];
 
     for (const unit of items) {
-        const sub_total = unit.price * unit.quantity;
-        const total_discount = unit.price * unit.discount * unit.quantity;
+        const sub_total =
+            unit.price * unit.quantity;
+        const total_discount =
+            unit.price *
+            unit.discount *
+            unit.quantity;
         const total_price = sub_total - total_discount;
 
-        const unit_profit = unit.price - unit.cost_price - (total_discount / unit.quantity);
+        const unit_profit =
+            unit.price - unit.cost_price -
+            (total_discount / unit.quantity);
         const total_profit = unit_profit * unit.quantity;
 
-        const total_tax = unit.price * unit.tax_rate * unit.quantity;
+        const total_tax =
+            unit.price *
+            unit.tax_rate *
+            unit.quantity;
         const last_price = total_price + total_tax;
 
         subtotal_transaction += sub_total;
@@ -46,18 +57,19 @@ export function calculateTransaction(cartState: CartState): TransactionState {
         item_summaries.push(item);
     }
 
-    const item_transaction: ItemTransaction[] = items.map((item, i) => ({
-        name: item.name,
-        category: item.category,
-        product_id: item.id,
-        barcode: item.barcode,
-        qty: item.quantity,
-        price: item.price,
-        cost_price: item.cost_price,
-        discount: item.discount,
-        tax_rate: item.tax_rate,
-        summary: item_summaries[i]
-    }))
+    const item_transaction: ItemTransaction[] =
+        items.map((item, i) => ({
+            name: item.name,
+            category: item.category,
+            product_id: item.id,
+            barcode: item.barcode,
+            qty: item.quantity,
+            price: item.price,
+            cost_price: item.cost_price,
+            discount: item.discount,
+            tax_rate: item.tax_rate,
+            summary: item_summaries[i]
+        }))
     const transaction: TransactionState = {
         status: 'pending',
         item: item_transaction,

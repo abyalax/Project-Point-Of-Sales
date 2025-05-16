@@ -99,6 +99,12 @@ class Transaction {
                 )   
             ");
 
+            $updateStock = $this->db->prepare("
+                UPDATE products
+                SET stock_qty = stock_qty - :quantity
+                WHERE id = :id
+            ");
+
             foreach ($data['item'] as $item) {
                 $stmtItems->execute([
                     'transaction_id' => $transactionId,
@@ -113,6 +119,12 @@ class Transaction {
                     'tax_rate'       => $item['tax_rate'],
                     'final_price'    => $item['summary']['last_price'],
                 ]);
+
+                $updateStock->execute([
+                    'quantity' => $item['qty'],
+                    'id'       => $item['product_id'],
+                ]);
+
             }
 
             $query = $this->db->commit();

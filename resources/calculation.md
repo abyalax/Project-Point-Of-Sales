@@ -1,5 +1,6 @@
 Example
 
+```javascript
 NIVEA MEN Extra Bright 50ml
 qty = 2
 unit_price 	= 25000

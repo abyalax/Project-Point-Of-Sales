@@ -124,7 +124,7 @@
                                             </svg>
                                             Cetak
                                         </button>
-                                        <button id="save-transaction-btn" data-bs-toggle="tooltip"
+                                        <button id="btn-save-transaction" data-testid="btn-save-transaction" data-bs-toggle="tooltip"
                                             data-bs-placement="bottom" data-bs-title="Save & Finish Transaction"
                                             class="btn btn-secondary btn-lg d-flex gap-1 flex-nowrap align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -158,23 +158,23 @@
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <p>Total Items</p>
-                                    <p id="cart-total-item">0</p>
+                                    <p id="cart-total-item" data-testid="cart-total-item">0</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <p>Subtotal Price</p>
-                                    <p id="cart-sub-total"></p>
+                                    <p id="cart-sub-total" data-testid="cart-sub-total"></p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <p>Total Tax Products</p>
-                                    <p id="cart-total-tax"></p>
+                                    <p id="cart-total-tax" data-testid="cart-total-tax"></p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <p>Total Discount</p>
-                                    <p id="cart-total-discount"></p>
+                                    <p id="cart-total-discount" data-testid="cart-total-discount"></p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <p>Total Price</p>
-                                    <p id="cart-total"></p>
+                                    <p id="cart-total" data-testid="cart-total"></p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <p>Payment Method</p>

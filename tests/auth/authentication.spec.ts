@@ -1,7 +1,6 @@
 import test, { expect } from "@playwright/test";
 import { kasir } from '../data/user';
-
-const domain = process.env.DOMAIN;
+import { domain } from "../config";
 
 test.describe('Authentication Testing', () => {
     test('should allow me to login and redirect to /transaction', async ({ page }) => {
@@ -16,7 +15,7 @@ test.describe('Authentication Testing', () => {
     });
 
     test('should deny access without login', async ({ page }) => {
-        await page.goto(`${domain}/login`);
+        await page.goto(`${domain}/transaction`);
         await expect(page).toHaveURL(/\/login$/);
     });
 

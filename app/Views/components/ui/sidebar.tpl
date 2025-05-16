@@ -1,6 +1,6 @@
 {literal}
     <script>
-        let base_url = '';
+        let domain = '';
 
         function handleLogout() {
             fetch('api/logout', {
@@ -28,7 +28,7 @@
         async function getConfig() {
             const fechData = await fetch('/point-of-sales/api/config')
             const res = await fechData.json()
-            base_url = res.data[0].base_url
+            domain = res.data[0].domain
         }
 
 
