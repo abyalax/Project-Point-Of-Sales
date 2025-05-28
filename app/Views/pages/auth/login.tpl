@@ -59,7 +59,7 @@
                             </div>
                         </div>
                         <div class="text-center mb-3">
-                            Don't have an account? <a href="/point-of-sales/register">Sign up</a>
+                            Don't have an account? <a href="{$base_url}register">Sign up</a>
                         </div>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ class ProductController extends BaseController {
         LoggerConfig::getInstance()->debug('Index Products Page', compact('find'));
         $this->smarty->assign('products', $find);
         $this->smarty->assign('page', 'Products Page');
-        $this->smarty->assign('url', '/point-of-sales/product');
+        $this->smarty->assign('url', "{$this->base_url}product");
         $this->smarty->display('pages/product/index.tpl');
     }
 
@@ -31,14 +31,14 @@ class ProductController extends BaseController {
         LoggerConfig::getInstance()->debug('Get Products Page', compact('find'));
         $this->smarty->assign('products', $find);
         $this->smarty->assign('page', 'Products Page');
-        $this->smarty->assign('url', '/point-of-sales/products');
+        $this->smarty->assign('url', "{$this->base_url}products");
         $this->smarty->display('pages/product/get.tpl');
     }
 
     public function create() {
         LoggerConfig::getInstance()->debug('Create Products Page');
         $this->smarty->assign('page', 'Create Products Page');
-        $this->smarty->assign('url', '/point-of-sales/products/create');
+        $this->smarty->assign('url', "{$this->base_url}products/create");
         $this->smarty->display('pages/product/create.tpl');
     }
 
@@ -49,7 +49,7 @@ class ProductController extends BaseController {
         LoggerConfig::getInstance()->debug('Found Product by ID', $data);
         $this->smarty->assign('product', $data);
         $this->smarty->assign('page', 'Update Products Page');
-        $this->smarty->assign('url', '/point-of-sales/products/edit/' . $paramID);
+        $this->smarty->assign('url', "{$this->base_url}products/edit/" . $paramID);
         $this->smarty->display('pages/product/edit.tpl');
     }
 

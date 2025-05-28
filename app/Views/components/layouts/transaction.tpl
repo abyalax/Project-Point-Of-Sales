@@ -20,10 +20,10 @@
                         text-decoration: underline;
                     }
                 </style>
-                <a class="breadcrumb-item {$url == '/point-of-sales/dashboard' ? " breadcrum-active" : "" }"
-                    style="text-decoration:none;color:gray;" href="/point-of-sales/dashboard">Home</a>
-                <a class="breadcrumb-item {$url == '/point-of-sales/transactions' ? " breadcrum-active" : "" }"
-                    style="text-decoration:none;color:gray;" href="/point-of-sales/transactions">Transaction</a>
+                <a class="breadcrumb-item {$url == "{$base_url}dashboard" ? " breadcrum-active" : "" }"
+                    style="text-decoration:none;color:gray;" href="{$base_url}dashboard">Home</a>
+                <a class="breadcrumb-item {$url == "{$base_url}transactions" ? " breadcrum-active" : "" }"
+                    style="text-decoration:none;color:gray;" href="{$base_url}transactions">Transaction</a>
             </ol>
 
         </nav>

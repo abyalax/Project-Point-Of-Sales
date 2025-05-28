@@ -27,7 +27,6 @@ dist-ssr
 .compiled/
 /node_modules/
 /logs/
-.env
 
 # Playwright
 /test-results/

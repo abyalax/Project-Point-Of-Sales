@@ -26,7 +26,7 @@
         }
 
         async function getConfig() {
-            const fechData = await fetch('/point-of-sales/api/config')
+            const fechData = await fetch('{$base_url}api/config')
             const res = await fechData.json()
             domain = res.data[0].domain
         }
@@ -56,7 +56,7 @@
 
 <nav id="sidebar" class="sidebar js-sidebar">
     <div class="sidebar-content js-simplebar">
-        <a class="sidebar-brand" href="/point-of-sales/">
+        <a class="sidebar-brand" href="{$base_url}">
             <span class="align-middle">Abya's POS</span>
         </a>
 
@@ -76,7 +76,7 @@
                 </a>
                 <ul id="sales" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/dashboard">
+                        <a class="sidebar-link" href="{$base_url}dashboard">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-ui-checks-grid" viewBox="0 0 16 16">
                                 <path
@@ -86,7 +86,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/transaction">
+                        <a class="sidebar-link" href="{$base_url}transaction">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-currency-dollar" viewBox="0 0 16 16">
                                 <path
@@ -96,7 +96,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/transactions">
+                        <a class="sidebar-link" href="{$base_url}transactions">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-clock-history" viewBox="0 0 16 16">
                                 <path
@@ -122,7 +122,7 @@
                 </a>
                 <ul id="products" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/product">
+                        <a class="sidebar-link" href="{$base_url}product">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-search" viewBox="0 0 16 16">
                                 <path
@@ -132,7 +132,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/products">
+                        <a class="sidebar-link" href="{$base_url}products">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-ui-checks" viewBox="0 0 16 16">
                                 <path
@@ -142,7 +142,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/products/create">
+                        <a class="sidebar-link" href="{$base_url}products/create">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-file-earmark-plus" viewBox="0 0 16 16">
                                 <path
@@ -174,7 +174,7 @@
                 </a>
                 <ul id="inventories" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/inventaris">
+                        <a class="sidebar-link" href="{$base_url}inventaris">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -187,7 +187,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/suppliers">
+                        <a class="sidebar-link" href="{$base_url}suppliers">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -261,7 +261,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/analytics">
+                        <a class="sidebar-link" href="{$base_url}analytics">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -283,7 +283,7 @@
                 </a>
                 <ul id="customers" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/members">
+                        <a class="sidebar-link" href="{$base_url}members">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -296,7 +296,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/member/create">
+                        <a class="sidebar-link" href="{$base_url}member/create">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -318,7 +318,7 @@
                 </a>
                 <ul id="staff" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/karyawans">
+                        <a class="sidebar-link" href="{$base_url}karyawans">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -366,7 +366,7 @@
                 </a>
                 <ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/settings">
+                        <a class="sidebar-link" href="{$base_url}settings">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -379,7 +379,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/login">
+                        <a class="sidebar-link" href="{$base_url}login">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -394,14 +394,14 @@
                 </ul>
             </li>
             <li class="sidebar-item">
-                <a href="/point-of-sales/settings" data-bs-target="#settings" data-bs-toggle="collapse"
+                <a href="{$base_url}settings" data-bs-target="#settings" data-bs-toggle="collapse"
                     class="sidebar-link collapsed" aria-expanded="false">
                     <i class="align-middle" data-feather="settings"></i>
                     <span class="align-middle">Settings</span>
                 </a>
                 <ul id="settings" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/payments">
+                        <a class="sidebar-link" href="{$base_url}payments">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -414,7 +414,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="/point-of-sales/settings">
+                        <a class="sidebar-link" href="{$base_url}settings">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"

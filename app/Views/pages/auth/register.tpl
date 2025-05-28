@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="text-center mb-3">
-                            Already have account? <a href="/point-of-sales/login">Log In</a>
+                            Already have account? <a href="{$base_url}login">Log In</a>
                         </div>
                     </div>
                 </div>
