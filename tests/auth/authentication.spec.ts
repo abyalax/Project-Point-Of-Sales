@@ -9,7 +9,6 @@ test.describe('Authentication Testing', () => {
         await page.getByTestId('login-password').fill(kasir.password);
         await page.getByTestId('btn-login').click();
         await page.waitForURL(`${domain}/transaction`);
-        await expect(page.getByTestId('page-transaction')).toBeVisible();
         await expect(page).toHaveURL(/\/transaction$/);
         await expect(page.getByTestId('page-transaction')).toBeVisible();
     });
