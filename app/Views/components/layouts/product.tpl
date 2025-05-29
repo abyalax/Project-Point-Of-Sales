@@ -24,13 +24,13 @@
                         text-decoration: underline;
                     }
                 </style>
-                <a class="breadcrumb-item {$url == "{$base_url}product" ? " breadcrum-active" : "" }"
-                    style="text-decoration:none;color:gray;" href="{$base_url}product">Home</a>
-                <a class="breadcrumb-item {$url == '{$base_url}products' ? " breadcrum-active" : "" }"
-                    style="text-decoration:none;color:gray;" href="{$base_url}products">Product</a>
-                <a class="breadcrumb-item  {$url == '{$base_url}products/create' ? " breadcrum-active" : "" }"
-                    style="text-decoration:none;color:gray;" href="{$base_url}products/create">Create</a>
-                <a class="breadcrumb-item  {substr($url, 0, strlen("{$base_url}products/edit")) == "{$base_url}products/edit" ? " breadcrum-active" : "d-none" }"
+                <a class="breadcrumb-item {$url == "{$base_url}/product" ? " breadcrum-active" : "" }"
+                    style="text-decoration:none;color:gray;" href="{$base_url}/product">Home</a>
+                <a class="breadcrumb-item {$url == '{$base_url}/products' ? " breadcrum-active" : "" }"
+                    style="text-decoration:none;color:gray;" href="{$base_url}/products">Product</a>
+                <a class="breadcrumb-item  {$url == '{$base_url}/products/create' ? " breadcrum-active" : "" }"
+                    style="text-decoration:none;color:gray;" href="{$base_url}/products/create">Create</a>
+                <a class="breadcrumb-item  {substr($url, 0, strlen("{$base_url}/products/edit")) == "{$base_url}/products/edit" ? " breadcrum-active" : "d-none" }"
                     style="text-decoration:none;color:gray;" href="{$url}">Update</a>
             </ol>
 

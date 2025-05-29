@@ -5,7 +5,7 @@
             {$icon nofilter}
             <h4 class="fw-semibold text-nowrap">{$menu}</h4>
         </div>
-        <a href="{$base_url}{$link}" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+        <a href="{$link}" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
         data-bs-title="You must login as {$role}">
         {$button}
         <i class="align-middle" data-feather="arrow-right"></i>
