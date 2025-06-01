@@ -50,25 +50,25 @@ class AuthController extends BaseController {
 
                 switch ($role) {
                     case 'Super Admin':
-                        Helper::sendResponse(303, StatusResponse::redirect, null, "{$this->base_url}/dashboard");
+                        Helper::sendResponse(303, StatusResponse::redirect, null, "/dashboard");
                         break;
                     case 'Owner':
-                        Helper::sendResponse(303, StatusResponse::redirect, null, "{$this->base_url}/dashboard");
+                        Helper::sendResponse(303, StatusResponse::redirect, null, "/dashboard");
                         break;
                     case 'Admin':
-                        Helper::sendResponse(303, StatusResponse::redirect, null, "{$this->base_url}/products");
+                        Helper::sendResponse(303, StatusResponse::redirect, null, "/products");
                         break;
                     case 'Manager':
-                        Helper::sendResponse(303, StatusResponse::redirect, null, "{$this->base_url}/product");
+                        Helper::sendResponse(303, StatusResponse::redirect, null, "/product");
                         break;
                     case 'Kasir':
-                        Helper::sendResponse(303, StatusResponse::redirect, null, "{$this->base_url}/transaction");
+                        Helper::sendResponse(303, StatusResponse::redirect, null, "/transaction");
                         break;
                     case 'Karyawan':
-                        Helper::sendResponse(303, StatusResponse::redirect, null, "{$this->base_url}/karyawans");
+                        Helper::sendResponse(303, StatusResponse::redirect, null, "/karyawans");
                         break;
                     default:
-                        Helper::sendResponse(303, StatusResponse::redirect, null, "{$this->base_url}/transaction");
+                        Helper::sendResponse(303, StatusResponse::redirect, null, "/transaction");
                         break;
                 }
 
@@ -94,6 +94,6 @@ class AuthController extends BaseController {
 
     public function logout() {
         AuthService::logout();
-        Helper::sendResponse(303, StatusResponse::redirect, null, "{$this->base_url}/login");
+        Helper::sendResponse(303, StatusResponse::redirect, null, "/login");
     }
 }

@@ -4,6 +4,7 @@ import { glob } from 'glob'
 
 export default defineConfig({
   build: {
+    outDir: 'public/dist',
     rollupOptions: {
       input: Object.fromEntries(
         glob.sync('src/**/index.ts').map(file => [

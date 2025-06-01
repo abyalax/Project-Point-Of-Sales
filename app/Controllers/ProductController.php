@@ -219,9 +219,13 @@ class ProductController extends BaseController {
             V::numericVal()->assert($data['category_id']);
             V::numericVal()->assert($data['price']);
             V::numericVal()->assert($data['cost_price']);
-            V::decimal(2)->assert($data['tax_rate']);
-            V::decimal(2)->assert($data['discount']);
             V::numericVal()->assert($data['stock_qty']);
+            if ($data['tax_rate'] > 0) {
+                V::decimal(2)->assert($data['tax_rate']);
+            }
+            if ($data['discount'] > 0) {
+                V::decimal(2)->assert($data['discount']);
+            }
 
             LoggerConfig::getInstance()->debug('Updating Product', compact('data'));
             $product = new Product();

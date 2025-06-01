@@ -24,84 +24,84 @@ class WebRoutes {
         return [
             'GET' => [
                 // Tanpa middleware
-                '' => [
+                '/' => [
                     [TransactionController::class, 'home']
                 ],
-                'login' => [
+                '/login' => [
                     [AuthController::class, 'loginView']
                 ],
-                'register' => [
+                '/register' => [
                     [AuthController::class, 'registerView']
                 ],
-                'dashboard' => [
+                '/dashboard' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [AnalyticsController::class, 'dashboard']
                 ],
-                'transaction' => [
+                '/transaction' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [TransactionController::class, 'index']
                 ],
-                'transactions' => [
+                '/transactions' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [TransactionController::class, 'getView']
                 ],
-                'transactions/(\d+)' => [
+                '/transactions/(\d+)' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [TransactionController::class, 'getViewByID']
                 ],
-                'inventaris' => [
+                '/inventaris' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [InventarisController::class, 'index']
                 ],
-                'analytics' => [
+                '/analytics' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [AnalyticsController::class, 'index']
                 ],
-                'suppliers' => [
+                '/suppliers' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [SupplierController::class, 'index']
                 ],
-                'members' => [
+                '/members' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [MemberController::class, 'index']
                 ],
-                'karyawans' => [
+                '/karyawans' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [KaryawanController::class, 'index']
                 ],
-                'product' => [
+                '/product' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'index']
                 ],
-                'products' => [
+                '/products' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'get']
                 ],
-                'products/create' => [
+                '/products/create' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'create']
                 ],
-                'products/edit/(\d+)' => [
+                '/products/edit/(\d+)' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'edit']
                 ],
-                'payments' => [
+                '/payments' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [RBACMiddleware::class, 'handle:read_payments'],
                     [PaymentController::class, 'index']
                 ],
-                'payments/manage' => [
+                '/payments/manage' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [RBACMiddleware::class, 'handle:manage_payments'],
                     [PaymentController::class, 'index']
                 ],
-                'settings' => [
+                '/settings' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [SettingController::class, 'index']
                 ],
             ],
             'POST' => [
-                'login' => [
+                '/login' => [
                     [AuthController::class, 'login']
                 ]
             ]

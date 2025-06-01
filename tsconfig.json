@@ -1,30 +1,3 @@
-// {
-//   "compilerOptions": {
-//     "target": "ES2020",
-//     "useDefineForClassFields": true,
-//     "module": "NodeNext",
-//     "lib": ["ES2020", "DOM", "DOM.Iterable"],
-//     "skipLibCheck": true,
-//     "allowJs": false,
-
-//     /* Bundler mode */
-//     "moduleResolution": "nodenext",
-//     "allowImportingTsExtensions": true,
-//     "allowSyntheticDefaultImports": true,
-//     "isolatedModules": true,
-//     "moduleDetection": "force",
-//     "noEmit": true,
-//     "outDir": "./dist",
-
-//     /* Linting */
-//     "strict": true,
-//     "noUnusedLocals": true,
-//     "noUnusedParameters": true,
-//     "noFallthroughCasesInSwitch": true,
-//     "noUncheckedSideEffectImports": true
-//   },
-//   "include": ["src"]
-// }
 {
   "compilerOptions": {
     "target": "ESNext",
@@ -40,7 +13,7 @@
     "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
     "noEmit": false,  // Diubah dari true ke false
-    "outDir": "./dist",
+    "outDir": "public/dist",
 
     /* Linting */
     "strict": true,
@@ -55,5 +28,5 @@
     "resolveJsonModule": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist", ".htaccess"]
+  "exclude": ["node_modules", "public/dist", ".htaccess"]
 }

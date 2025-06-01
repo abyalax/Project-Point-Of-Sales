@@ -1,4 +1,3 @@
-import { base_url } from "../helper/config";
 import { Category, Product } from "../types/product";
 import { addCategory, addProduct, getCategories, getCategoryByID, getProducts, updateProduct } from "./core";
 
@@ -170,7 +169,7 @@ export default class ProductUI {
         const response = await updateProduct(stateProduct);
         if (response === 200) {
             alert('Product berhasil diupdate');
-            window.location.href = `${base_url}/products`;
+            window.location.href = `/products`;
         } else {
             alert('Product gagal diupdate');
         }

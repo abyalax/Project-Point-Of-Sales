@@ -220,7 +220,7 @@
             $("#fm-search-products").autocomplete({
                 source: function(request, response) {
                     $.ajax({
-                        url: "api/products",
+                        url: "/api/products",
                         type: "POST",
                         data: {
                             keyword: request.term
@@ -241,7 +241,7 @@
             $("#bx-search-products").autocomplete({
                 source: function(request, response) {
                     $.ajax({
-                        url: "api/products",
+                        url: "/api/products",
                         type: "POST",
                         data: {
                             keyword: request.term

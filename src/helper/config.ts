@@ -2,7 +2,6 @@ import nativeToast from 'native-toast'
 import { ToastOptions } from 'native-toast'
 
 export const domain = import.meta.env.DOMAIN
-export const base_url = import.meta.env.BASE_URL
 
 export function toast({
     message,

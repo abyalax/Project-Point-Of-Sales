@@ -18,8 +18,8 @@ if (!empty($parsed['query'])) {
     parse_str($parsed['query'], $queryParams);
 }
 
-$prefix = Config::getBaseUrl();
-$path = trim(substr($path, strlen($prefix)), '/');
+// $prefix = Config::getBaseUrl();
+// $path = trim(substr($path, strlen($prefix)), '/');
 
 LoggerConfig::getInstance()->debug('Request Entry Point: ', [
     'method' => $method,
@@ -28,9 +28,9 @@ LoggerConfig::getInstance()->debug('Request Entry Point: ', [
 ]);
 
 $method = $_SERVER['REQUEST_METHOD'];
-$path = trim(substr($parsed['path'], strlen($prefix)), '/');
+// $path = trim(substr($parsed['path'], strlen($prefix)), '/');
 
-if (str_starts_with($path, 'api/')) {
+if (str_starts_with($path, '/api/')) {
     header('Content-Type: application/json');
     Routes::apiRoutes($method, $path, $queryParams);
 } else {

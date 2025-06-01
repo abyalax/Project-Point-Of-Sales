@@ -30,6 +30,6 @@ class Routes {
                 return;
             }
         }
-        Helper::sendResponse(404, StatusResponse::notfound, ['request' => $path]);
+        Helper::sendResponse(404, StatusResponse::notfound, ['endpoint ini tidak ditemukan' => $path]);
     }
 }

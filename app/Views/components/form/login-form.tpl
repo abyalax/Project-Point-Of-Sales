@@ -12,7 +12,7 @@
                 formData.append('email', email.value);
                 formData.append('password', password.value);
 
-                fetch('api/login', {
+                fetch('/api/login', {
                         method: 'POST',
                         body: formData
                     }).then(response => {

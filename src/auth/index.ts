@@ -2,7 +2,7 @@ import { User } from "../types/user";
 
 export async function getUserSession(): Promise<User> {
     try {
-        const fetchData = await fetch('api/session', {
+        const fetchData = await fetch('/api/session', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'

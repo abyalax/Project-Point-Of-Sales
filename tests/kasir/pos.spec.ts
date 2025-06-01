@@ -1,14 +1,13 @@
 import { expect, test } from "../fixtures";
 import { cart, payloadTransaction, productCart } from "../data/product";
-
-const domain = process.env.DOMAIN;
+import { url_test } from "../config";
 
 // test.describe.configure({ mode: 'serial' });
 
 test.describe('Point of Sales Kasir Testing', () => {
     test.use({ withLogin: true });
     test('should can do transaction at cashier', async ({ page }) => {
-        await page.goto(`${domain}/transaction`);
+        await page.goto(`${url_test}/transaction`);
         await test.step('insert product to cart', async () => {
             await page.getByTestId('input-search-product').fill(productCart.name);
             await page.getByTestId('btn-insert-cart').click();

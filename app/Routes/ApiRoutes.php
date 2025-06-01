@@ -15,90 +15,90 @@ class ApiRoutes {
     public static function get() {
         return [
             'GET' => [
-                'api/config' => [
+                '/api/config' => [
                     [ConfigController::class, 'config'],
                 ],
-                'api/session' => [
+                '/api/session' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [AuthController::class, 'getUserSession'],
                 ],
-                'api/users' => [
+                '/api/users' => [
                     [AuthMiddleware::class, 'checkSession'],
                 ],
-                'api/home' => [
+                '/api/home' => [
                     [AuthMiddleware::class, 'checkSession'],
                 ],
-                'api/products' => [
+                '/api/products' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'getProducts'],
                 ],
-                'api/product/categories' => [
+                '/api/product/categories' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'getCategories'],
                 ],
-                'api/product/category/(\d+)' => [
+                '/api/product/category/(\d+)' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'getCategoryByID'],
                 ],
-                'api/transactions' => [
+                '/api/transactions' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [TransactionController::class, 'getTransactions'],
                 ],
-                'api/analytics/report/month' => [
+                '/api/analytics/report/month' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [AnalyticsController::class, 'getReportSalesByMonth'],
                 ],
-                'api/analytics/report/year' => [
+                '/api/analytics/report/year' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [AnalyticsController::class, 'getReportSalesByYear'],
                 ],
-                'api/analytics/report/category' => [
+                '/api/analytics/report/category' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [AnalyticsController::class, 'getReportSalesByCategory'],
                 ],
             ],
             'POST' => [
-                'api/home' => [
+                '/api/home' => [
                     [AuthMiddleware::class, 'checkSession'],
                 ],
-                'api/login' => [
+                '/api/login' => [
                     [AuthController::class, 'login'],
                 ],
-                'api/logout' => [
+                '/api/logout' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [AuthController::class, 'logout'],
                 ],
-                'api/products' => [
+                '/api/products' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'search'],
                 ],
-                'api/product/create' => [
+                '/api/product/create' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'createProduct'],
                 ],
-                'api/transactions/(\d+)' => [
+                '/api/transactions/(\d+)' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [TransactionController::class, 'getTransactionByID']
                 ],
-                'api/transaction/insert' => [
+                '/api/transaction/insert' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [TransactionController::class, 'createTransaction'],
                 ],
-                'api/product/name' => [
+                '/api/product/name' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'getProductByName'],
                 ],
-                'api/product/id' => [
+                '/api/product/id' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'getProductByID'],
                 ],
-                'api/product/category/create' => [
+                '/api/product/category/create' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'addCategoryProducts'],
                 ],
             ],
             'PUT' => [
-                'api/product/update/(\d+)' => [
+                '/api/product/update/(\d+)' => [
                     [AuthMiddleware::class, 'checkSession'],
                     [ProductController::class, 'updateProduct'],
                 ],

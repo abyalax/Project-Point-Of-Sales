@@ -12,24 +12,24 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <link rel="stylesheet" href="/vendor/components/jqueryui/themes/smoothness/jquery-ui.min.css" />
-    <link rel="stylesheet" href="/vendor/components/jqueryui/themes/smoothness/theme.css" />
+    <link rel="stylesheet" href="/module/jqueryui/themes/smoothness/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/module/jqueryui/themes/smoothness/theme.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="/public/module/adminkit/css/app.css" />
-    <link rel="stylesheet" href="/public/module/adminkit/css/app.css">
-    <script src="/public/module/adminkit/js/app.js"></script>
+    <link rel="stylesheet" href="/module/adminkit/css/app.css" />
+    <link rel="stylesheet" href="/module/adminkit/css/app.css">
+    <script src="/module/adminkit/js/app.js"></script>
 
 
-    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
 
-    <script src="/vendor/components/jquery/jquery.min.js"></script>
-    <script src="/vendor/components/jqueryui/jquery-ui.min.js"></script>
+    <script src="/module/jquery/jquery.min.js"></script>
+    <script src="/module/jqueryui/jquery-ui.min.js"></script>
     
 
-    <link rel="stylesheet" href="/public/module/native-toast/dist/native-toast.css" />
-    <script src="/public/module/native-toast/dist/native-toast.min.js"></script>
+    <link rel="stylesheet" href="/module/native-toast/dist/native-toast.css" />
+    <script src="/module/native-toast/dist/native-toast.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 
@@ -59,7 +59,7 @@
                             </div>
                         </div>
                         <div class="text-center mb-3">
-                            Don't have an account? <a href="{$base_url}/register">Sign up</a>
+                            Don't have an account? <a href="/register">Sign up</a>
                         </div>
                     </div>
                 </div>

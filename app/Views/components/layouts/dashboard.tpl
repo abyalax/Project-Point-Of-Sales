@@ -10,26 +10,26 @@
     <meta name="keywords" content="abya, point-of-sales, pos, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, web">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     {* JQuery CSS*}
-    <link rel="stylesheet" href="/vendor/components/jqueryui/themes/base/jquery-ui.min.css" />
-    <link rel="stylesheet" href="/vendor/components/jqueryui/themes/base/theme.css" />
+    <link rel="stylesheet" href="/module/jqueryui/themes/base/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/module/jqueryui/themes/base/theme.css" />
     {* JQuery JS*}
-    <script src="/vendor/components/jquery/jquery.min.js"></script>
-    <script src="/vendor/components/jqueryui/jquery-ui.min.js"></script>
+    <script src="/module/jquery/jquery.min.js"></script>
+    <script src="/module/jqueryui/jquery-ui.min.js"></script>
     {* Fancybox *}
-    <link rel="stylesheet" href="/public/module/fancybox/fancybox/fancybox.css" />
-    <script src="/public/module/fancybox/fancybox/fancybox.umd.js"></script>
-    <script src="/public/module/fancybox/index.umd.js"></script>
+    <link rel="stylesheet" href="/module/fancybox/fancybox/fancybox.css" />
+    <script src="/module/fancybox/fancybox/fancybox.umd.js"></script>
+    <script src="/module/fancybox/index.umd.js"></script>
     {* Bootstrap *}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     {* Template AdminKit *}
-    <script src="/public/module/adminkit/js/app.js"></script>
-    <link rel="stylesheet" href="/public/module/adminkit/css/app.css" />
+    <script src="/module/adminkit/js/app.js"></script>
+    <link rel="stylesheet" href="/module/adminkit/css/app.css" />
     {* Native Toast *}
-    <link rel="stylesheet" href="/public/module/native-toast/dist/native-toast.css" />
-    <script src="/public/module/native-toast/dist/native-toast.min.js"></script>
+    <link rel="stylesheet" href="/module/native-toast/dist/native-toast.css" />
+    <script src="/module/native-toast/dist/native-toast.min.js"></script>
     {* CSS root *}
-    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Mode Development -->
@@ -45,7 +45,7 @@
 <body>
     <div class="wrapper">
         {* {include file="/resources/components/ui/sidebar.tpl"} *}
-        {include file="../ui/sidebar.tpl"}
+        {include file="../ui/sidebar.tpl" base_url=$base_url}
         <div class="main position-relative" style="z-index: 1;">
             <nav style="z-index: 3;" class="navbar position-sticky top-0 navbar-expand navbar-light navbar-bg">
                 <a class="sidebar-toggle js-sidebar-toggle">
@@ -141,7 +141,7 @@
                                         <div class="row g-0 align-items-center">
                                         <div class="col-2">
 
-                                        <img src="/public/module/adminkit/img/avatars/avatar-5.jpg"
+                                        <img src="/module/adminkit/img/avatars/avatar-5.jpg"
                                             class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
                                             </div>
                                             <div class="col-10 ps-2">
@@ -155,7 +155,7 @@
                                     <a href="#" class="list-group-item">
                                         <div class="row g-0 align-items-center">
                                             <div class="col-2">
-                                                <img src="/public/module/adminkit/img/avatars/avatar-2.jpg"
+                                                <img src="/module/adminkit/img/avatars/avatar-2.jpg"
                                                     class="avatar img-fluid rounded-circle" alt="William Harris">
                                             </div>
                                             <div class="col-10 ps-2">
@@ -169,7 +169,7 @@
                                     <a href="#" class="list-group-item">
                                         <div class="row g-0 align-items-center">
                                             <div class="col-2">
-                                                <img src="/public/module/adminkit/img/avatars/avatar-4.jpg"
+                                                <img src="/module/adminkit/img/avatars/avatar-4.jpg"
                                                     class="avatar img-fluid rounded-circle" alt="Christina Mason">
                                             </div>
                                             <div class="col-10 ps-2">
@@ -183,7 +183,7 @@
                                     <a href="#" class="list-group-item">
                                         <div class="row g-0 align-items-center">
                                             <div class="col-2">
-                                                <img src="/public/module/adminkit/img/avatars/avatar-3.jpg"
+                                                <img src="/module/adminkit/img/avatars/avatar-3.jpg"
                                                     class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
                                             </div>
                                             <div class="col-10 ps-2">
@@ -208,7 +208,7 @@
 
                             <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#"
                                 data-bs-toggle="dropdown">
-                                <img src="/public/module/adminkit/img/avatars/avatar.jpg"
+                                <img src="/module/adminkit/img/avatars/avatar.jpg"
                                     class="avatar img-fluid rounded me-1" alt="Charles Hall" />
                                 <span class="text-dark">{$auth_user['name']|default:'Nama Cashier'}</span>
                             </a>

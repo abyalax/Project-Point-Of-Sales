@@ -26,7 +26,7 @@
         }
 
         async function getConfig() {
-            const fechData = await fetch('{$base_url}/api/config')
+            const fechData = await fetch('/api/config')
             const res = await fechData.json()
             domain = res.data[0].domain
         }
@@ -55,7 +55,7 @@
 
 <nav id="sidebar" class="sidebar js-sidebar">
     <div class="sidebar-content js-simplebar">
-        <a class="sidebar-brand" href="{$base_url}/">
+        <a class="sidebar-brand" href="/">
             <span class="align-middle">Abya's POS</span>
         </a>
 
@@ -75,7 +75,7 @@
                 </a>
                 <ul id="sales" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/dashboard">
+                        <a class="sidebar-link" href="/dashboard">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-ui-checks-grid" viewBox="0 0 16 16">
                                 <path
@@ -85,7 +85,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/transaction">
+                        <a class="sidebar-link" href="/transaction">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-currency-dollar" viewBox="0 0 16 16">
                                 <path
@@ -95,7 +95,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/transactions">
+                        <a class="sidebar-link" href="/transactions">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-clock-history" viewBox="0 0 16 16">
                                 <path
@@ -121,7 +121,7 @@
                 </a>
                 <ul id="products" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/product">
+                        <a class="sidebar-link" href="/product">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-search" viewBox="0 0 16 16">
                                 <path
@@ -131,7 +131,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/products">
+                        <a class="sidebar-link" href="/products">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-ui-checks" viewBox="0 0 16 16">
                                 <path
@@ -141,7 +141,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/products/create">
+                        <a class="sidebar-link" href="/products/create">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-file-earmark-plus" viewBox="0 0 16 16">
                                 <path
@@ -173,7 +173,7 @@
                 </a>
                 <ul id="inventories" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/inventaris">
+                        <a class="sidebar-link" href="/inventaris">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -186,7 +186,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/suppliers">
+                        <a class="sidebar-link" href="/suppliers">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -260,7 +260,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/analytics">
+                        <a class="sidebar-link" href="/analytics">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -282,7 +282,7 @@
                 </a>
                 <ul id="customers" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/members">
+                        <a class="sidebar-link" href="/members">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -295,7 +295,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/member/create">
+                        <a class="sidebar-link" href="/member/create">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -317,7 +317,7 @@
                 </a>
                 <ul id="staff" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/karyawans">
+                        <a class="sidebar-link" href="/karyawans">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -365,7 +365,7 @@
                 </a>
                 <ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/settings">
+                        <a class="sidebar-link" href="/settings">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -378,7 +378,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/login">
+                        <a class="sidebar-link" href="/login">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -393,14 +393,14 @@
                 </ul>
             </li>
             <li class="sidebar-item">
-                <a href="{$base_url}/settings" data-bs-target="#settings" data-bs-toggle="collapse"
+                <a href="/settings" data-bs-target="#settings" data-bs-toggle="collapse"
                     class="sidebar-link collapsed" aria-expanded="false">
                     <i class="align-middle" data-feather="settings"></i>
                     <span class="align-middle">Settings</span>
                 </a>
                 <ul id="settings" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/payments">
+                        <a class="sidebar-link" href="/payments">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -413,7 +413,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item ps-3">
-                        <a class="sidebar-link" href="{$base_url}/settings">
+                        <a class="sidebar-link" href="/settings">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 style="width: .8rem;height: .8rem;" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"

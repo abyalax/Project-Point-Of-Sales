@@ -46,11 +46,8 @@ export default defineConfig({
   reporter: 'list',
   use: {
     headless: true,
-    viewport: { width: 1280, height: 720 },
     launchOptions: {
       headless: true,
-      slowMo: 500,
-      args: ['--start-maximized'],
     },
     baseURL: process.env.BASE_URL,
     trace: 'on-first-retry',

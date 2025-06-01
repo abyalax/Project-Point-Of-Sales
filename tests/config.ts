@@ -1,1 +1,1 @@
-export const domain = process.env.DOMAIN;
+export const url_test = process.env.URL_TEST;

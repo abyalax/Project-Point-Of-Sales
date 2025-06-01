@@ -18,7 +18,7 @@
         <div class="row row-cols-md-4 row-cols-sm-3 row-cols-1 justify-content-center gap-4">
 
             {include file="../components/ui/card.tpl"
-            link="point-of-sales/transaction"
+            link="transaction"
             title="Create Transaction"
             menu="Menu Transaction"
             role="Cashier"
@@ -32,7 +32,7 @@
             button="Transaction" }
 
             {include file="../components/ui/card.tpl"
-            link="point-of-sales/inventaris"
+            link="inventaris"
             title="Create and Manage Inventaris"
             menu="Menu Inventaris"
             role="Admin"
@@ -49,7 +49,7 @@
             button="Inventaris" }
 
             {include file="../components/ui/card.tpl"
-            link="point-of-sales/analytics"
+            link="analytics"
             title="Analyze Your Data"
             menu="Analytics & report"
             role="Manager"
@@ -63,7 +63,7 @@
             button="Analytics" }
 
             {include file="../components/ui/card.tpl"
-            link="point-of-sales/suppliers"
+            link="suppliers"
             title="Manage Suppliers"
             menu="Menu Supliers"
             role="Admin"
@@ -79,7 +79,7 @@
             button="Suppliers" }
 
             {include file="../components/ui/card.tpl"
-            link="point-of-sales/members"
+            link="members"
             title="Create and Manage Members"
             menu="Menu Members"
             role="Owner"
@@ -95,7 +95,7 @@
             button="Members" }
 
             {include file="../components/ui/card.tpl"
-            link="point-of-sales/karyawans"
+            link="karyawans"
             title="Manage Karyawan"
             menu="Menu Karyawan"
             role="Human Resource Development"
@@ -111,7 +111,7 @@
             button="Karyawan" }
 
             {include file="../components/ui/card.tpl"
-            link="point-of-sales/products"
+            link="products"
             title="Manage Products"
             menu="Menu Products"
             role="Admin"
@@ -128,7 +128,7 @@
             button="Products" }
 
             {include file="../components/ui/card.tpl"
-            link="point-of-sales/payments"
+            link="payments"
             title="Manage Payments"
             menu="Menu Payments"
             role="Owner"
@@ -142,7 +142,7 @@
             button="Payments" }
 
             {include file="../components/ui/card.tpl"
-            link="point-of-sales/settings"
+            link="settings"
             title="Manage Configuration"
             menu="Settings"
             role="Admin"
