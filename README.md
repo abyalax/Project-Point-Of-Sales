@@ -38,14 +38,14 @@
 
 ---
 
-### **Deskripsi Proyek**
+# **Deskripsi Proyek**
 Proyek ini adalah sistem Point of Sales (POS) berbasis PHP Native dengan implementasi PSR-4 autoload dan menggunakan database MySQL untuk penyimpanan data. Proyek ini dirancang untuk fleksibilitas, skalabilitas, dan kemudahan pengelolaan.
 
 ---
 
-### **Langkah-Langkah Setup**
+# **Langkah-Langkah Setup**
 
-#### **1. Clone Proyek**
+## **1. Clone Proyek**
 Clone repository ini ke direktori lokal kamu:
 ```bash
 git clone https://github.com/abyalax/Project-Point-Of-Sales.git
@@ -57,18 +57,22 @@ ubah nama directory menjadi
 ```
 ini base url di environment saya, ubah ini di env
 
-#### **2. Konfigurasi Environment**
+## **2. Konfigurasi Environment**
 Salin file `.env.example` (jika tersedia) menjadi `.env` dan sesuaikan konfigurasi database:
 ```dotenv
-DB_HOST=localhost
-DB_NAME=nama_database
-DB_USER=root
-DB_PASSWORD=password_kamu
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=db_pos
+DB_USERNAME=root
+DB_PASSWORD=
 
-BASE_URL = /point-of-sales
+# Virtual Host
+BASE_URL = /
+# nama folder : point-of-sales
+URL_TEST = http://point-of-sales.com
 ```
 
-#### **3. Install Dependencies**
+## **3. Install Dependencies**
 Jalankan perintah berikut untuk menginstall dependencies php:
 ```bash
 composer install
@@ -78,20 +82,23 @@ Jalankan perintah berikut untuk menginstall dependencies node js:
 npm install
 ```
 
-#### **4. Import Struktur Database**
+## **4. Import Struktur Database**
 Gunakan file migrasi terbaru (`init-3.sql`) untuk menginisialisasi struktur database. Jalankan perintah ini di MySQL:
 ```bash
 mysql -u username -p database_name < database/migrations/full.sql
 ```
 
-#### **5. Import Data Awal**
+## **5. Import Data Awal**
 Jika diperlukan, import data awal menggunakan file seed terbaru (`init-3.sql`):
 ```bash
 mysql -u username -p database_name < database/seeds/full.sql
 ```
 
-#### **6. Jalankan Proyek**
-Arahkan root folder ke root folder project ini, kemudian set konfigurasi apache 
+## **6. Jalankan Proyek**
+
+### Standar Apache without virtual hosts
+
+Arahkan Document Root ke root folder project ini, kemudian set konfigurasi apache 
 Enable Mod Rewrite berikut ( hapus tanda # )
 ```sh
 LoadModule rewrite_module modules/mod_rewrite.so
@@ -132,11 +139,23 @@ Pastikan Apache dan MySQL berjalan, lalu akses aplikasi melalui browser dengan U
 http://localhost/point-of-sales
 ```
 
+### Virtual Hosts
+
+Arahkan Document Root ke folder parent project ini, kemudian jalankan auto create virtual host di laragon
+contoh
+
+![config-laragon](resources/laragon.png)
+
+Lalu akses di url berikut
+```
+http://point-of-sales.com/
+```
+
 ---
 
-### **Struktur Direktori**
+# **Struktur Direktori**
 Penjelasan singkat tentang beberapa folder utama:
-- **app/**: Berisi kode utama aplikasi (PSR-4 autoload).
+- **app/**: Berisi kode utama aplikasi (PSR-4 autoload) dengan arsitektur MVC.
 - **database/**: Berisi file migrasi dan seed untuk setup database.
 - **public/**: Root akses aplikasi melalui server web.
 - **resources/**: Berisi Dokumentasi dan Diagram Perancangan Sistem.

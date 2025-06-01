@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Redirect semua request ke index.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !\.(css|js|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot)$ [NC]
+
+# RewriteRule ^(.*)$ index.php [QSA,L]
+RewriteRule . /index.php [L]
