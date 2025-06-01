@@ -10,6 +10,9 @@ dotenv.config({path: '.env'});
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
+
+// Non Headless ( with chromium )
+
 // export default defineConfig({
 //   testDir: './.',
 //   fullyParallel: false,

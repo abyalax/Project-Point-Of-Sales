@@ -55,7 +55,6 @@ ubah nama directory menjadi
 ```
 📂 point-of-sales
 ```
-ini base url di environment saya, ubah ini di env
 
 ## **2. Konfigurasi Environment**
 Salin file `.env.example` (jika tersedia) menjadi `.env` dan sesuaikan konfigurasi database:
@@ -153,6 +152,14 @@ http://point-of-sales.com/
 
 ---
 
+## End To End Test 
+Jalankan command berikut
+```sh
+npx playwright test
+```
+Konfigurasi testing ada di file `playwright.config.ts`
+Disini ada dua versi testing (Headless dan NonHeadless) , uncomment salah satu sesuai preferensi testing
+
 # **Struktur Direktori**
 Penjelasan singkat tentang beberapa folder utama:
 - **app/**: Berisi kode utama aplikasi (PSR-4 autoload) dengan arsitektur MVC.
@@ -160,6 +167,162 @@ Penjelasan singkat tentang beberapa folder utama:
 - **public/**: Root akses aplikasi melalui server web.
 - **resources/**: Berisi Dokumentasi dan Diagram Perancangan Sistem.
 
+## Core Backend
+
+```
+└── 📁app
+    └── 📁Config
+        └── BaseController.php
+        └── Config.php
+        └── Database.php
+        └── Helper.php
+        └── LoggerConfig.php
+        └── SmartyConfig.php
+    └── 📁Controllers
+        └── AnalyticsController.php
+        └── AuthController.php
+        └── ConfigController.php
+        └── InventarisController.php
+        └── KaryawanController.php
+        └── MemberController.php
+        └── PaymentController.php
+        └── ProductController.php
+        └── SettingController.php
+        └── SupplierController.php
+        └── TransactionController.php
+        └── UserController.php
+    └── 📁Middlewares
+        └── AuthMiddleware.php
+        └── RBACMiddleware.php
+    └── 📁Models
+        └── Analytics.php
+        └── Permission.php
+        └── Product.php
+        └── Role.php
+        └── Transaction.php
+        └── User.php
+    └── 📁Routes
+        └── ApiRoutes.php
+        └── Routes.php
+        └── WebRoutes.php
+    └── 📁Services
+        └── AuthService.php
+        └── RBACService.php
+    └── 📁Views
+        └── 📁components
+            └── 📁form
+                └── category-form.tpl
+                └── login-form.tpl
+                └── search-transaction-form.tpl
+                └── transaction-form.tpl
+            └── 📁layouts
+                └── dashboard.tpl
+                └── product.tpl
+                └── transaction.tpl
+            └── 📁table
+                └── products.tpl
+                └── table.tpl
+                └── transaction.tpl
+                └── transactions.tpl
+                └── user.tpl
+            └── 📁ui
+                └── card.tpl
+                └── sidebar.tpl
+        └── 📁pages
+            └── analytics.tpl
+            └── 📁auth
+                └── login.tpl
+                └── register.tpl
+            └── index.tpl
+            └── inventaris.tpl
+            └── karyawan.tpl
+            └── member.tpl
+            └── payment.tpl
+            └── 📁product
+                └── create.tpl
+                └── edit.tpl
+                └── get.tpl
+                └── index.tpl
+            └── setting.tpl
+            └── supplier.tpl
+            └── 📁transaction
+                └── dashboard.tpl
+                └── detail.tpl
+                └── get.tpl
+                └── index.tpl
+```
+
+## Logical Frontend
+
+```
+└── 📁src
+    └── 📁analytics
+        └── core.ts
+        └── 📁docs
+            └── line-sales.md
+            └── pie-category.md
+        └── index.ts
+        └── README.md
+        └── ui.ts
+    └── 📁auth
+        └── index.ts
+    └── 📁calculation
+        └── transaction.ts
+    └── 📁cart
+        └── core.ts
+        └── index.ts
+        └── ui.ts
+    └── 📁helper
+        └── config.ts
+        └── index.ts
+    └── 📁product
+        └── core.ts
+        └── index.ts
+        └── ui.ts
+    └── 📁transaction
+        └── core.ts
+    └── 📁types
+        └── analytics.ts
+        └── cart.ts
+        └── payment.ts
+        └── product.ts
+        └── transaction.ts
+        └── user.ts
+    └── vite-env.d.ts
+```
+
+## End To End Testing
+
+```
+└── 📁tests
+    └── 📁auth
+        └── authentication.spec.ts
+        └── authorization.spec.ts
+    └── 📁data
+        └── product.ts
+        └── user.ts
+    └── 📁fixtures
+        └── index.ts
+    └── 📁kasir
+        └── pos.spec.ts
+    └── config.ts
+```
+
+## Serve Public
+
+```
+└── 📁public
+    └── 📁module
+        └── 📁adminkit
+        └── 📁fancybox
+        └── 📁jquery
+        └── 📁jqueryui
+        └── 📁native-toast
+    └── .htaccess
+    └── index.php
+    └── styles.css
+    └── vite.svg
+```
 ---
 
 Generate Class Diagram
