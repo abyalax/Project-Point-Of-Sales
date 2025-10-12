@@ -3,6 +3,12 @@ import path from 'path'
 import { glob } from 'glob'
 
 export default defineConfig({
+  server: {
+    cors: {
+      origin: ['http://localhost:8000'],
+      methods: ['GET'],
+    }
+  },
   build: {
     outDir: 'public/dist',
     rollupOptions: {

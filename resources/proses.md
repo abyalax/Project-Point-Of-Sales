@@ -539,3 +539,16 @@ Install respect validation dengan perintah berikut
 ```sh
 composer require respect/validation
 ```
+
+## 🖨️ Direct Printing
+
+Install library QZ-Tray untuk melakukan print tanpa dialog browser
+```sh
+npm i qz-tray
+```
+Install juga dependency typescriptnya
+```sh
+npm i --save-dev @types/qz-tray
+```
+
+

@@ -3,7 +3,7 @@ import { PaymentMethod } from "../types/payment";
 
 export default class CartManager {
     private _stateCart: CartState;
-
+    
     constructor() {
         this._stateCart = {
             subtotal: 0,

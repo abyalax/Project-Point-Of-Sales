@@ -1,4 +1,15 @@
 <?php
+
+// === CORS ===
+header("Access-Control-Allow-Origin: http://localhost:5173");
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
+
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit();
+}
+
 require_once '../vendor/autoload.php';
 
 use Abya\PointOfSales\Config\Config;
@@ -18,9 +29,6 @@ if (!empty($parsed['query'])) {
     parse_str($parsed['query'], $queryParams);
 }
 
-// $prefix = Config::getBaseUrl();
-// $path = trim(substr($path, strlen($prefix)), '/');
-
 LoggerConfig::getInstance()->debug('Request Entry Point: ', [
     'method' => $method,
     'path' => $path,
@@ -28,7 +36,6 @@ LoggerConfig::getInstance()->debug('Request Entry Point: ', [
 ]);
 
 $method = $_SERVER['REQUEST_METHOD'];
-// $path = trim(substr($parsed['path'], strlen($prefix)), '/');
 
 if (str_starts_with($path, '/api/')) {
     header('Content-Type: application/json');

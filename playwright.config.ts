@@ -51,6 +51,7 @@ export default defineConfig({
     headless: true,
     launchOptions: {
       headless: true,
+      slowMo: 300,
     },
     baseURL: process.env.BASE_URL,
     trace: 'on-first-retry',

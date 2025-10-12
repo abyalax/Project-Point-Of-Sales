@@ -331,3 +331,5 @@ vendor/bin/phuml phuml:diagram -r -t -m -p dot app example.png
 ```
 
 ---
+
+ php -S localhost:8000 -t public
